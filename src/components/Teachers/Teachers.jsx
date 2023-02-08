@@ -82,7 +82,13 @@ const RenderSlider = ({ index, replay }) => {
             </div>
             {data[index + 1] && (
                 <div className="next_slide">
-                    <img src={data[index + 1].image} alt="" />
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.3 }}
+                        transition={{ duration: 0.3 }}
+                        animate={replay ? { opacity: 1, scale: 1 } : 'hidden'}
+                    >
+                        <img src={data[index + 1].image} alt="" />
+                    </motion.div>
                 </div>
             )}
         </div>
