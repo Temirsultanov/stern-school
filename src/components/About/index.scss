@@ -1,0 +1,104 @@
+.about {
+    .row {
+        display: grid;
+        grid-template-columns: 645px 1fr;
+        column-gap: 28px;
+        margin-bottom: 27px;
+        height: 583px;
+    }
+    .second_row {
+        display: grid;
+        grid-template-columns: 888px 1fr;
+        column-gap: 31px;
+        height: 583px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 30px;
+        background: #fff;
+        padding: 60px 56px 105px;
+    }
+    .card.phone {
+        padding: 57px 50px 42px;
+    }
+    .image_wrapper {
+        margin: 0 auto;
+        position: relative;
+        border-radius: 50%;
+        width: 284px;
+        height: 284px;
+        display: grid;
+        place-content: center;
+        background: #fff;
+        img.first {
+            width: 223px;
+        }
+        img.second {
+            width: 400px;
+            position: absolute;
+            top: -130px;
+            left: -100px;
+        }
+        img.third {
+            width: 284px;
+        }
+        img.forth {
+            width: 285px;
+        }
+    }
+    p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #515151;
+        margin-top: 44px;
+        span {
+            font-weight: 500;
+        }
+    }
+    button {
+        width: 208px;
+        height: 52px;
+        background: radial-gradient(
+                100% 942.28% at 9.58% 0%,
+                #738cff 0%,
+                rgba(110, 91, 233, 0) 97.76%
+            )
+            #6f5bec;
+        box-shadow: 4.31443px 4.31443px 8.62887px rgba(62, 72, 128, 0.1);
+        border-radius: 43px;
+        border: none;
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 32px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    input {
+        background: radial-gradient(
+                    109.8% 109.8% at 11.4% -9.8%,
+                    rgba(200, 210, 255, 0.15) 0%,
+                    rgba(255, 255, 255, 0) 100%
+                )
+                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+            #ffffff;
+        box-shadow: inset 4.31443px 4.31443px 4.31443px rgba(125, 102, 173, 0.2);
+        border-radius: 43.1443px;
+        height: 60px;
+        width: 100%;
+        text-align: center;
+        font-weight: 400;
+        font-size: 20.7093px;
+        color: rgba(50, 50, 65, 0.5);
+        outline: none;
+        border: none;
+        margin: 53px 0 30px;
+        &::placeholder {
+            font-weight: 400;
+            font-size: 20.7093px;
+            color: rgba(50, 50, 65, 0.5);
+        }
+    }
+}

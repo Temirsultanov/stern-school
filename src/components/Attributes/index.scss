@@ -1,0 +1,172 @@
+.attributes {
+    margin-top: 110px;
+    .top_card {
+        background: #c981ff;
+        border-radius: 55px;
+        padding: 42px 47px 56px 29px;
+        position: relative;
+        h2 {
+            font-weight: 700;
+            font-size: 96px;
+            line-height: 120%;
+            color: #ffffff;
+            margin-bottom: 80px;
+        }
+        &_row {
+            display: grid;
+            grid-template-columns: 540px 1fr;
+            padding: 18px 90px 18px 0;
+            column-gap: 127px;
+            &:nth-child(n + 4) {
+                border-top: 1px solid rgba(255, 255, 255, 0.3);
+            }
+            &:last-child { 
+                border: none;
+            }
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 38px;
+                color: #ffffff;
+            }
+        }
+        img { 
+            position: absolute;
+            right: 0;
+            top: 100px;
+        }
+    }
+
+    .block {
+        margin: 33px 0;
+        border-radius: 55px;
+        background: linear-gradient(216.68deg, #3687ff 0%, #cd62ff 128.61%);
+        padding: 36px 51px 84px 54px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 130px;
+    }
+    .image_wrapper {
+        margin: 0 auto;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        display: grid;
+        place-content: center;
+        background: #5156ff;
+        margin-bottom: 32px;
+    }
+    .white {
+        background: #fff;
+    }
+    h3,
+    h4 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 150%;
+        color: #ffffff;
+        margin-bottom: 6px;
+    }
+    h4.black {
+        line-height: 150%;
+        color: #515151;
+        margin-bottom: 26px;
+    }
+    input {
+        background: radial-gradient(
+                    109.8% 109.8% at 11.4% -9.8%,
+                    rgba(200, 210, 255, 0.15) 0%,
+                    rgba(255, 255, 255, 0) 100%
+                )
+                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+            #ffffff;
+        box-shadow: inset 4.31443px 4.31443px 4.31443px rgba(125, 102, 173, 0.2);
+        border-radius: 43.1443px;
+        height: 60px;
+        width: 100%;
+        text-align: center;
+        font-weight: 400;
+        font-size: 20.7093px;
+        color: rgba(50, 50, 65, 0.5);
+        outline: none;
+        border: none;
+        margin: 26px auto;
+        width: 300px;
+        &::placeholder {
+            font-weight: 400;
+            font-size: 20.7093px;
+            color: rgba(50, 50, 65, 0.5);
+        }
+    }
+    button {
+        width: 208px;
+        height: 52px;
+        background: radial-gradient(
+                100% 942.28% at 9.58% 0%,
+                #738cff 0%,
+                rgba(110, 91, 233, 0) 97.76%
+            )
+            #6f5bec;
+        box-shadow: 4.31443px 4.31443px 8.62887px rgba(62, 72, 128, 0.1);
+        border-radius: 43px;
+        border: none;
+        margin: 0 auto;
+        font-weight: 400;
+        font-size: 32px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: #ffffff;
+    }
+
+    .row {
+        height: 740px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+
+    .row .card {
+        border-radius: 55px;
+        padding: 40px 55px 40px;
+    }
+
+    .row .card:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        background: radial-gradient(
+                    53.1% 111.36% at 82.89% 107.5%,
+                    #8affea 0%,
+                    rgba(255, 255, 255, 0) 100%
+                )
+                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+            radial-gradient(
+                    83.89% 114.98% at 24.87% -12.82%,
+                    #fff598 0%,
+                    rgba(255, 246, 165, 0) 100%
+                )
+                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+            radial-gradient(
+                    60.42% 123.7% at 1.61% 113.1%,
+                    #8e59fe 0%,
+                    #6922ff 0.01%,
+                    rgba(174, 90, 255, 0) 100%
+                )
+                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+            radial-gradient(
+                    85% 183.05% at 100% 0%,
+                    #fb25ff 0%,
+                    rgba(255, 255, 255, 0) 100%
+                )
+                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+            #ffcaed;
+        box-shadow: 0px 17.305px 25.9575px rgba(0, 0, 0, 0.2);
+    }
+    .row .card:nth-child(1) {
+        background: linear-gradient(216.68deg, #3687ff 0%, #cd62ff 128.61%);
+    }
+}

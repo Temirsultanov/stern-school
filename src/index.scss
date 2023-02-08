@@ -6,13 +6,22 @@ div {
   padding: 0;
   margin: 0;
   font-size: 14px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Manrope', sans-serif;
   list-style: none;
   text-decoration: none;
+  color: #000;
 }
 
 .wrapper {
   width: 1320px;
   height: 100%;
   margin: 0 auto;
+}
+
+body {
+  background: #FFEDFA;
+}
+
+:root { 
+  --purple: #6767BB;
 }
