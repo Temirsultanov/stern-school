@@ -1,6 +1,6 @@
 .about {
-    .cont { 
-        position: relative; 
+    .cont {
+        position: relative;
     }
     h2 {
         font-weight: 700;
@@ -63,15 +63,18 @@
             width: 285px;
         }
     }
+    span {
+        font-size: 20px;
+        line-height: 150%;
+        color: #515151;
+        font-weight: 500;
+    }
     p {
         font-weight: 400;
         font-size: 20px;
         line-height: 150%;
         color: #515151;
         margin-top: 44px;
-        span {
-            font-weight: 500;
-        }
     }
     button {
         width: 208px;
