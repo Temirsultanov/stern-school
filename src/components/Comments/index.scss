@@ -43,6 +43,25 @@
             margin-left: 27px;
         }
     }
+    .row {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 28px;
+        h5 {
+            width: 70px;
+            font-weight: 800;
+            font-size: 16px;
+            line-height: 22px;
+            color: #3f3a3a;
+        }
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            color: rgba(63, 58, 58, 0.5);
+        }
+    }
     .arrows {
         margin: 0 auto;
         display: flex;
@@ -64,6 +83,7 @@
 
     .card {
         width: 330px;
+        height: 523px;
         padding: 47px 33px 67px;
         background: rgba(255, 255, 255, 0.7);
         box-shadow: 2px 2px 5px rgba(109, 108, 164, 0.25);
@@ -71,6 +91,9 @@
     }
     .video {
         padding: 27px 24px;
+        img {
+            height: 100%;
+        }
     }
 
     .empty {

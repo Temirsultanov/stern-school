@@ -1,4 +1,17 @@
 .about {
+    .cont { 
+        position: relative; 
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 120%;
+        color: #6767bb;
+        text-transform: uppercase;
+        position: absolute;
+        left: 50px;
+        top: -40px;
+    }
     .row {
         display: grid;
         grid-template-columns: 645px 1fr;
@@ -18,7 +31,9 @@
         flex-direction: column;
         border-radius: 30px;
         background: #fff;
-        padding: 60px 56px 105px;
+        padding: 60px 56px 70px;
+        background-size: 120%;
+        background-repeat: no-repeat;
     }
     .card.phone {
         padding: 57px 50px 42px;
@@ -100,5 +115,18 @@
             font-size: 20.7093px;
             color: rgba(50, 50, 65, 0.5);
         }
+    }
+
+    .row .card:nth-child(1) {
+        background: url(../../../public/images/about/bg.png);
+    }
+    .row .card:nth-child(2) {
+        background: url(../../../public/images/about/bg2.png);
+    }
+    .second_row .card:nth-child(1) {
+        background: url(../../../public/images/about/bg3.png);
+    }
+    .second_row .card:nth-child(2) {
+        background: url(../../../public/images/about/bg4.png);
     }
 }

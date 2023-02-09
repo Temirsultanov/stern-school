@@ -138,32 +138,7 @@
     .row .card:nth-child(2) {
         display: flex;
         flex-direction: column;
-        background: radial-gradient(
-                    53.1% 111.36% at 82.89% 107.5%,
-                    #8affea 0%,
-                    rgba(255, 255, 255, 0) 100%
-                )
-                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-            radial-gradient(
-                    83.89% 114.98% at 24.87% -12.82%,
-                    #fff598 0%,
-                    rgba(255, 246, 165, 0) 100%
-                )
-                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-            radial-gradient(
-                    60.42% 123.7% at 1.61% 113.1%,
-                    #8e59fe 0%,
-                    #6922ff 0.01%,
-                    rgba(174, 90, 255, 0) 100%
-                )
-                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-            radial-gradient(
-                    85% 183.05% at 100% 0%,
-                    #fb25ff 0%,
-                    rgba(255, 255, 255, 0) 100%
-                )
-                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-            #ffcaed;
+        background: url(../../../public/images/attributes/bg.png);
         box-shadow: 0px 17.305px 25.9575px rgba(0, 0, 0, 0.2);
     }
     .row .card:nth-child(1) {
