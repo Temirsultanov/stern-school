@@ -1,5 +1,6 @@
 .teachers {
     .cont {
+        overflow: hidden;
         position: relative;
     }
     button {
@@ -110,10 +111,10 @@
             height: 300px;
         }
         .circle {
-            width: 394px;
-            height: 394px;
-            top: -47px;
-            left: 0;
+            width: 350px;
+            height: 350px;
+            top: -28px;
+            left: 15px;
         }
         .image {
             display: flex;
