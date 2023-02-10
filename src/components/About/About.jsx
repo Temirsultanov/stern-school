@@ -4,7 +4,7 @@ import InputMask from 'react-input-mask'
 
 const About = () => {
     return (
-        <div className="about">
+        <div className="about" id='about2'>
             <div className="wrapper">
                 <div className="cont">
                     <div className="row">

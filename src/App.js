@@ -20,7 +20,7 @@ const components = [
     <Gallery />,
     <Teachers />,
     // <Attributes />,
-    // <Comments />,
+    <Comments />,
     <Cost />,
     <Faq />,
 ]

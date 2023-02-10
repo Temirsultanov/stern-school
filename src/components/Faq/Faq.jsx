@@ -77,7 +77,7 @@ const FaqItem = ({ data }) => {
 
 const Faq = () => {
     return (
-        <div className="faq">
+        <div className="faq" id="faq">
             <div className="wrapper">
                 <div className="cont">
                     <div className="left">

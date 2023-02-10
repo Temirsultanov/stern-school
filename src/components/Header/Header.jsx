@@ -1,8 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './index.scss'
 
 const Header = () => {
     const [show, setShow] = useState(false)
+
+    useEffect(() => {
+        if (show) {
+            document.body.style.overflowY = 'hidden'
+        } else {
+            document.body.style.overflowY = 'scroll'
+        }
+    }, [show])
 
     return (
         <div className="header">
@@ -61,11 +69,32 @@ const Header = () => {
                         <img src="./images/header/telegram.svg" alt="" />
                     </div>
                 </div>
-                <div className="burger">
+                <div className="burger" onClick={() => setShow(true)}>
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
+            </div>
+            <div className={show ? 'burger_content show' : 'burger_content'}>
+                <img
+                    src="./images/header/cross.svg"
+                    alt=""
+                    onClick={() => setShow(false)}
+                />
+                <a href="#about" onClick={() => setShow(false)}>
+                    О смене
+                </a>
+                <a href="#about2" onClick={() => setShow(false)}>
+                    Проживание и питание
+                </a>
+                <a href="#comments" onClick={() => setShow(false)}>
+                    Отзывы
+                </a>
+                <a href="#faq" onClick={() => setShow(false)}>
+                    Частые вопросы
+                </a>
+                <a href="/">Регистрация</a>
+                <a href="/">Перезвоните мне</a>
             </div>
         </div>
     )

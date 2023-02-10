@@ -6,7 +6,7 @@ const Comments = () => {
     let swiperRef = React.useRef(null)
 
     return (
-        <div className="comments">
+        <div className="comments" id='comments'>
             <div className="wrapper">
                 <div className="cont">
                     <h2>Отзывы</h2>
@@ -27,8 +27,7 @@ const Comments = () => {
             <div className="slider">
                 <Swiper
                     spaceBetween={50}
-                    slidesPerView={8.5}
-                    initialSlide={1}
+                    slidesPerView={window.innerWidth < 768 ? 1.169 : 8}
                     className="mySwiper"
                     onBeforeInit={(swiper) => {
                         swiperRef.current = swiper

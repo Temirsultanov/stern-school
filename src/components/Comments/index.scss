@@ -79,6 +79,9 @@
     .slider {
         width: 100%;
         height: 523px;
+        .video img {
+            width: 100%;
+        }
     }
 
     .card {
@@ -113,6 +116,40 @@
         }
         img {
             margin: 0 auto;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        h2 {
+            margin-bottom: 18px;
+            font-size: 36px;
+        }
+        p.main {
+            display: none;
+        }
+        .ask {
+            left: 0;
+            margin: 0 0 17px;
+            p {
+                margin-left: 11px;
+                font-size: 25.3988px;
+                line-height: 100%;
+            }
+            img {
+                width: 21px;
+                height: 21px;
+            }
+        }
+        .main_img {
+            display: none;
+        }
+        .wrapper {
+            margin: 0;
+        }
+        .slider {
+            padding-left: 15px;
+            .video img {
+                width: 100%;
+            }
         }
     }
 }

@@ -3,7 +3,7 @@ import './index.scss'
 
 const Offer = () => {
     return (
-        <div className="offer">
+        <div className="offer" id='about'>
             <div className="wrapper">
                 <div className="cont">
                     <div className="left">
