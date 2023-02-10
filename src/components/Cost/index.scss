@@ -4,8 +4,8 @@
         padding: 27px 104px 6px;
         position: relative;
         background: url(../../../public/images/cost/bg.png) no-repeat;
-        background-size: cover;
-        min-height: 750px;
+        background-size: 100%;
+        // min-height: 800px;
         display: flex;
         flex-direction: column;
 
@@ -97,7 +97,7 @@
         }
 
         span {
-            margin-top: auto;
+            margin-top: 80px;
             margin-left: auto;
             font-weight: 700;
             font-size: 16px;
@@ -117,7 +117,8 @@
         line-height: 120%;
         cursor: pointer;
         color: #ffffff;
-        filter: drop-shadow(0px 1.90909px 4.09091px rgba(109, 108, 164, 0.25));
+        box-shadow: 0px 7px 15px rgba(109, 108, 164, 0.25);
+        border-radius: 55px;
     }
     .adaptive_card {
         display: none;

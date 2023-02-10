@@ -2,7 +2,9 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import './index.scss'
 
-const Cost = () => {
+const Cost = ({ setShow }) => {
+
+    console.log(setShow)
     return (
         <div className="cost">
             <div className="wrapper">
@@ -51,8 +53,12 @@ const Cost = () => {
                                 slidesPerView={1.4}
                                 className="mySwiper"
                             >
-                                <SwiperSlide className='slide active'>1-8 класс</SwiperSlide>
-                                <SwiperSlide className='slide'>10-11 класс</SwiperSlide>
+                                <SwiperSlide className="slide active">
+                                    1-8 класс
+                                </SwiperSlide>
+                                <SwiperSlide className="slide">
+                                    10-11 класс
+                                </SwiperSlide>
                             </Swiper>
                         </div>
                         <div className="cost_block">44 900 ₽</div>
@@ -89,7 +95,7 @@ const Cost = () => {
                             </div>
                         </div>
                     </div>
-                    <button>Регистрация</button>
+                    <button onClick={() => setShow(true)}>Регистрация</button>
                 </div>
             </div>
         </div>

@@ -38,7 +38,10 @@ const FaqList = () => {
 const FaqItem = ({ data }) => {
     const [show, setShow] = React.useState(false)
     return (
-        <div className="item" onClick={() => setShow(!show)}>
+        <div
+            className={show ? 'item active' : "item"}
+            onClick={() => setShow(!show)}
+        >
             <div className={show ? 'heading show' : 'heading'}>
                 <h4>{data.title}</h4>
                 <div className="image_wrapper">
@@ -49,28 +52,12 @@ const FaqItem = ({ data }) => {
                     )}
                 </div>
             </div>
-            {show && (
-                <motion.p
-                    className="App"
-                    initial="hidden"
-                    animate={show ? 'visible' : 'hidden'}
-                    variants={{
-                        visible: {
-                            transition: {
-                                staggerChildren: 0.015,
-                            },
-                        },
-                    }}
-                >
-                    <AnimatedText
-                        type={'heading2'}
-                        text={
-                            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae dolorem eaque error maiores omnis laudantium saepe ipsa quo nulla praesentium? Veniam, atque! Corrupti deserunt consectetur dolores nemo non natus libero?'
-                        }
-                        duration={0.05}
-                    />
-                </motion.p>
-            )}
+            <h2>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                vitae ab, quis doloremque officiis est, delectus dolores
+                praesentium iste similique ut cumque. Placeat inventore
+                excepturi reprehenderit alias doloribus repellendus sed.
+            </h2>
         </div>
     )
 }

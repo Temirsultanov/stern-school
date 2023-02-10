@@ -4,7 +4,7 @@ import InputMask from 'react-input-mask'
 
 const About = () => {
     return (
-        <div className="about" id='about2'>
+        <div className="about" id="about2">
             <div className="wrapper">
                 <div className="cont">
                     <div className="row">
@@ -89,8 +89,8 @@ const About = () => {
                                 />
                             </div>
                             <InputMask
-                                mask="+7 9999 9999-999-999"
-                                placeholder="+7 ____ ____-___-___ "
+                                mask="+7 (999) 999-99-99"
+                                placeholder="+7 (___) ___-__-__"
                             />
                             <button>Отправить</button>
                         </div>

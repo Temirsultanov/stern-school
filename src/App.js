@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import About from './components/About/About'
 import Attributes from './components/Attributes/Attributes'
 import Comments from './components/Comments/Comments'
@@ -13,6 +13,7 @@ import Gallery from './components/Gallery/Gallery'
 import Study from './components/Study/Study'
 import Includes from './components/Includes/Includes'
 import Cost from './components/Cost/Cost'
+import Modal from './components/Modal/Modal'
 
 const components = [
     <Study />,
@@ -21,8 +22,7 @@ const components = [
     <Teachers />,
     <Attributes />,
     <Comments />,
-    <Cost />,
-    <Faq />,
+    ,
 ]
 
 const cardVariants = {
@@ -39,7 +39,7 @@ const cardVariants = {
     },
 }
 
-function Card({ emoji, hueA, hueB }) {
+function Card({ emoji }) {
     return (
         <motion.div
             className="card-container"
@@ -53,15 +53,32 @@ function Card({ emoji, hueA, hueB }) {
 }
 
 const App = () => {
+    const [show, setShow] = React.useState(false)
+    const [isLoading, setIsLoading] = React.useState(true)
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIsLoading(false)
+        }, 2000)
+    }, [])
+
     return (
         <>
-            <Header />
-            <Offer />
-            <About />
+            {isLoading && (
+                <div class="loader-wrapper">
+                    <div class="loader"></div>
+                </div>
+            )}
 
+            <Header />
+            <Offer setShow={setShow} />
+            <About />
+            {show && <Modal set={setShow} />}
             {components.map((item) => {
                 return <Card emoji={item} />
             })}
+            <Cost setShow={setShow} />
+            <Faq />
             <Footer />
         </>
     )

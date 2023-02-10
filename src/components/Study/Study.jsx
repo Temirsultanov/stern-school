@@ -53,7 +53,7 @@ const Study = () => {
                                         alt=""
                                     />
                                 </div>
-                                <p className="third">ВСОШ/МОШ</p>
+                                <p className="third">ВСОШ</p>
                             </div>
                         </div>
                         <div className="card">

@@ -1,14 +1,19 @@
 .gallery {
     margin: 72px 0 43px;
+    .cont {
+        display: flex;
+        flex-direction: column;
+    }
     .grid {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         row-gap: 30px;
+        margin: 0 auto;
     }
     .row {
         display: grid;
-        justify-content: space-between;
+        column-gap: 28px;
         width: 100%;
     }
     .row:nth-child(1) {
@@ -28,6 +33,7 @@
         width: 100%;
         height: 100%;
         border-radius: 52.8186px;
+        cursor: pointer;
     }
     button {
         margin-top: 30px;
@@ -63,8 +69,91 @@
         color: #ffffff;
     }
 
+    .lightbox {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        display: grid;
+        place-content: center;
+        background: rgba(0, 0, 0, 0.4);
+        img {
+            width: 150%;
+        }
+    }
+
+    .full_lightbox {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        display: grid;
+        place-content: center;
+        background: rgba(0, 0, 0, 0.4);
+        img.main {
+            width: 150%;
+        }
+        .arrow {
+            background: #fff;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            border-radius: 50%;
+            display: grid;
+            place-content: center;
+            border: none !important;
+        }
+        .first {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 30%;
+            transform: rotate(180deg);
+            cursor: pointer;
+        }
+        .second {
+            position: absolute;
+            top: 52%;
+            transform: translateY(-50%);
+            right: 18%;
+            cursor: pointer;
+        }
+    }
+
     @media screen and (max-width: 768px) {
         margin: 63px 0 52px;
+        .lightbox {
+            img {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+        .full_lightbox {
+            img.main {
+                margin: 0 auto;
+                width: 80%;
+            }
+            .arrow { 
+                width: 30px;
+                height: 30px;
+                svg {
+                    width: 50%;
+                    margin: 0 auto;
+                }
+            }
+            .first { 
+                top: 48%;
+                left: 20px;
+            }
+            .second {
+                top: 50%;
+                right: 20px;
+            }
+        }
         .grid {
             row-gap: 10px;
         }

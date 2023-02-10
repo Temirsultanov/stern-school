@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.scss'
 
-const Offer = () => {
+const Offer = ({setShow}) => {
     return (
         <div className="offer" id='about'>
             <div className="wrapper">
@@ -64,7 +64,7 @@ const Offer = () => {
             </div>
             <div className="wrapper">
                 <div className="button">
-                    <button>Регистрация</button>
+                    <button onClick={() => setShow(true)}>Регистрация</button>
                 </div>
             </div>
         </div>

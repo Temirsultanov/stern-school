@@ -79,15 +79,17 @@ const Attributes = () => {
                             </h4>
                             <div className="card_row">
                                 <InputMask
-                                    mask="+7 9999 9999-999-999"
-                                    placeholder="+7 ____ ____-___-___ "
+                                    mask="+7 (999) 999-99-99"
+                                    placeholder="+7 (___) ___-__-__"
                                 />
                                 <button>Отправить</button>
                             </div>
                         </div>
                     </div>
-                    <span className='adaptive'>Остались вопросы? Мы ответим!</span>
-                    <button className='adaptive'>Оставить заявку</button>
+                    <span className="adaptive">
+                        Остались вопросы? Мы ответим!
+                    </span>
+                    <button className="adaptive">Оставить заявку</button>
                 </div>
             </div>
         </div>

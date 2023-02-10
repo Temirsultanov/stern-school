@@ -114,6 +114,11 @@
 
 .faq .grid {
     border-bottom: 2px solid #fff;
+    .item.active h2 {
+        opacity: 1;
+        height: auto;
+        padding-bottom: 23px;
+    }
 }
 
 .faq .heading {
@@ -132,15 +137,17 @@
     color: #6767bb;
 }
 
-.faq h2 { padding-bottom: 23px;
-    * {
-        font-weight: 400 !important;
-        font-size: 20px !important;
-        line-height: 120% !important;
-        color: rgba(103, 103, 187, 0.7) !important;
-        @media screen and (max-width:768px) {
-            font-size: 16px!important;
-        }
+.faq h2 {
+    overflow-y: hidden;
+    padding-bottom: 0;
+    font-weight: 400 !important;
+    font-size: 20px !important;
+    line-height: 120% !important;
+    color: rgba(103, 103, 187, 0.7) !important;
+    height: 0;
+    opacity: 0;
+    transition: 0.2s all ease;
+    @media screen and (max-width: 768px) {
+        font-size: 16px !important;
     }
-
 }
