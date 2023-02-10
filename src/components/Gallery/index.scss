@@ -160,6 +160,7 @@
         }
         .row {
             column-gap: 7px;
+            justify-content: center;
         }
         .row:nth-child(1) {
             grid-template-columns: 157px 186px;
