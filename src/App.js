@@ -7,8 +7,23 @@ import Offer from './components/Offer/Offer'
 import 'swiper/css'
 import Teachers from './components/Teachers/Teachers'
 import { motion } from 'framer-motion'
+import Footer from './components/Footer/Footer'
+import Faq from './components/Faq/Faq'
+import Gallery from './components/Gallery/Gallery'
+import Study from './components/Study/Study'
+import Includes from './components/Includes/Includes'
+import Cost from './components/Cost/Cost'
 
-const components = [<Teachers />, <Attributes />, <Comments />]
+const components = [
+    <Study />,
+    <Includes />,
+    <Gallery />,
+    <Teachers />,
+    <Attributes />,
+    <Comments />,
+    <Cost />,
+    <Faq />,
+]
 
 const cardVariants = {
     offscreen: {
@@ -40,11 +55,15 @@ function Card({ emoji, hueA, hueB }) {
 const App = () => {
     return (
         <>
-            <Header /> 
-            <Offer /><About />
-            {components.map((item) => {
+            <Header />
+            <Offer />
+             <About />
+
+            {/* {components.map((item) => {
                 return <Card emoji={item} />
             })}
+
+            <Footer /> */}
         </>
     )
 }

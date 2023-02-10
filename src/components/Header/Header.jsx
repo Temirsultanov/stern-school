@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './index.scss'
 
 const Header = () => {
+    const [show, setShow] = useState(false)
+
     return (
-        <>
+        <div className="header">
             <div className="header_top">
                 <div className="wrapper">
                     <div className="info">
@@ -44,7 +46,28 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </>
+            <div className="adaptive_header">
+                <div className="icons">
+                    <div className="image_wrapper">
+                        <img src="./images/header/phone.svg" alt="" />
+                    </div>
+                    <div className="image_wrapper">
+                        <img src="./images/header/mail.svg" alt="" />
+                    </div>
+                    <div className="image_wrapper">
+                        <img src="./images/header/whats.svg" alt="" />
+                    </div>
+                    <div className="image_wrapper">
+                        <img src="./images/header/telegram.svg" alt="" />
+                    </div>
+                </div>
+                <div className="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
     )
 }
 

@@ -1,4 +1,51 @@
-.offer { 
+.offer {
+    button {
+        margin-bottom: 27px;
+        width: 100%;
+        height: 125px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 120%;
+        border: none;
+        color: #6767bb;
+        background: url(../../../public/images/offer/bg.png);
+        box-shadow: 0px 7px 15px rgba(109, 108, 164, 0.25);
+        border-radius: 55px;
+        cursor: pointer;
+    }
+    @media screen and (max-width: 768px) {
+        button {
+            height: 53px;
+            margin: 13px 0;
+            font-size: 24px;
+            background: radial-gradient(
+                        77.11% 250.38% at 104.9% 217.46%,
+                        #8affea 0%,
+                        rgba(255, 255, 255, 0) 100%
+                    )
+                    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+                radial-gradient(
+                        121.82% 258.52% at 20.64% -53.08%,
+                        #fff598 0%,
+                        rgba(255, 246, 165, 0) 100%
+                    )
+                    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+                radial-gradient(
+                        87.74% 278.14% at -13.13% 230.05%,
+                        #8e59fe 0%,
+                        #6922ff 0.01%,
+                        rgba(174, 90, 255, 0) 100%
+                    )
+                    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+                radial-gradient(
+                        123.43% 411.56% at 129.75% -24.25%,
+                        #fb25ff 0%,
+                        rgba(255, 255, 255, 0) 100%
+                    )
+                    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+                #ffcaed;
+        }
+    }
 }
 
 .offer .cont {
@@ -7,13 +54,23 @@
     box-shadow: 0px 17.305px 25.9575px rgba(0, 0, 0, 0.2);
     padding: 58px 0 130px 56px;
     position: relative;
-    background: url(../../../public/images/offer/bg.png);
+    background: url(../../../public/images/offer/bg.png) no-repeat;
+    background-size: cover;
 
-    .star {
+    .ping {
         position: absolute;
-        right: -50px;
-        top: 50%;
-        transform: translateY(-50%);
+        right: -70px;
+        bottom: -100px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding: 44px 7px 51px 7px;
+        .ping {
+            z-index: 0;
+            bottom: 30px;
+            right: -30px;
+            width: 379px;
+        }
     }
 }
 .offer .left {
@@ -67,5 +124,32 @@
         font-weight: 600;
         font-size: 24px;
         color: #6767bb;
+    }
+    @media screen and (max-width: 768px) {
+        .grid {
+            position: relative;
+            z-index: 1;
+            row-gap: 12px;
+            grid-template-rows: repeat(3, 26px);
+        }
+        h2 {
+            font-size: 36px;
+            margin-bottom: 160px;
+        }
+        .image_wrapper {
+            display: none;
+        }
+        .card {
+            height: 26px !important;
+            display: flex;
+        }
+        p {
+            height: 26px;
+            text-align: left;
+            padding: 6px 13px;
+            font-size: 12px;
+            background: #ffffff;
+            box-shadow: 0px 3.35917px 7.19823px rgba(0, 0, 0, 0.15);
+        }
     }
 }

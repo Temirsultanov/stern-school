@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './index.scss'
-import { motion } from 'framer-motion'
-import AnimatedText from '../AnimatedText'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 const data = [
     {
@@ -26,88 +25,13 @@ const data = [
     },
 ]
 
-const RenderSlider = ({ index, replay }) => {
-    return (
-        <div className="slider">
-            <div className="main_slide">
-                <div className="image_wrapper">
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.3 }}
-                        transition={{ duration: 0.3 }}
-                        animate={replay ? { opacity: 1, scale: 1 } : 'hidden'}
-                    >
-                        <img src={data[index].image} alt="" />
-                    </motion.div>
-                </div>
-
-                <div className="text">
-                    <motion.div
-                        className="App"
-                        initial="hidden"
-                        animate={replay ? 'visible' : 'hidden'}
-                        variants={{
-                            visible: {
-                                transition: {
-                                    staggerChildren: 0.025,
-                                },
-                            },
-                        }}
-                    >
-                        <AnimatedText
-                            type={'heading2'}
-                            text={data[index].name}
-                            duration={0.15}
-                        />
-                    </motion.div>
-                    <motion.div
-                        className="App"
-                        initial="hidden"
-                        // animate="visible"
-                        animate={replay ? 'visible' : 'hidden'}
-                        variants={{
-                            visible: {
-                                transition: {
-                                    staggerChildren: 0.025,
-                                },
-                            },
-                        }}
-                    >
-                        <AnimatedText
-                            type={'heading1'}
-                            text={data[index].text}
-                            duration={0.55}
-                        />
-                    </motion.div>
-                </div>
-            </div>
-            {data[index + 1] && (
-                <div className="next_slide">
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.3 }}
-                        transition={{ duration: 0.3 }}
-                        animate={replay ? { opacity: 1, scale: 1 } : 'hidden'}
-                    >
-                        <img src={data[index + 1].image} alt="" />
-                    </motion.div>
-                </div>
-            )}
-        </div>
-    )
-}
-
 const Teachers = () => {
     const [index, setIndex] = useState(0)
-    const [replay, setReplay] = useState(true)
+    const ref = useRef(null)
 
     useEffect(() => {
         setIndex(index)
     }, [index])
-    const handleReplay = () => {
-        setReplay(!replay)
-        setTimeout(() => {
-            setReplay(true)
-        }, 600)
-    }
 
     return (
         <div className="teachers">
@@ -115,20 +39,34 @@ const Teachers = () => {
                 <div className="cont">
                     <h2>Педагогический состав</h2>
 
-                    <RenderSlider
-                        index={index}
-                        set={setIndex}
-                        replay={replay}
-                    />
+                    <div className="slider">
+                        <div className="circle"></div>
+                        <Swiper
+                            slidesPerView={1.5}
+                            spaceBetween={20}
+                            loop={true}
+                            className="mySwiper"
+                            onBeforeInit={(swiper) => {
+                                ref.current = swiper
+                            }}
+                        >
+                            {data.map((slide, index) => (
+                                <SwiperSlide key={index}>
+                                    <div className="image">
+                                        <img src={slide.image} alt="" />
+                                    </div>
+                                    <div className="text">
+                                        <h5>{slide.name}</h5>
+                                        <span>{slide.text}</span>
+                                    </div>
+                                </SwiperSlide>
+                            ))}
+                        </Swiper>
+                    </div>
                     <div className="arrows">
                         <div
                             className="arrow_wrapper"
-                            onClick={() => {
-                                handleReplay()
-                                return index + 1 > 1
-                                    ? setIndex((prev) => prev - 1)
-                                    : null
-                            }}
+                            onClick={() => ref.current?.slidePrev()}
                         >
                             <svg
                                 width="17"
@@ -146,12 +84,7 @@ const Teachers = () => {
                         </div>
                         <div
                             className="arrow_wrapper"
-                            onClick={() => {
-                                handleReplay()
-                                return index + 1 !== data.length
-                                    ? setIndex((prev) => prev + 1)
-                                    : null
-                            }}
+                            onClick={() => ref.current?.slideNext()}
                         >
                             <svg
                                 width="17"

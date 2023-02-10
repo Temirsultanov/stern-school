@@ -1,17 +1,4 @@
 .about {
-    .cont {
-        position: relative;
-    }
-    h2 {
-        font-weight: 700;
-        font-size: 96px;
-        line-height: 120%;
-        color: #6767bb;
-        text-transform: uppercase;
-        position: absolute;
-        left: 50px;
-        top: -40px;
-    }
     .row {
         display: grid;
         grid-template-columns: 645px 1fr;
@@ -25,7 +12,6 @@
         column-gap: 31px;
         height: 583px;
     }
-
     .card {
         display: flex;
         flex-direction: column;
@@ -131,5 +117,52 @@
     }
     .second_row .card:nth-child(2) {
         background: url(../../../public/images/about/bg4.png);
+    }
+
+    .adaptive_card {
+        display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        .row {
+            background: url(../../../public/images/about/adaptive_bg.png)
+                no-repeat;
+            background-size: cover;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto;
+            row-gap: 26px;
+            height: auto;
+            padding: 45px 0 14px;
+            border-radius: 30px;
+        }
+        .image_wrapper {
+            width: 78px;
+            height: 78px;
+            img {
+                width: 100% !important;
+                top: 0 !important;
+                left: 0 !important;
+                position: relative !important;
+            }
+        }
+        .second_row {
+            display: none;
+        }
+        .card {
+            padding: 0 10px;
+            display: grid;
+            grid-template-columns: 78px 1fr;
+            column-gap: 15px;
+            background: none !important;
+        }
+        p {
+            margin-top: 0;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 150%;
+        }
+        span {
+            font-size: 12px;
+        }
     }
 }

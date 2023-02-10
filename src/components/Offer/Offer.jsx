@@ -26,7 +26,7 @@ const Offer = () => {
                                 <div className="image_wrapper">
                                     <img
                                         src="./images/offer/second.svg"
-                                        className='roket'
+                                        className="roket"
                                         alt=""
                                     />
                                 </div>
@@ -43,9 +43,28 @@ const Offer = () => {
                                     АВТОРСКИЕ ОЛИМПИАДНЫЕ ЗАДАЧИ ДЛЯ 1-8 КЛАССОВ
                                 </p>
                             </div>
+                            <div className="card">
+                                <div className="image_wrapper">
+                                    <img
+                                        src="./images/offer/fourth.svg"
+                                        alt=""
+                                        style={{position: "relative", left: '3px'}}
+                                    />
+                                </div>
+                                <p>АВТОРСКИЙ КУРС К ЕГЭ ОТ ЭКСПЕРТОВ</p>
+                            </div>
                         </div>
                     </div>
-                    <img src="./images/offer/star.svg" alt="" className='star'/>
+                    <img
+                        src="./images/offer/ping.png"
+                        alt=""
+                        className="ping"
+                    />
+                </div>
+            </div>
+            <div className="wrapper">
+                <div className="button">
+                    <button>Регистрация</button>
                 </div>
             </div>
         </div>

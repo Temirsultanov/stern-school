@@ -7,7 +7,6 @@ const About = () => {
         <div className="about">
             <div className="wrapper">
                 <div className="cont">
-                    <h2>О смене</h2>
                     <div className="row">
                         <div className="card">
                             <div className="image_wrapper">
@@ -35,6 +34,24 @@ const About = () => {
                                 По количеству занятий всегда одна такая смена
                                 приравнивается к 3 дополнительным месяцам
                                 занятий! Круто, не правда ли?
+                            </p>
+                        </div>
+                        <div className="card adaptive_card">
+                            <div className="image_wrapper">
+                                <img
+                                    src="./images/about/ping.svg"
+                                    alt=""
+                                    className="third"
+                                />
+                            </div>
+                            <p>
+                                Для учеников 1-8 класса будет организован
+                                математических интенсив с авторскими
+                                олимпиадными задачами преподавателей нашей
+                                школы, а вот ребят 9-11 классов ждет настоящий
+                                подарок - интенсив к ОГЭ и ЕГЭ сразу по 4
+                                предметам - математике, русскому языку,
+                                информатике и физике!
                             </p>
                         </div>
                     </div>
