@@ -59,11 +59,11 @@ const App = () => {
             <Offer />
              <About />
 
-            {/* {components.map((item) => {
+            {components.map((item) => {
                 return <Card emoji={item} />
             })}
 
-            <Footer /> */}
+            <Footer />
         </>
     )
 }
