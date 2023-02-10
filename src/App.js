@@ -19,8 +19,8 @@ const components = [
     <Includes />,
     <Gallery />,
     <Teachers />,
-    <Attributes />,
-    <Comments />,
+    // <Attributes />,
+    // <Comments />,
     <Cost />,
     <Faq />,
 ]
@@ -57,12 +57,11 @@ const App = () => {
         <>
             <Header />
             <Offer />
-             <About />
+            <About />
 
             {components.map((item) => {
                 return <Card emoji={item} />
             })}
-
             <Footer />
         </>
     )

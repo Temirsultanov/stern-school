@@ -34,4 +34,39 @@
         right: 0;
         top: 100px;
     }
+    .texts {
+        display: none;
+    }
+    @media screen and (max-width: 768px) {
+        img {
+            width: 147px;
+            top: 60px;
+        }
+
+        h2 {
+            font-size: 32px !important;
+            margin-bottom: 28px;
+        }
+        .top_card_row {
+            display: none;
+        }
+        .texts {
+            display: flex;
+            flex-direction: column;
+        }
+        p {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            font-weight: 600;
+            font-size: 12px;
+            color: #ffffff;
+        }
+        p:not(:first-child) {
+            border-top: 2px solid rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+
+.includes {
 }

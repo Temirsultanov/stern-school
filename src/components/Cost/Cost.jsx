@@ -1,4 +1,5 @@
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import './index.scss'
 
 const Cost = () => {
@@ -41,6 +42,52 @@ const Cost = () => {
                             *трансфер и материалы для занятий включены в
                             стоимость
                         </span>
+                    </div>
+                    <div className="adaptive_card">
+                        <h4>Стоимость</h4>
+                        <div className="slides">
+                            <Swiper
+                                spaceBetween={10}
+                                slidesPerView={1.4}
+                                className="mySwiper"
+                            >
+                                <SwiperSlide className='slide active'>1-8 класс</SwiperSlide>
+                                <SwiperSlide className='slide'>10-11 класс</SwiperSlide>
+                            </Swiper>
+                        </div>
+                        <div className="cost_block">44 900 ₽</div>
+                        <p className="desc">
+                            <span>60 000 ₽</span> - стоимость такого же
+                            количества занятий в школе
+                        </p>
+                        <div className="yellow_block">
+                            60 000₽ - 44 900₽ = 15 100₽ экономии
+                        </div>
+                        <div className="cards_adaptive">
+                            <div className="adaptive_card2">
+                                <div className="card_image">
+                                    <img
+                                        src="./images/cost/roket2.svg"
+                                        alt=""
+                                        className="roket"
+                                    />
+                                </div>
+                                <p>Эффект 3 месяцев занятий всего за 8 дней</p>
+                            </div>
+                            <div className="adaptive_card2">
+                                <div className="card_image">
+                                    <img
+                                        src="./images/cost/moun2.svg"
+                                        alt=""
+                                        className="moun"
+                                    />
+                                </div>
+                                <p>
+                                    Самый лучший способ заполнить все пробелы в
+                                    знаних и подготовиться к ОГЭ/ЕГЭ
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <button>Регистрация</button>
                 </div>

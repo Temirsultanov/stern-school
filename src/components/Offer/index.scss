@@ -49,6 +49,7 @@
 }
 
 .offer .cont {
+    overflow: hidden;
     margin: 26px 0;
     border-radius: 30px;
     box-shadow: 0px 17.305px 25.9575px rgba(0, 0, 0, 0.2);
@@ -65,6 +66,7 @@
 
     @media screen and (max-width: 768px) {
         padding: 44px 7px 51px 7px;
+        margin-bottom: 0;
         .ping {
             z-index: 0;
             bottom: 30px;

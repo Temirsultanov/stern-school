@@ -24,11 +24,13 @@ const About = () => {
                         </div>
                         <div className="card">
                             <div className="image_wrapper">
-                                <img
-                                    src="./images/about/roket.svg"
-                                    alt=""
-                                    className="second"
-                                />
+                                <div className="second_wrapper">
+                                    <img
+                                        src="./images/about/roket.svg"
+                                        alt=""
+                                        className="second"
+                                    />
+                                </div>
                             </div>
                             <p>
                                 По количеству занятий всегда одна такая смена
@@ -54,7 +56,11 @@ const About = () => {
                                 информатике и физике!
                             </p>
                         </div>
+                        <button className="adaptive_button">
+                            Оставить заявку
+                        </button>
                     </div>
+
                     <div className="second_row">
                         <div className="card">
                             <div className="image_wrapper">

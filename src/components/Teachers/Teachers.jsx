@@ -42,7 +42,7 @@ const Teachers = () => {
                     <div className="slider">
                         <div className="circle"></div>
                         <Swiper
-                            slidesPerView={1.5}
+                            slidesPerView={window.innerWidth < 768 ? 1 : 1.5}
                             spaceBetween={20}
                             loop={true}
                             className="mySwiper"
