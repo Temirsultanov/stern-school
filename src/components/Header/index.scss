@@ -1,4 +1,3 @@
-
 header {
     overflow: hidden;
 }
@@ -116,7 +115,7 @@ header {
     position: fixed;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 2;
     background: #6767bb;
     height: 51px;
@@ -160,7 +159,7 @@ header {
 
 .burger_content {
     position: fixed;
-    overflow-x: hidden;
+    overflow: hidden;
     top: 0;
     width: 100vw;
     height: 100%;
@@ -193,7 +192,7 @@ header {
         &:focus {
             color: #6767bb;
         }
-        &:nth-child(n+2) {
+        &:nth-child(n + 2) {
             margin-top: 21px;
         }
         &:nth-child(6) {

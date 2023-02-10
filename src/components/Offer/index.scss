@@ -133,7 +133,7 @@
             position: relative;
             z-index: 1;
             row-gap: 12px;
-            grid-template-rows: repeat(3, 26px);
+            grid-template-rows: repeat(3, auto);
         }
         h2 {
             font-size: 36px;
@@ -143,13 +143,12 @@
             display: none;
         }
         .card {
-            height: 26px !important;
             display: flex;
         }
         p {
-            height: 26px;
+            height: auto;
             text-align: left;
-            padding: 6px 13px;
+            padding: 2px 13px;
             font-size: 12px;
             background: #ffffff;
             box-shadow: 0px 3.35917px 7.19823px rgba(0, 0, 0, 0.15);

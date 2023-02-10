@@ -19,7 +19,7 @@ const components = [
     <Includes />,
     <Gallery />,
     <Teachers />,
-    // <Attributes />,
+    <Attributes />,
     <Comments />,
     <Cost />,
     <Faq />,
