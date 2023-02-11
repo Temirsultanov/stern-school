@@ -14,7 +14,7 @@ const Comments = () => {
                         Орфография и пунктуация авторов сохранены :)
                     </p>
                     <img
-                        src="./images/comments/ping.svg"
+                        src="./images/comments/ping.png"
                         alt=""
                         className="main_img"
                     />

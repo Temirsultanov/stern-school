@@ -11,7 +11,7 @@ const About = () => {
                         <div className="card">
                             <div className="image_wrapper">
                                 <img
-                                    src="./images/about/table.svg"
+                                    src="./images/about/table.png"
                                     alt=""
                                     className="first"
                                 />
@@ -26,7 +26,7 @@ const About = () => {
                             <div className="image_wrapper">
                                 <div className="second_wrapper">
                                     <img
-                                        src="./images/about/roket.svg"
+                                        src="./images/about/roket.png"
                                         alt=""
                                         className="second"
                                     />
@@ -41,7 +41,7 @@ const About = () => {
                         <div className="card adaptive_card">
                             <div className="image_wrapper">
                                 <img
-                                    src="./images/about/ping.svg"
+                                    src="./images/about/ping.png"
                                     alt=""
                                     className="third"
                                 />
@@ -65,7 +65,7 @@ const About = () => {
                         <div className="card">
                             <div className="image_wrapper">
                                 <img
-                                    src="./images/about/ping.svg"
+                                    src="./images/about/ping.png"
                                     alt=""
                                     className="third"
                                 />

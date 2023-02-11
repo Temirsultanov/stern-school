@@ -32,7 +32,7 @@ const Attributes = () => {
                         <div className="right">
                             <div className="image_wrapper">
                                 <img
-                                    src="./images/attributes/third.svg"
+                                    src="./images/attributes/third.png"
                                     alt=""
                                 />
                             </div>
@@ -73,7 +73,7 @@ const Attributes = () => {
                                     alt=""
                                 />
                             </div>
-                            <h4 className="black">
+                            <h4>
                                 Остались вопросы?
                                 <br /> Мы ответим!
                             </h4>

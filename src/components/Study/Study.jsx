@@ -81,7 +81,7 @@ const Study = () => {
                             <div className="image_wrapper">
                                 <div className="image">
                                     <img
-                                        src="./images/study/image5.svg"
+                                        src="./images/study/image5.png"
                                         alt=""
                                     />
                                 </div>
