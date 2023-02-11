@@ -23,6 +23,39 @@ body {
     scroll-behavior: smooth;
 }
 
+button:not(.ril__navButtons) {
+    transition: 0.3s all ease;
+    &:hover {
+        box-shadow: 8px 8px 10px rgb(200, 200, 200),
+            -8px -8px 10px rgb(200, 200, 200) !important;
+    }
+    &:active {
+        box-shadow: 2px 2px 2px rgb(200, 200, 200),
+            -2px -2px 2px rgb(200, 200, 200) !important;
+    }
+}
+
+.ReactModal__Content {
+    button {
+        &:hover{
+            box-shadow: none!important;
+        }
+    }
+}
+
+.ril__navButtonPrev{
+    background: rgba(0, 0, 0, 0.3)
+        url(../public/images/teachers/arrow.svg)
+        no-repeat center!important;
+        transform: rotate(180deg);
+}
+
+.ril__navButtonNext {
+    background: rgba(0, 0, 0, 0.3)
+        url(../public/images/teachers/arrow.svg)
+        no-repeat center!important;
+}
+
 .loader-wrapper {
     background: #ffedfa;
     width: 100%;

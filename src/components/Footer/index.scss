@@ -63,6 +63,14 @@ footer .card {
     .image_wrapper {
         height: 32px;
     }
+    &:hover {
+        transition: 0.3s all ease;
+        p {
+            transition: 0.3s all ease;
+            color: var(--purple);
+        }
+
+    }
     @media screen and (max-width: 768px) {
         grid-template-columns: 27px 1fr;
         column-gap: 11px;

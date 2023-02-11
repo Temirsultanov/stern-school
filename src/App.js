@@ -61,6 +61,13 @@ const App = () => {
             setIsLoading(false)
         }, 2000)
     }, [])
+    useEffect(() => {
+        if (show) {
+            document.body.style.overflowY = 'hidden'
+        } else {
+            document.body.style.overflowY = 'scroll'
+        }
+    }, [show])
 
     return (
         <>

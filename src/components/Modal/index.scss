@@ -96,4 +96,14 @@
             }
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .content {
+            max-width: 360px;
+            padding: 86px 20px 76px;
+        }
+        .phone {
+            display: none;
+        }
+    }
 }

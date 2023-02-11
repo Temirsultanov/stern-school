@@ -2,25 +2,33 @@ import React, { useState } from 'react'
 import './index.scss'
 import InputMask from 'react-input-mask'
 import axios from 'axios'
+import { useOnClickOutside } from '../../utils/useOnClickOutside'
 
 const Modal = ({ state, set }) => {
     const [fio, setFio] = useState('')
     const [phone, setPhone] = useState('')
     const [form, setForm] = useState('')
+    let ref = React.useRef(null)
+
+    useOnClickOutside(ref, () => set(false))
 
     const handleSend = () => {
         if (form.length === 0 || phone.length === 0 || fio.length === 0) {
             return null
         } else {
             axios
-                .post('http://kurs.stern.xyz:8001/api/v1/register/')
+                .post('http://kurs.stern.xyz:8001/api/v1/register/', {
+                    fio,
+                    phone,
+                    form,
+                })
                 .then((res) => console.log('success'))
         }
     }
 
     return (
         <div className="modal_wrapper">
-            <div className="content">
+            <div className="content" ref={ref}>
                 <img src="./images/modal/phone.png" alt="" className="phone" />
                 <img
                     src="./images/modal/cross.svg"
