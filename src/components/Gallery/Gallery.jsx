@@ -182,9 +182,9 @@ const Gallery = () => {
                             ))}
                         </div>
                     </div>
-                    <button onClick={() => setFullLightbox(true)}>
+                    {/* <button onClick={() => setFullLightbox(true)}>
                         Посмотреть еще
-                    </button>
+                    </button> */}
                 </div>
             </div>
         </div>
