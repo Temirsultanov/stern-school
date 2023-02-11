@@ -4,24 +4,64 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 const data = [
     {
+        name: 'ЮМАШЕВ Михаил Владиславович',
+        text: 'Руководитель Школы Точных Наук',
+        image: 'https://static.tildacdn.com/tild6135-6530-4438-b261-363833396333/DSC09234.jpeg',
+    },
+    {
         name: 'ВОЛКОВА Александра',
-        text: 'Профессионал, психолог, администратор, программист и много всего еще интересного',
+        text: 'Профессионал-психолог, администратор',
         image: './images/teachers/photo1.png',
     },
     {
-        name: 'ВОЛКОВА Александра',
-        text: 'Профессионал',
+        name: 'ЛОБСАНОВА Татьяна',
+        text: 'Преподаватель математики',
         image: './images/teachers/photo2.png',
     },
     {
-        name: 'ВОЛКОВА Александра',
-        text: 'администратор, программист',
-        image: './images/teachers/photo1.png',
+        name: 'КАРТВЕЛИШВИЛИ Татьяна',
+        text: 'Соруководитель Школы, преподаватель математики',
+        image: 'https://static.tildacdn.com/tild3261-3964-4130-a364-633964326366/IMG_5688.jpg',
     },
     {
-        name: 'ВОЛКОВА Александра',
-        text: 'интересного',
-        image: './images/teachers/photo2.png',
+        name: 'ЗИЗГАНОВА Елена',
+        text: 'Преподаватель математики',
+        image: 'https://static.tildacdn.com/tild3534-6637-4164-a535-323630623861/IMG_1400_1.jpg',
+    },
+    {
+        name: 'КУЛИКОВ Андрей',
+        text: 'Преподаватель математики',
+        image: 'https://static.tildacdn.com/tild3461-3236-4633-a265-363037313338/IMG_1972_1.jpg',
+    },
+    {
+        name: 'ХМЕЛЕВА Ксения',
+        text: 'Преподаватель русского языка',
+        image: 'https://static.tildacdn.com/tild6237-3165-4131-b933-366634373937/IMG_1216_1.jpg',
+    },
+    {
+        name: 'МАТВЕЕВ Алексей',
+        text: 'Преподаватель математики',
+        image: 'https://static.tildacdn.com/tild3230-3435-4663-b336-633433306438/noroot.png',
+    },
+    {
+        name: 'КОРАБЛИНОВ Никита',
+        text: 'Преподаватель программирования',
+        image: 'https://static.tildacdn.com/tild3339-3638-4634-b538-316634313765/IMG_0674_1.jpg',
+    },
+    {
+        name: 'АВДАСЕВ Олег',
+        text: 'Преподаватель программирования и математики',
+        image: 'https://static.tildacdn.com/tild3064-3130-4738-a130-623937323433/IMG_1094_1.jpg',
+    },
+    {
+        name: 'МУДИНОВ Темур',
+        text: 'Преподаватель биологии',
+        image: 'https://static.tildacdn.com/tild6231-6664-4235-a635-353738333335/IMG_0699_1.jpg',
+    },
+    {
+        name: 'КУЛИЕВА Каролина',
+        text: 'Преподаватель русского языка',
+        image: 'https://static.tildacdn.com/tild3166-6466-4064-b833-626338396431/noroot.png',
     },
 ]
 

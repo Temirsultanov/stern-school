@@ -92,6 +92,13 @@
         transform: rotate(180deg);
     }
 
+    .image {
+        overflow: hidden;
+        img {
+            object-fit: cover;
+        }
+    }
+
     @media screen and (max-width: 768px) {
         .cont {
             display: flex;
