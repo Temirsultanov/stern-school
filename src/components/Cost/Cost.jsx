@@ -3,7 +3,6 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import './index.scss'
 
 const Cost = ({ setShow }) => {
-
     console.log(setShow)
     return (
         <div className="cost">
@@ -26,7 +25,7 @@ const Cost = ({ setShow }) => {
                         <div className="grid">
                             <div className="item">
                                 <div className="image_wrapper">
-                                    <img src="./images/cost/roket.svg" alt="" />
+                                    <img src="./images/cost/roket.png" alt="" className='roket'/>
                                 </div>
                                 <p>Эффект 3 месяцев занятий всего за 8 дней</p>
                             </div>
@@ -73,7 +72,7 @@ const Cost = ({ setShow }) => {
                             <div className="adaptive_card2">
                                 <div className="card_image">
                                     <img
-                                        src="./images/cost/roket2.svg"
+                                        src="./images/cost/roket.png"
                                         alt=""
                                         className="roket"
                                     />

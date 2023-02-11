@@ -13,8 +13,9 @@ const Offer = ({setShow}) => {
                             <div className="card">
                                 <div className="image_wrapper">
                                     <img
-                                        src="./images/offer/first.svg"
+                                        src="./images/offer/first.png"
                                         alt=""
+                                        className='table'
                                     />
                                 </div>
                                 <p>
@@ -25,7 +26,7 @@ const Offer = ({setShow}) => {
                             <div className="card">
                                 <div className="image_wrapper">
                                     <img
-                                        src="./images/offer/second.svg"
+                                        src="./images/offer/second.png"
                                         className="roket"
                                         alt=""
                                     />
@@ -35,7 +36,7 @@ const Offer = ({setShow}) => {
                             <div className="card">
                                 <div className="image_wrapper">
                                     <img
-                                        src="./images/offer/third.svg"
+                                        src="./images/offer/third.png"
                                         alt=""
                                     />
                                 </div>
