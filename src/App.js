@@ -54,13 +54,7 @@ function Card({ emoji }) {
 
 const App = () => {
     const [show, setShow] = React.useState(false)
-    const [isLoading, setIsLoading] = React.useState(true)
-
-    useEffect(() => {
-        setTimeout(() => {
-            setIsLoading(false)
-        }, 2000)
-    }, [])
+   
     useEffect(() => {
         if (show) {
             document.body.style.overflowY = 'hidden'
@@ -71,12 +65,6 @@ const App = () => {
 
     return (
         <>
-            {isLoading && (
-                <div class="loader-wrapper">
-                    <div class="loader"></div>
-                </div>
-            )}
-
             <Header />
             <Offer setShow={setShow} />
             <About />
