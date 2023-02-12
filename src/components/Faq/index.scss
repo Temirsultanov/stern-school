@@ -116,7 +116,7 @@
 .faq .grid {
     border-bottom: 2px solid #fff;
     .item.active .accordion {
-        max-height: 90px;
+        max-height: 150px;
         padding-bottom: 23px;
     }
 
@@ -127,7 +127,7 @@
 }
 
 .faq .item {
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.2s;
 }
 
 .faq .heading {
@@ -151,7 +151,7 @@
     max-height: 0;
     display: block;
     overflow-y: hidden;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.2s;
 }
 
 .faq h2 {
