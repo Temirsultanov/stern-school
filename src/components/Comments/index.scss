@@ -86,7 +86,7 @@
         }
     }
 
-    .slider {
+    .slider, .swiper-wrapper {
         width: 100%;
         height: 530px;
     }
@@ -107,7 +107,7 @@
         justify-content: center;
         cursor: pointer;
         .blur {
-            filter: blur(4px);
+            filter: blur(3px);
         }
         img {
             cursor: pointer;
@@ -173,9 +173,6 @@
         }
         .slider {
             padding-left: 15px;
-            .video img {
-                width: 100%;
-            }
         }
     }
 }
