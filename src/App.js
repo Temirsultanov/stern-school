@@ -22,13 +22,11 @@ const App = () => {
                     <div class="loader"></div>
                 </div>
             )}
-            <BrowserRouter>
-                <Header />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/go" element={<Go />} />
-                </Routes>
-            </BrowserRouter>
+            <Header />
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/go" element={<Go />} />
+            </Routes>
 
             <Footer />
         </>
