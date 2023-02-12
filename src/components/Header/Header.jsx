@@ -89,10 +89,10 @@ const Header = () => {
             <div className="header_bottom">
                 <div className="wrapper">
                     <div className="nav">
-                        <a href="/">О смене</a>
-                        <a href="/">Проживание и питание</a>
-                        <a href="/">Отзывы</a>
-                        <a href="/">Частые вопросы</a>
+                        <a href="#about">О смене</a>
+                        <a href="#about2">Проживание и питание</a>
+                        <a href="#comments">Отзывы</a>
+                        <a href="#faq">Частые вопросы</a>
                     </div>
                     <div className="buttons">
                         <button>Регистрация</button>

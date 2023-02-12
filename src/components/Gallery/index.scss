@@ -15,6 +15,7 @@
         display: grid;
         column-gap: 28px;
         width: 100%;
+        justify-content: center;
     }
     .row:nth-child(1) {
         grid-template-columns: 483px 259px 483px;
@@ -80,7 +81,7 @@
         place-content: center;
         background: rgba(0, 0, 0, 0.4);
         img {
-            transform: translate3d(0px, 0px, 0px) scale3d(1.5, 1.5, 1.5)!important;
+            transform: translate3d(0px, 0px, 0px) scale3d(1.5, 1.5, 1.5) !important;
         }
     }
 
@@ -130,7 +131,7 @@
             img {
                 width: 100%;
                 margin: 0 auto;
-                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)!important;
+                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) !important;
             }
         }
         .full_lightbox {
@@ -190,5 +191,51 @@
             height: 52px;
             margin-top: 12px;
         }
+    }
+}
+
+.gallery {
+    .ril-image-current {
+        transform: translate3d(0px, 0px, 0px) scale3d(1.5, 1.5, 1.5) !important;
+        @media screen and (max-width: 768px) {
+            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) !important;
+        }
+    }
+
+    .ril__closeButton {
+        background: url(../../../public/images/gallery/cross.svg) no-repeat center !important;
+    }
+
+    .ReactModal__Content {
+        button {
+            &:hover {
+                box-shadow: none !important;
+            }
+        }
+    }
+
+    .ril__caption,
+    .ril__toolbar {
+        background: none !important;
+    }
+
+    .ril__zoomOutButton,
+    .ril__zoomInButton {
+        display: none !important;
+    }
+
+    .ril__navButtonPrev {
+        background: rgba(255, 255, 255, 0.6)
+            url(../../../public/images/teachers/arrow.svg) no-repeat center !important;
+        transform: rotate(180deg);
+    }
+
+    .ril__navButtonNext {
+        background: rgba(255, 255, 255, 0.6)
+            url(../../../public/images/teachers/arrow.svg) no-repeat center !important;
+    }
+
+    .ril__outer {
+        background: rgba(255, 255, 255, 0.6) !important;
     }
 }
