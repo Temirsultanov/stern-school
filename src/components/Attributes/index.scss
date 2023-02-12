@@ -96,13 +96,39 @@
     .row .card {
         border-radius: 55px;
         padding: 40px 55px 40px;
+        &:hover {
+        }
     }
 
     .row .card:nth-child(2) {
         display: flex;
         flex-direction: column;
-        background: url(../../../public/images/attributes/bg3.png) no-repeat;
-        background-size: cover;
+
+        background: radial-gradient(
+                244.2% 304.44% at 269.41% -65.3%,
+                #8affea 0%,
+                rgba(255, 255, 255, 0) 100%
+            ),
+            radial-gradient(
+                385.79% 314.34% at 2.59% -394.25%,
+                #fff598 0%,
+                rgba(255, 246, 165, 0) 100%
+            ),
+            radial-gradient(
+                277.84% 338.19% at -104.36% -49.99%,
+                #5b57ff 30.21%,
+                #f2f1ff 98.44%
+            ),
+            radial-gradient(
+                390.9% 500.43% at 348.1% -359.19%,
+                #7977ff 0%,
+                rgba(255, 255, 255, 0) 100%
+            ),
+            #ffcaed;
+        background-size: 400% 400%;
+        animation: gradient 20s infinite ease;
+        &:hover {
+        }
     }
     .row .card:nth-child(1) {
         background: linear-gradient(216.68deg, #3687ff 0%, #cd62ff 128.61%);
@@ -219,5 +245,16 @@
             line-height: 130%;
             color: #ffffff;
         }
+    }
+}
+@keyframes gradient {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        // background-position: 200px;
+    }
+    100% {
+        background-position: 0%;
     }
 }

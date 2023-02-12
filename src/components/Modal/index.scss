@@ -28,6 +28,10 @@
         top: 35px;
         right: 35px;
         cursor: pointer;
+        &:hover {
+            transition: 0.3s ease-in-out;
+            transform: rotate(180deg);
+        }
     }
     .left {
         width: 320px;
