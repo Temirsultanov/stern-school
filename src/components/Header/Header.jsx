@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from 'react'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import './index.scss'
 
 const Header = () => {
+    const location = useLocation()
+    const navigate = useNavigate()
+    console.log(location.hash)
     const [show, setShow] = useState(false)
 
     useEffect(() => {
@@ -11,6 +16,12 @@ const Header = () => {
             document.body.style.overflowY = 'scroll'
         }
     }, [show])
+
+    useEffect(() => {
+        if (location.hash === '#about' && location.pathname === '/') {
+            navigate(location.pathname + location.hash)
+        }
+    }, [location.hash, location.pathname])
 
     return (
         <div className="header">
@@ -53,7 +64,10 @@ const Header = () => {
                         </a>
                     </div>
                     <div className="icons">
-                        <a href="https://wa.clck.bar/79365120601" className="image_wrapper">
+                        <a
+                            href="https://wa.clck.bar/79365120601"
+                            className="image_wrapper"
+                        >
                             <svg
                                 width="15"
                                 height="15"
@@ -69,7 +83,10 @@ const Header = () => {
                                 />
                             </svg>
                         </a>
-                        <a href="https://t.me/shternik3" className="image_wrapper">
+                        <a
+                            href="https://t.me/shternik3"
+                            className="image_wrapper"
+                        >
                             <svg
                                 width="23"
                                 height="23"
@@ -89,10 +106,10 @@ const Header = () => {
             <div className="header_bottom">
                 <div className="wrapper">
                     <div className="nav">
-                        <a href="#about">О смене</a>
-                        <a href="#about2">Проживание и питание</a>
-                        <a href="#comments">Отзывы</a>
-                        <a href="#faq">Частые вопросы</a>
+                        <a href="/#about">О смене</a>
+                        <a href="/#about2">Проживание и питание</a>
+                        <AnchorLink href="/#comments">Отзывы</AnchorLink>
+                        <AnchorLink href="#faq">Частые вопросы</AnchorLink>
                     </div>
                     <div className="buttons">
                         <button>Регистрация</button>
@@ -127,18 +144,18 @@ const Header = () => {
                     alt=""
                     onClick={() => setShow(false)}
                 />
-                <a href="#about" onClick={() => setShow(false)}>
+                <a href="/#about" onClick={() => setShow(false)}>
                     О смене
                 </a>
-                <a href="#about2" onClick={() => setShow(false)}>
+                <a href="/#about2" onClick={() => setShow(false)}>
                     Проживание и питание
                 </a>
-                <a href="#comments" onClick={() => setShow(false)}>
+                <a href="/#comments" onClick={() => setShow(false)}>
                     Отзывы
                 </a>
-                <a href="#faq" onClick={() => setShow(false)}>
+                <Link to="/#faq" onClick={() => setShow(false)}>
                     Частые вопросы
-                </a>
+                </Link>
                 <a href="/">Регистрация</a>
                 <a href="/">Перезвоните мне</a>
             </div>

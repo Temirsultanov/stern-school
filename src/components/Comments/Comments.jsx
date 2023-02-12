@@ -124,7 +124,7 @@ const Comments = () => {
             <div className="slider">
                 <Swiper
                     spaceBetween={50}
-                    slidesPerView={window.innerWidth < 768 ? 1.169 : 8}
+                    slidesPerView={window.innerWidth < 768 ? 1.169 : window.innerWidth > 2000 ? 8 : 5}
                     className="mySwiper"
                     onBeforeInit={(swiper) => {
                         swiperRef.current = swiper

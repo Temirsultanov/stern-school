@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import 'swiper/css'
-import { Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Go from './pages/Go'
 
@@ -22,12 +22,13 @@ const App = () => {
                     <div class="loader"></div>
                 </div>
             )}
-
-            <Header />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/go" element={<Go />} />
-            </Routes>
+            <BrowserRouter>
+                <Header />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/go" element={<Go />} />
+                </Routes>
+            </BrowserRouter>
 
             <Footer />
         </>

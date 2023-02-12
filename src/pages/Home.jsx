@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Cost from '../components/Cost/Cost'
 import Modal from '../components/Modal/Modal'
 import Faq from '../components/Faq/Faq'
@@ -12,6 +12,7 @@ import Attributes from '../components/Attributes/Attributes'
 import Comments from '../components/Comments/Comments'
 import { motion } from 'framer-motion'
 
+
 const components = [
     <Study />,
     <Includes />,
@@ -19,7 +20,6 @@ const components = [
     <Teachers />,
     <Attributes />,
     <Comments />,
-    ,
 ]
 
 const cardVariants = {
@@ -53,12 +53,12 @@ const Home = () => {
     const [show, setShow] = React.useState(false)
     const [isLoading, setIsLoading] = React.useState(true)
 
-    React.useEffect(() => {
+    useEffect(() => {
         setTimeout(() => {
             setIsLoading(false)
         }, 500)
     }, [])
-    React.useEffect(() => {
+    useEffect(() => {
         if (show) {
             document.body.style.overflowY = 'hidden'
         } else {
@@ -73,8 +73,7 @@ const Home = () => {
                     <div class="loader"></div>
                 </div>
             )}
-
-            <Offer setShow={setShow} />
+                <Offer setShow={setShow} />
             <About />
             {show && <Modal set={setShow} />}
             {components.map((item) => {
