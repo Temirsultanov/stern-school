@@ -79,6 +79,9 @@
         display: grid;
         place-content: center;
         background: rgba(0, 0, 0, 0.4);
+        img {
+            transform: translate3d(0px, 0px, 0px) scale3d(1.5, 1.5, 1.5)!important;
+        }
     }
 
     .full_lightbox {
@@ -125,8 +128,9 @@
         margin: 63px 0 52px;
         .lightbox {
             img {
-                width: 80%;
+                width: 100%;
                 margin: 0 auto;
+                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)!important;
             }
         }
         .full_lightbox {

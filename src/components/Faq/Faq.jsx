@@ -39,7 +39,7 @@ const FaqItem = ({ data }) => {
     const [show, setShow] = React.useState(false)
     return (
         <div
-            className={show ? 'item active' : "item"}
+            className={show ? 'item active' : 'item'}
             onClick={() => setShow(!show)}
         >
             <div className={show ? 'heading show' : 'heading'}>
