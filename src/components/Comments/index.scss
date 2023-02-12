@@ -35,6 +35,13 @@
         display: flex;
         align-items: center;
         margin: 0 auto 14px;
+        cursor: pointer;
+        &:hover { 
+            img {
+                transition: .5s all ease;
+                transform: rotate(180deg);
+            }
+        }
         p {
             font-weight: 400;
             font-size: 36px;

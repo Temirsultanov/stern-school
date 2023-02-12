@@ -25,6 +25,7 @@ body {
 
 button:not(.ril__navButtons) {
     transition: 0.3s all ease;
+    border: 1px solid #ffedfa!important;
     &:active {
         box-shadow: inset 5px 5px 15px 0 rgba(181, 181, 181, 0.8),
             inset -5px -5px 15px 0 rgba(255, 255, 255, 0.8) !important;
