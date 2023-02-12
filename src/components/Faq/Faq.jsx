@@ -72,7 +72,7 @@ const Faq = () => {
                         <p>Нет вашего вопроса?</p>
                         <InputMask
                             mask="+7 9999 9999-999-999"
-                            placeholder="+7 ____ ____-___-___ "
+                            placeholder="+7 (___) ___-__-__"
                         />
                         <button>Отправить</button>
                     </div>

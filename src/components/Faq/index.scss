@@ -121,6 +121,10 @@
     }
 }
 
+.faq .item {
+    transition: 0.5s all ease;
+}
+
 .faq .heading {
     display: flex;
     align-items: center;
@@ -128,6 +132,7 @@
     padding: 21px 0;
     border-top: 2px solid #fff;
     cursor: pointer;
+    transition: 0.5s all ease;
 }
 
 .faq h4 {
