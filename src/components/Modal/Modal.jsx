@@ -17,7 +17,7 @@ const Modal = ({ state, set }) => {
             return null
         } else {
             axios
-                .post('http://kurs.stern.xyz:8001/api/v1/register/', {
+                .post('http://45.147.177.125:8001/api/v1/register/', {
                     fio,
                     phone,
                     form,
