@@ -1,12 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './index.scss'
 
 const Header = () => {
-    const location = useLocation()
-    const navigate = useNavigate()
-    console.log(location.hash)
     const [show, setShow] = useState(false)
 
     useEffect(() => {
@@ -16,12 +12,6 @@ const Header = () => {
             document.body.style.overflowY = 'scroll'
         }
     }, [show])
-
-    useEffect(() => {
-        if (location.hash === '#about' && location.pathname === '/') {
-            navigate(location.pathname + location.hash)
-        }
-    }, [location.hash, location.pathname])
 
     return (
         <div className="header">
@@ -108,8 +98,8 @@ const Header = () => {
                     <div className="nav">
                         <a href="/#about">О смене</a>
                         <a href="/#about2">Проживание и питание</a>
-                        <AnchorLink href="/#comments">Отзывы</AnchorLink>
-                        <AnchorLink href="#faq">Частые вопросы</AnchorLink>
+                        <a href="/#comments">Отзывы</a>
+                        <a href="#faq">Частые вопросы</a>
                     </div>
                     <div className="buttons">
                         <button>Регистрация</button>
