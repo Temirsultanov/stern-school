@@ -114,15 +114,15 @@
 
 .faq .grid {
     border-bottom: 2px solid #fff;
-    .item.active h2 {
-        opacity: 1;
-        height: auto;
+    .item.active .accordion {
+        // opacity: 1;
+        max-height: 90px;
         padding-bottom: 23px;
     }
 }
 
 .faq .item {
-    transition: 0.5s all ease;
+    transition: ease-in-out 0.3s;
 }
 
 .faq .heading {
@@ -132,7 +132,7 @@
     padding: 21px 0;
     border-top: 2px solid #fff;
     cursor: pointer;
-    transition: 0.5s all ease;
+    transition: ease-in-out 0.3s;
 }
 
 .faq h4 {
@@ -142,16 +142,20 @@
     color: #6767bb;
 }
 
-.faq h2 {
+.faq .accordion {
+    max-height: 0;
+    display: block;
     overflow-y: hidden;
+    transition: ease-in-out 0.3s;
+}
+
+.faq h2 {
     padding-bottom: 0;
     font-weight: 400 !important;
     font-size: 20px !important;
     line-height: 120% !important;
     color: rgba(103, 103, 187, 0.7) !important;
-    height: 0;
-    opacity: 0;
-    transition: 0.5s all ease;
+
     @media screen and (max-width: 768px) {
         font-size: 16px !important;
     }

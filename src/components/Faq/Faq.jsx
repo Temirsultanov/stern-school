@@ -52,12 +52,14 @@ const FaqItem = ({ data }) => {
                     )}
                 </div>
             </div>
-            <h2>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
-                vitae ab, quis doloremque officiis est, delectus dolores
-                praesentium iste similique ut cumque. Placeat inventore
-                excepturi reprehenderit alias doloribus repellendus sed.
-            </h2>
+            <div className="accordion">
+                <h2>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                    vitae ab, quis doloremque officiis est, delectus dolores
+                    praesentium iste similique ut cumque. Placeat inventore
+                    excepturi reprehenderit alias doloribus repellendus sed.
+                </h2>
+            </div>
         </div>
     )
 }
