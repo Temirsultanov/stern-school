@@ -8,7 +8,7 @@ const GoMain = () => {
                 <div className="cont">
                     <img src="./images/go/ping.png" alt="" />
                     <h2>Что взять с собой</h2>
-                    <button className="dowload">Сказать памятку</button>
+                    <button className="dowload">Скачать памятку</button>
                     <div className="row">
                         <div className="grid">
                             <div className="column">
