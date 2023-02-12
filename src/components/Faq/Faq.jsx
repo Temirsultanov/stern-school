@@ -45,11 +45,7 @@ const FaqItem = ({ data }) => {
             <div className={show ? 'heading show' : 'heading'}>
                 <h4>{data.title}</h4>
                 <div className="image_wrapper">
-                    {show ? (
-                        <img src="./images/faq/minus.svg" alt="" />
-                    ) : (
-                        <img src="./images/faq/plus.svg" alt="" />
-                    )}
+                    <img src="./images/faq/plus.svg" alt="" />
                 </div>
             </div>
             <div className="accordion">

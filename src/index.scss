@@ -23,15 +23,20 @@ body {
     scroll-behavior: smooth;
 }
 .ril-image-current {
-    transform: translate3d(0px, 0px, 0px) scale3d(1.5, 1.5, 1.5)!important;
+    transform: translate3d(0px, 0px, 0px) scale3d(1.5, 1.5, 1.5) !important;
     @media screen and (max-width: 768px) {
-        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1)!important;
+        transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) !important;
     }
+}
+
+.ril__closeButton {
+    background: url(../public/images/gallery/cross.svg)
+        no-repeat center!important;
 }
 
 button:not(.ril__navButtons) {
     transition: 0.3s all ease;
-    border: 1px solid #ffedfa!important;
+    border: 1px solid #ffedfa !important;
     &:active {
         box-shadow: inset 5px 5px 15px 0 rgba(181, 181, 181, 0.8),
             inset -5px -5px 15px 0 rgba(255, 255, 255, 0.8) !important;
@@ -48,6 +53,14 @@ button:not(.ril__navButtons) {
             box-shadow: none !important;
         }
     }
+}
+
+.ril__caption, .ril__toolbar {
+    background: none!important;
+}
+
+.ril__zoomOutButton, .ril__zoomInButton {
+    display: none!important;
 }
 
 .ril__navButtonPrev {
