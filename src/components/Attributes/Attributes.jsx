@@ -1,8 +1,18 @@
 import React from 'react'
 import './index.scss'
 import InputMask from 'react-input-mask'
+import axios from 'axios'
 
 const Attributes = () => {
+    const [phone, setPhone] = React.useState('')
+
+    const Send = () => {
+        axios
+            .post('https://kurs.stern.xyz:8002/api/v1/feedback/', {phone})
+            .then(console.log('success'))
+            .catch((err) => console.error(err))
+    }
+
     return (
         <div className="attributes">
             <div className="wrapper">
@@ -81,8 +91,12 @@ const Attributes = () => {
                                 <InputMask
                                     mask="+7 (999) 999-99-99"
                                     placeholder="+7 (___) ___-__-__"
+                                    value={phone}
+                                    onClick={(e) => setPhone(e.target.value)}
                                 />
-                                <button>Отправить</button>
+                                <button onClick={() => Send()}>
+                                    Отправить
+                                </button>
                             </div>
                         </div>
                     </div>

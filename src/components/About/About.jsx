@@ -1,10 +1,19 @@
 import React from 'react'
 import './index.scss'
 import InputMask from 'react-input-mask'
+import axios from 'axios'
 
-const About = ({set}) => {
+const About = ({ set }) => {
+    const [phone, setPhone] = React.useState("")
+    const Send = () => {
+        axios
+            .post('https://kurs.stern.xyz:8002/api/v1/feedback/', {phone})
+            .then(console.log('success'))
+            .catch((err) => console.error(err))
+    }
+
     return (
-        <div className="about" id={"about2"}>
+        <div className="about" id={'about2'}>
             <div className="wrapper">
                 <div className="cont">
                     <div className="row">
@@ -56,7 +65,10 @@ const About = ({set}) => {
                                 информатике и физике!
                             </p>
                         </div>
-                        <button className="adaptive_button" onClick={() => set(true)}>
+                        <button
+                            className="adaptive_button"
+                            onClick={() => set(true)}
+                        >
                             Оставить заявку
                         </button>
                     </div>
@@ -91,8 +103,10 @@ const About = ({set}) => {
                             <InputMask
                                 mask="+7 (999) 999-99-99"
                                 placeholder="+7 (___) ___-__-__"
+                                value={setPhone}
+                                onChange={e => setPhone(e.target.value)}
                             />
-                            <button>Отправить</button>
+                            <button onClick={() => Send()}>Отправить</button>
                         </div>
                     </div>
                 </div>
