@@ -4,7 +4,7 @@
     .block {
         margin: 33px 0;
         border-radius: 55px;
-        background: linear-gradient(216.68deg, #3687ff 0%, #cd62ff 128.61%);
+        background: linear-gradient(236.7deg, #3687ff 0%, #cd62ff 181.84%);
         padding: 36px 51px 84px 54px;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -96,8 +96,6 @@
     .row .card {
         border-radius: 55px;
         padding: 40px 55px 40px;
-        &:hover {
-        }
     }
 
     .row .card:nth-child(2) {
@@ -127,7 +125,11 @@
             #ffcaed;
     }
     .row .card:nth-child(1) {
-        background: linear-gradient(216.68deg, #3687ff 0%, #cd62ff 128.61%);
+        background: linear-gradient(
+            216.69deg,
+            #3687ff -104.38%,
+            #cd62ff 158.47%
+        );
     }
 
     .card_row {
