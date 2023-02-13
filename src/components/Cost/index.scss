@@ -101,6 +101,10 @@
             display: grid;
             place-content: center;
             margin-right: 26px;
+
+            &.moun {overflow: hidden;
+                width: 100%;
+            }
         }
 
         span {

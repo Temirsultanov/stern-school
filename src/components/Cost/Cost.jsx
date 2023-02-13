@@ -68,9 +68,9 @@ const Cost = ({ setShow }) => {
                                                 </p>
                                             </div>
                                             <div className="item">
-                                                <div className="image_wrapper">
+                                                <div className="image_wrapper moun">
                                                     <img
-                                                        src="./images/cost/moun.svg"
+                                                        src="./images/cost/moun2.png"
                                                         alt=""
                                                     />
                                                 </div>
@@ -140,7 +140,7 @@ const Cost = ({ setShow }) => {
                                         <div className="adaptive_card2">
                                             <div className="card_image">
                                                 <img
-                                                    src="./images/cost/moun2.svg"
+                                                    src="./images/cost/moun2.png"
                                                     alt=""
                                                     className="moun"
                                                 />

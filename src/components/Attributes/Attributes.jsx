@@ -21,7 +21,7 @@ const Attributes = () => {
                         <div className="left">
                             <div className="image_wrapper">
                                 <img
-                                    src="./images/attributes/second.svg"
+                                    src="./images/attributes/second.png"
                                     alt=""
                                 />
                             </div>
@@ -61,7 +61,7 @@ const Attributes = () => {
                         <div className="card">
                             <div className="image_wrapper">
                                 <img
-                                    src="./images/attributes/forth.svg"
+                                    src="./images/attributes/forth.png"
                                     alt=""
                                 />
                             </div>
@@ -79,7 +79,7 @@ const Attributes = () => {
                         <div className="card">
                             <div className="image_wrapper white">
                                 <img
-                                    src="./images/attributes/fifth.svg"
+                                    src="./images/modal/phone.png"
                                     alt=""
                                 />
                             </div>

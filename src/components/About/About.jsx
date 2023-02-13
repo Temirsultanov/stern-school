@@ -95,7 +95,7 @@ const About = ({ set }) => {
                         <div className="card phone">
                             <div className="image_wrapper">
                                 <img
-                                    src="./images/about/phone.svg"
+                                    src="./images/modal/phone.png"
                                     alt=""
                                     className="forth"
                                 />

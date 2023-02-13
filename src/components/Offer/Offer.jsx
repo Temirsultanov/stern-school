@@ -47,7 +47,7 @@ const Offer = ({ setShow }) => {
                             <div className="card">
                                 <div className="image_wrapper">
                                     <img
-                                        src="./images/offer/fourth.svg"
+                                        src="./images/offer/fourth.png"
                                         alt=""
                                         style={{
                                             position: 'relative',

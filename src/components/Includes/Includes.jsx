@@ -9,7 +9,7 @@ const Includes = () => {
                     <div className="texts"></div>
                     <div className="top_card">
                         <h2>Что включает в себя смена?</h2>
-                        <img src="./images/attributes/first.svg" alt="" />
+                        <img src="./images/attributes/first.png" alt="" />
                         <div className="texts">
                             <p>Интенсив по олимпиадной математике</p>
                             <p>Интеллектуальные квесты</p>
