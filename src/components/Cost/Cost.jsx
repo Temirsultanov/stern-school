@@ -23,6 +23,7 @@ const Cost = ({ setShow }) => {
                             />
                         </div>
                         <Swiper
+                            loop={true}
                             spaceBetween={20}
                             slidesPerView={1}
                             className="slider_swiper"
@@ -92,12 +93,12 @@ const Cost = ({ setShow }) => {
                     </div>
                     <div className="adaptive_slider">
                         <Swiper
+                            loop={true}
                             spaceBetween={20}
                             slidesPerView={1}
                             initialSlide={1}
                         >
                             {[1, 3, 42].map((item, index) => (
-                                
                                 <SwiperSlide className="adaptive_card">
                                     <h4>Стоимость</h4>
                                     <div className="slides">

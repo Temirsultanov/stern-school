@@ -123,6 +123,7 @@ const Comments = () => {
             </div>
             <div className="slider">
                 <Swiper
+                    loop={true}
                     spaceBetween={50}
                     slidesPerView={
                         window.innerWidth < 768
