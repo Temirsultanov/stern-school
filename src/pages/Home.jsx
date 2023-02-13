@@ -51,8 +51,7 @@ function Card({ emoji }) {
 
 const hash = ['#about', '#about2', '#faq', '#comments']
 
-const Home = ({ set }) => {
-    const [show, setShow] = React.useState(false)
+const Home = ({ set, showRegister, setShowRegister }) => {
     let location = useLocation()
     const [isLoading, setIsLoading] = React.useState(false)
 
@@ -61,13 +60,14 @@ const Home = ({ set }) => {
             setIsLoading(false)
         }, 500)
     }, [])
+
     useEffect(() => {
-        if (show) {
+        if (showRegister) {
             document.body.style.overflowY = 'hidden'
         } else {
             document.body.style.overflowY = 'scroll'
         }
-    }, [show])
+    }, [showRegister])
 
     useEffect(() => {
         for (const key in hash) {
@@ -77,6 +77,8 @@ const Home = ({ set }) => {
         }
     }, [location.hash])
 
+    console.log(showRegister);
+
     return (
         <>
             {isLoading && (
@@ -84,13 +86,13 @@ const Home = ({ set }) => {
                     <div class="loader"></div>
                 </div>
             )}
-            <Offer setShow={setShow} />
+            <Offer setShow={setShowRegister} />
             <About set={set} />
-            {show && <Modal set={setShow} />}
+            {showRegister && <Modal set={setShowRegister} />}
             {components.map((item) => {
                 return <Card emoji={item} />
             })}
-            <Cost setShow={setShow} />
+            <Cost setShow={setShowRegister} />
             <Faq />
         </>
     )

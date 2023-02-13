@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './index.scss'
 
-const Header = ({ set }) => {
+const Header = ({ set, setShowRegister }) => {
     const [show, setShow] = useState(false)
 
     useEffect(() => {
@@ -101,7 +101,14 @@ const Header = ({ set }) => {
                         <a href="/#faq">Частые вопросы</a>
                     </div>
                     <div className="buttons">
-                        <button>Регистрация</button>
+                        <button
+                            onClick={() => {
+                                setShow(false)
+                                setShowRegister(true)
+                            }}
+                        >
+                            Регистрация
+                        </button>
                         <button onClick={() => set(true)}>
                             Перезвоните мне
                         </button>
@@ -147,11 +154,22 @@ const Header = ({ set }) => {
                 <a to="/#faq" onClick={() => setShow(false)}>
                     Частые вопросы
                 </a>
-                <a href="/">Регистрация</a>
-                <p onClick={() => {
-                    set(true)
-                    setShow(false)
-                }}>Перезвоните мне</p>
+                <p
+                    onClick={() => {
+                        setShow(false)
+                        setShowRegister(true)
+                    }}
+                >
+                    Регистрация
+                </p>
+                <p
+                    onClick={() => {
+                        set(true)
+                        setShow(false)
+                    }}
+                >
+                    Перезвоните мне
+                </p>
             </div>
         </div>
     )

@@ -9,15 +9,27 @@ import CallMe from './components/CallMe/Modal'
 
 const App = () => {
     const [show, setShow] = React.useState(false)
-
+    const [showRegister, setShowRegister] = React.useState(false)
 
     return (
         <>
-            {show && <CallMe set={setShow}/>}
-            
-            <Header set={setShow}/>
+            {show && <CallMe set={setShow} />}
+
+            <Header
+                set={setShow}
+                setShowRegister={setShowRegister}
+            />
             <Routes>
-                <Route path="/" element={<Home set={setShow}/>} />
+                <Route
+                    path="/"
+                    element={
+                        <Home
+                            set={setShow}
+                            showRegister={showRegister}
+                            setShowRegister={setShowRegister}
+                        />
+                    }
+                />
                 <Route path="/go" element={<Go />} />
             </Routes>
 
