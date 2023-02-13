@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
 import './index.scss'
 
-const Header = () => {
+const Header = ({ set }) => {
     const [show, setShow] = useState(false)
 
     useEffect(() => {
@@ -99,11 +98,13 @@ const Header = () => {
                         <a href="/#about">О смене</a>
                         <a href="/#about2">Проживание и питание</a>
                         <a href="/#comments">Отзывы</a>
-                        <a href="#faq">Частые вопросы</a>
+                        <a href="/#faq">Частые вопросы</a>
                     </div>
                     <div className="buttons">
                         <button>Регистрация</button>
-                        <button>Перезвоните мне</button>
+                        <button onClick={() => set(true)}>
+                            Перезвоните мне
+                        </button>
                     </div>
                 </div>
             </div>
@@ -143,11 +144,14 @@ const Header = () => {
                 <a href="/#comments" onClick={() => setShow(false)}>
                     Отзывы
                 </a>
-                <Link to="/#faq" onClick={() => setShow(false)}>
+                <a to="/#faq" onClick={() => setShow(false)}>
                     Частые вопросы
-                </Link>
+                </a>
                 <a href="/">Регистрация</a>
-                <a href="/">Перезвоните мне</a>
+                <p onClick={() => {
+                    set(true)
+                    setShow(false)
+                }}>Перезвоните мне</p>
             </div>
         </div>
     )

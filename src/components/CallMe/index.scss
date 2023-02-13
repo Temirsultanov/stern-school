@@ -1,0 +1,85 @@
+.call.modal_wrapper {
+    background: rgba(255, 255, 255, 0.6);
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-content: center;
+    .content {
+        position: relative;
+        width: 360px;
+        padding: 86px 20px 76px;
+        background: #ffffff;
+        box-shadow: 0px 7px 15px rgba(109, 108, 164, 0.25),
+            inset 0px 7px 15px rgba(109, 108, 164, 0.25);
+        border-radius: 25px;
+    }
+    .cross {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        cursor: pointer;
+        &:hover {
+            transition: 0.3s ease-in-out;
+            transform: rotate(180deg);
+        }
+    }
+    input {
+        height: 64px;
+        outline: none;
+        border: none;
+        padding: 0 30px 0 60px;
+        background: radial-gradient(
+                    109.8% 109.8% at 11.4% -9.8%,
+                    rgba(200, 210, 255, 0.15) 0%,
+                    rgba(255, 255, 255, 0) 100%
+                )
+                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+            #ffffff;
+        box-shadow: inset 4.58333px 4.58333px 4.58333px rgba(125, 102, 173, 0.2);
+        border-radius: 45.8333px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 30px;
+        color: #323241;
+        width: 100%;
+        &::placeholder {
+            color: rgba(50, 50, 65, 0.5);
+        }
+    }
+    button {
+        height: 60px;
+        width: 100%;
+        background: radial-gradient(
+                    100% 942.28% at 9.58% 0%,
+                    #738cff 0%,
+                    rgba(110, 91, 233, 0) 97.76%
+                )
+                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+            #6f5bec;
+        box-shadow: 4.31443px 4.31443px 8.62887px rgba(62, 72, 128, 0.1);
+        border-radius: 43px;
+        margin-top: 17px;
+        border: none;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 44px;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    .texts {
+        margin-top: 47px;   
+        p {
+            font-weight: 700;
+            font-size: 33px;
+            line-height: 45px;
+            color: #6767bb;
+            &:nth-child(n + 2) {
+                margin-top: 18px;
+            }
+        }
+    }
+}

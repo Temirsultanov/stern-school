@@ -2,9 +2,9 @@ import React from 'react'
 import './index.scss'
 import InputMask from 'react-input-mask'
 
-const About = () => {
+const About = ({set}) => {
     return (
-        <div className="about" id="about2">
+        <div className="about" id={"about2"}>
             <div className="wrapper">
                 <div className="cont">
                     <div className="row">
@@ -56,7 +56,7 @@ const About = () => {
                                 информатике и физике!
                             </p>
                         </div>
-                        <button className="adaptive_button">
+                        <button className="adaptive_button" onClick={() => set(true)}>
                             Оставить заявку
                         </button>
                     </div>

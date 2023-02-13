@@ -27,7 +27,7 @@ const Modal = ({ state, set }) => {
     }
 
     return (
-        <div className="modal_wrapper">
+        <div className="register modal_wrapper">
             <div className="content" ref={ref}>
                 <img src="./images/modal/phone.png" alt="" className="phone" />
                 <img

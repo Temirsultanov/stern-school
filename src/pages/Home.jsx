@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Cost from '../components/Cost/Cost'
-import Modal from '../components/Modal/Modal'
+import Modal from '../components/RegisterModal/Modal'
 import Faq from '../components/Faq/Faq'
 import About from '../components/About/About'
 import Offer from '../components/Offer/Offer'
@@ -11,7 +11,7 @@ import Teachers from '../components/Teachers/Teachers'
 import Attributes from '../components/Attributes/Attributes'
 import Comments from '../components/Comments/Comments'
 import { motion } from 'framer-motion'
-
+import { useLocation } from 'react-router-dom'
 
 const components = [
     <Study />,
@@ -49,8 +49,9 @@ function Card({ emoji }) {
     )
 }
 
-const Home = () => {
+const Home = ({ set }) => {
     const [show, setShow] = React.useState(false)
+    let location = useLocation()
     const [isLoading, setIsLoading] = React.useState(true)
 
     useEffect(() => {
@@ -65,6 +66,9 @@ const Home = () => {
             document.body.style.overflowY = 'scroll'
         }
     }, [show])
+    useEffect(() => {
+        window.location.href = location.hash
+    }, [location.hash])
 
     return (
         <>
@@ -73,8 +77,8 @@ const Home = () => {
                     <div class="loader"></div>
                 </div>
             )}
-                <Offer setShow={setShow} />
-            <About />
+            <Offer setShow={setShow} />
+            <About set={set} />
             {show && <Modal set={setShow} />}
             {components.map((item) => {
                 return <Card emoji={item} />
