@@ -1,9 +1,9 @@
 import React from 'react'
 import './index.scss'
 
-const Offer = ({setShow}) => {
+const Offer = ({ setShow }) => {
     return (
-        <div className="offer" id='about'>
+        <div className="offer" id="about">
             <div className="wrapper">
                 <div className="cont">
                     <div className="left">
@@ -15,7 +15,7 @@ const Offer = ({setShow}) => {
                                     <img
                                         src="./images/offer/first.png"
                                         alt=""
-                                        className='table'
+                                        className="table"
                                     />
                                 </div>
                                 <p>
@@ -49,7 +49,10 @@ const Offer = ({setShow}) => {
                                     <img
                                         src="./images/offer/fourth.svg"
                                         alt=""
-                                        style={{position: "relative", left: '3px'}}
+                                        style={{
+                                            position: 'relative',
+                                            left: '3px',
+                                        }}
                                     />
                                 </div>
                                 <p>АВТОРСКИЙ КУРС К ЕГЭ ОТ ЭКСПЕРТОВ</p>

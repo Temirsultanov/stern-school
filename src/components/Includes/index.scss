@@ -1,6 +1,21 @@
 .includes .top_card {
-    background: url(../../../public/images/attributes/bg2.png) no-repeat;
-    background-size: cover;
+    background: linear-gradient(
+            121.91deg,
+            #fff598 -144.25%,
+            rgba(255, 246, 165, 0) 72.54%
+        ),
+        linear-gradient(
+            66.94deg,
+            #8e59fe 0.45%,
+            #6922ff 0.46%,
+            rgba(174, 90, 255, 0) 77.92%
+        ),
+        linear-gradient(
+            250.92deg,
+            #fb25ff -73.06%,
+            rgba(255, 255, 255, 0) 39.82%
+        ),
+        #ffcaed;
     border-radius: 55px;
     padding: 42px 47px 56px 29px;
     position: relative;

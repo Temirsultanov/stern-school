@@ -18,8 +18,7 @@
         border-radius: 30px;
         background: #fff;
         padding: 60px 56px 70px;
-        background-size: 120%;
-        background-repeat: no-repeat;
+        transition: 2s all ease;
     }
     .card.phone {
         padding: 57px 50px 42px;
@@ -107,16 +106,110 @@
     }
 
     .row .card:nth-child(1) {
-        background: url(../../../public/images/about/bg.png);
+        background: linear-gradient(
+                296.97deg,
+                #8affea -75.37%,
+                rgba(255, 255, 255, 0) 21.9%
+            ),
+            linear-gradient(
+                121.4deg,
+                #fff598 -47.63%,
+                rgba(255, 246, 165, 0) 101.06%
+            ),
+            linear-gradient(
+                63.47deg,
+                #6922ff -104.01%,
+                #8e59fe -73.77%,
+                rgba(174, 90, 255, 0) 103.43%
+            ),
+            linear-gradient(
+                249.05deg,
+                #fb25ff -92.77%,
+                rgba(255, 255, 255, 0) 11.2%
+            ),
+            #ffcaed;
     }
     .row .card:nth-child(2) {
-        background: url(../../../public/images/about/bg2.png);
+        background: linear-gradient(
+                296.82deg,
+                #8affea -9.09%,
+                rgba(255, 255, 255, 0) 88.11%
+            ),
+            linear-gradient(
+                121.24deg,
+                #fff598 -109.61%,
+                rgba(255, 246, 165, 0) 39%
+            ),
+            linear-gradient(
+                63.61deg,
+                #6922ff -170.37%,
+                #8e59fe -140.16%,
+                rgba(174, 90, 255, 0) 36.89%
+            ),
+            linear-gradient(
+                249.17deg,
+                #fb25ff -20.52%,
+                rgba(255, 255, 255, 0) 83.33%
+            ),
+            #ffcaed;
     }
     .second_row .card:nth-child(1) {
-        background: url(../../../public/images/about/bg3.png);
+        background: linear-gradient(
+                291.08deg,
+                #8affea -15.53%,
+                rgba(255, 255, 255, 0) 64.74%
+            ),
+            linear-gradient(
+                114.82deg,
+                #fff598 -72.75%,
+                rgba(255, 246, 165, 0) 51.3%
+            ),
+            linear-gradient(
+                69.28deg,
+                #6922ff -58.53%,
+                #8e59fe -33.61%,
+                rgba(174, 90, 255, 0) 112.44%
+            ),
+            linear-gradient(
+                253.83deg,
+                #fb25ff -78.65%,
+                rgba(255, 255, 255, 0) 5.8%
+            ),
+            #ffcaed;
+        background-position: 0 0;
+        background-size: 200%;
+        &:hover {
+            animation: bg 10s infinite ease;
+        }
     }
     .second_row .card:nth-child(2) {
-        background: url(../../../public/images/about/bg4.png);
+        background: linear-gradient(
+                309.93deg,
+                #8affea 29.13%,
+                rgba(255, 255, 255, 0) 158.78%
+            ),
+            linear-gradient(
+                135.12deg,
+                #fff598 -219.3%,
+                rgba(255, 246, 165, 0) -25.42%
+            ),
+            linear-gradient(
+                47.78deg,
+                #6922ff -106.87%,
+                #8e59fe -33.94%,
+                rgba(174, 90, 255, 0) 66.98%
+            ),
+            linear-gradient(
+                237.81deg,
+                #fb25ff -67.69%,
+                rgba(255, 255, 255, 0) 75.46%
+            ),
+            #ffcaed;
+        background-position: 0 0;
+        background-size: 200%;
+        &:hover {
+            animation: bg 10s infinite ease;
+        }
     }
 
     .adaptive_card {
@@ -141,24 +234,24 @@
             margin-bottom: 0;
         }
         .first {
-            width: 61px!important;
+            width: 61px !important;
         }
-        .second { 
-            top: 0!important;
-            left: 0!important;
-            position: relative!important;
+        .second {
+            top: 0 !important;
+            left: 0 !important;
+            position: relative !important;
         }
-        .second_wrapper { 
+        .second_wrapper {
             width: 108px;
             position: absolute;
             top: -35px;
             left: -25px;
             .second {
-                width: 100%!important;
+                width: 100% !important;
             }
         }
         .third {
-            width: 100%!important;
+            width: 100% !important;
         }
         .image_wrapper {
             width: 78px;

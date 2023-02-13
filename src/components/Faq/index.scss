@@ -72,7 +72,7 @@
         display: grid;
         place-content: center;
         border-radius: 50%;
-        transition: .3s ease-in-out;
+        transition: 0.3s ease-in-out;
     }
 
     @media screen and (max-width: 768px) {
@@ -116,12 +116,12 @@
 .faq .grid {
     border-bottom: 2px solid #fff;
     .item.active .accordion {
-        max-height: 150px;
+        max-height: 500px;
         padding-bottom: 23px;
     }
 
-    .item.active .image_wrapper { 
-        transition: .3s ease-in-out;
+    .item.active .image_wrapper {
+        transition: ease-in-out 0.2s;
         transform: rotate(-45deg);
     }
 }
@@ -137,7 +137,7 @@
     padding: 21px 0;
     border-top: 2px solid #fff;
     cursor: pointer;
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.2s;
 }
 
 .faq h4 {
@@ -161,7 +161,17 @@
     line-height: 120% !important;
     color: rgba(103, 103, 187, 0.7) !important;
 
+    a {
+        font-weight: 500 !important;
+        font-size: 20px !important;
+        line-height: 120% !important;
+        color: rgba(103, 103, 187, 1) !important;
+    }
+
     @media screen and (max-width: 768px) {
         font-size: 16px !important;
+        a { 
+            font-size: 16px;
+        }
     }
 }

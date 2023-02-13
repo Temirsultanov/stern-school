@@ -125,10 +125,6 @@
                 rgba(255, 255, 255, 0) 100%
             ),
             #ffcaed;
-        background-size: 400% 400%;
-        animation: gradient 20s infinite ease;
-        &:hover {
-        }
     }
     .row .card:nth-child(1) {
         background: linear-gradient(216.68deg, #3687ff 0%, #cd62ff 128.61%);
@@ -245,16 +241,5 @@
             line-height: 130%;
             color: #ffffff;
         }
-    }
-}
-@keyframes gradient {
-    0% {
-        background-position: 0%;
-    }
-    50% {
-        // background-position: 200px;
-    }
-    100% {
-        background-position: 0%;
     }
 }
