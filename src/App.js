@@ -13,11 +13,6 @@ const App = () => {
 
     return (
         <>
-            {/* {isLoading && (
-                <div class="loader-wrapper">
-                    <div class="loader"></div>
-                </div>
-            )} */}
             {show && <CallMe set={setShow}/>}
             
             <Header set={setShow}/>

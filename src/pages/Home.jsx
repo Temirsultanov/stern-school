@@ -49,16 +49,18 @@ function Card({ emoji }) {
     )
 }
 
+const hash = ['#about', '#about2', '#faq', '#comments']
+
 const Home = ({ set }) => {
     const [show, setShow] = React.useState(false)
     let location = useLocation()
     const [isLoading, setIsLoading] = React.useState(false)
 
-    // useEffect(() => {
-    //     setTimeout(() => {
-    //         setIsLoading(false)
-    //     }, 500)
-    // }, [])
+    useEffect(() => {
+        setTimeout(() => {
+            setIsLoading(false)
+        }, 500)
+    }, [])
     useEffect(() => {
         if (show) {
             document.body.style.overflowY = 'hidden'
@@ -66,8 +68,13 @@ const Home = ({ set }) => {
             document.body.style.overflowY = 'scroll'
         }
     }, [show])
+
     useEffect(() => {
-        window.location.href = location.hash
+        for (const key in hash) {
+            if (location.hash.includes(hash[key])) {
+                window.location.href = hash[key]
+            }
+        }
     }, [location.hash])
 
     return (
