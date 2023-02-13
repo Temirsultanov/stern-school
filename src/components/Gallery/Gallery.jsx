@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useOnClickOutside } from '../../utils/useOnClickOutside'
+import { useOnClickOutside } from '../../lib/useOnClickOutside'
 import Lightbox from 'react-image-lightbox'
 import 'react-image-lightbox/style.css' // T
 import './index.scss'

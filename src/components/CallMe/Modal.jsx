@@ -1,5 +1,5 @@
 import React from 'react'
-import { useOnClickOutside } from '../../utils/useOnClickOutside'
+import { useOnClickOutside } from '../../lib/useOnClickOutside'
 import InputMask from "react-input-mask"
 import './index.scss'
 

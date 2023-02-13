@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import './index.scss'
 import InputMask from 'react-input-mask'
 import axios from 'axios'
-import { useOnClickOutside } from '../../utils/useOnClickOutside'
+import { useOnClickOutside } from '../../lib/useOnClickOutside'
+import { createNotification } from '../../lib/createNotification'
 
 const Modal = ({ state, set }) => {
     const [fio, setFio] = useState('')
@@ -22,7 +23,8 @@ const Modal = ({ state, set }) => {
                     phone,
                     form,
                 })
-                .then((res) => console.log('success'))
+                .then((res) => createNotification('success'))
+                .catch((err) => createNotification('error'))
         }
     }
 
