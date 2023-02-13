@@ -52,13 +52,13 @@ function Card({ emoji }) {
 const Home = ({ set }) => {
     const [show, setShow] = React.useState(false)
     let location = useLocation()
-    const [isLoading, setIsLoading] = React.useState(true)
+    const [isLoading, setIsLoading] = React.useState(false)
 
-    useEffect(() => {
-        setTimeout(() => {
-            setIsLoading(false)
-        }, 500)
-    }, [])
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setIsLoading(false)
+    //     }, 500)
+    // }, [])
     useEffect(() => {
         if (show) {
             document.body.style.overflowY = 'hidden'
