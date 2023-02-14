@@ -36,7 +36,11 @@ const Cost = ({ setShow }) => {
                             {[1, 2, 3].map((item, index) => (
                                 <SwiperSlide>
                                     <div className="card" key={index}>
-                                        <p className="cost_text">72 000 ₽</p>
+                                        <p className="cost_text">
+                                            {grade === 0
+                                                ? '44 900 ₽'
+                                                : '72 000 ₽'}
+                                        </p>
                                         <h2>Стоимость</h2>
                                         <div className="grades">
                                             <div
@@ -57,15 +61,20 @@ const Cost = ({ setShow }) => {
                                                 }
                                                 onClick={() => setGrade(1)}
                                             >
-                                                10-11 класс
+                                                9-11 класс
                                             </div>
                                         </div>
                                         <h5>
-                                            160 000 ₽ - стоимость такого же
-                                            количества занятий в школе
+                                            {grade === 0
+                                                ? '60 000 ₽'
+                                                : '160 000 ₽'}{' '}
+                                            - стоимость такого же количества
+                                            занятий в школе
                                         </h5>
                                         <p className="subcost">
-                                            160 000₽ - 72 000₽ = 88 000₽
+                                            {grade === 0
+                                                ? '60 000₽ - 44 900₽ = 15 100₽'
+                                                : '160 000₽ - 72 000₽ = 88 000₽'}{' '}
                                             экономии
                                         </p>
                                         <div className="grid">
