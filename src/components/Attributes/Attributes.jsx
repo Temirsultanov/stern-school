@@ -2,15 +2,19 @@ import React from 'react'
 import './index.scss'
 import InputMask from 'react-input-mask'
 import axios from 'axios'
+import { toast } from 'react-toastify'
 
 const Attributes = () => {
     const [phone, setPhone] = React.useState('')
 
+    const notify = () => toast.success('Заявка отправлена!!')
+    const notifyError = () => toast.error('Ошибка отправки!!')
+
     const Send = () => {
         axios
             .post('https://kurs.stern.xyz:8002/api/v1/feedback/', {phone})
-            .then(console.log('success'))
-            .catch((err) => console.error(err))
+            .then(res => notify())
+            .catch((err) => notifyError())
     }
 
     return (

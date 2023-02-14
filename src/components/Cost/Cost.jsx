@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import './index.scss'
 
 const Cost = ({ setShow }) => {
+    const [grade, setGrade] = React.useState(0)
     let swiperRef = React.useRef(null)
 
     return (
@@ -38,10 +39,24 @@ const Cost = ({ setShow }) => {
                                         <p className="cost_text">72 000 ₽</p>
                                         <h2>Стоимость</h2>
                                         <div className="grades">
-                                            <div className="grade">
+                                            <div
+                                                className={
+                                                    grade === 0
+                                                        ? 'grade active'
+                                                        : 'grade'
+                                                }
+                                                onClick={() => setGrade(0)}
+                                            >
                                                 1-8 класс
                                             </div>
-                                            <div className="grade active">
+                                            <div
+                                                className={
+                                                    grade === 1
+                                                        ? 'grade active'
+                                                        : 'grade'
+                                                }
+                                                onClick={() => setGrade(1)}
+                                            >
                                                 10-11 класс
                                             </div>
                                         </div>
@@ -107,10 +122,24 @@ const Cost = ({ setShow }) => {
                                             slidesPerView={1.4}
                                             className="mySwiper"
                                         >
-                                            <SwiperSlide className="slide active">
+                                            <SwiperSlide
+                                                onClick={() => setGrade(0)}
+                                                className={
+                                                    grade === 0
+                                                        ? 'slide active'
+                                                        : 'slide'
+                                                }
+                                            >
                                                 1-8 класс
                                             </SwiperSlide>
-                                            <SwiperSlide className="slide">
+                                            <SwiperSlide
+                                                onClick={() => setGrade(1)}
+                                                className={
+                                                    grade === 1
+                                                        ? 'slide active'
+                                                        : 'slide'
+                                                }
+                                            >
                                                 10-11 класс
                                             </SwiperSlide>
                                         </Swiper>

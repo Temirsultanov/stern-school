@@ -3,6 +3,7 @@ import './index.scss'
 import InputMask from 'react-input-mask'
 import axios from 'axios'
 import { useOnClickOutside } from '../../lib/useOnClickOutside'
+import { toast } from 'react-toastify'
 
 const Modal = ({ state, set }) => {
     const [fio, setFio] = useState('')
@@ -11,6 +12,8 @@ const Modal = ({ state, set }) => {
     let ref = React.useRef(null)
 
     useOnClickOutside(ref, () => set(false))
+    const notify = () => toast.success('Заявка отправлена!!')
+    const notifyError = () => toast.error('Ошибка отправки!!')
 
     const handleSend = () => {
         if (form.length === 0 || phone.length === 0 || fio.length === 0) {
@@ -22,8 +25,11 @@ const Modal = ({ state, set }) => {
                     phone,
                     form,
                 })
-                .then((res) => set(true))
-                .catch((err) => console.log(err))
+                .then((res) => {
+                    set(true)
+                    notify()
+                })
+                .catch((err) => notifyError())
                 .finally(() => set(false))
         }
     }

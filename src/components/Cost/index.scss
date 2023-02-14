@@ -37,6 +37,7 @@
             align-items: center;
             gap: 18px;
             .grade {
+                cursor: pointer;
                 font-weight: 600;
                 font-size: 48px;
                 line-height: 120%;
@@ -182,8 +183,6 @@
         .arrows {
             display: none;
         }
-        .adaptive_slider {
-        }
         .roket {
             top: -10px;
             left: -7px;
@@ -205,6 +204,7 @@
             border-radius: 25px;
         }
         .slide {
+            color: #fff;
             padding: 0 21px;
             font-weight: 600;
             font-size: 36px;

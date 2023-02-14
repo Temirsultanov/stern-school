@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import AnimatedText from '../AnimatedText'
 import './index.scss'
 import axios from 'axios'
+import { toast } from 'react-toastify'
 
 const data = [
     {
@@ -64,11 +65,13 @@ const FaqItem = ({ data }) => {
 
 const Faq = () => {
     const [phone, setPhone] = React.useState('')
+    const notify = () => toast.success('Заявка отправлена!!')
+    const notifyError = () => toast.error('Ошибка отправки!!')
     const Send = () => {
         axios
             .post('https://kurs.stern.xyz:8002/api/v1/feedback/', { phone })
-            .then(console.log('success'))
-            .catch((err) => console.error(err))
+            .then((res) => notify())
+            .catch((err) => notifyError())
     }
     return (
         <div className="faq" id="faq">

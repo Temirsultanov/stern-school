@@ -3,18 +3,21 @@ import { useOnClickOutside } from '../../lib/useOnClickOutside'
 import InputMask from 'react-input-mask'
 import './index.scss'
 import axios from 'axios'
+import { toast } from 'react-toastify'
 
 const CallMe = ({ set }) => {
     let ref = React.useRef(null)
     const [phone, setPhone] = React.useState('')
 
     useOnClickOutside(ref, () => set(false))
+    const notify = () => toast.success('Заявка отправлена!!')
+    const notifyError = () => toast.error('Ошибка отправки!!')
 
     const Send = () => {
         axios
             .post('https://kurs.stern.xyz:8002/api/v1/feedback/', { phone })
-            .then(console.log('success'))
-            .catch((err) => console.error(err))
+            .then(res => notify())
+            .catch((err) => notifyError())
     }
 
     return (
