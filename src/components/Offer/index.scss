@@ -118,7 +118,7 @@
     max-width: 813px;
 
     h2 {
-        margin-bottom: 89px;
+        margin-bottom: 25px;
         font-weight: 700;
         font-size: 96px;
         line-height: 120%;
@@ -148,12 +148,11 @@
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 54px);
-        row-gap: 26px;
+        row-gap: 20px;
     }
 
     .card {
-        display: grid;
-        grid-template-columns: 54px 1fr;
+        display: flex;
         column-gap: 19px;
     }
     p {
@@ -169,6 +168,7 @@
         place-content: center;
         font-weight: 600;
         font-size: 24px;
+        padding: 0 32px;
         color: #6767bb;
     }
     @media screen and (max-width: 768px) {
