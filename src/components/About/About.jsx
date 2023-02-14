@@ -107,7 +107,7 @@ const About = ({ set }) => {
                             <InputMask
                                 mask="+7 (999) 999-99-99"
                                 placeholder="+7 (___) ___-__-__"
-                                value={setPhone}
+                                value={phone}
                                 onChange={e => setPhone(e.target.value)}
                             />
                             <button onClick={() => Send()}>Отправить</button>

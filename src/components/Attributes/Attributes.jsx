@@ -12,8 +12,8 @@ const Attributes = () => {
 
     const Send = () => {
         axios
-            .post('https://kurs.stern.xyz:8002/api/v1/feedback/', {phone})
-            .then(res => notify())
+            .post('https://kurs.stern.xyz:8002/api/v1/feedback/', { phone })
+            .then((res) => notify())
             .catch((err) => notifyError())
     }
 
@@ -82,10 +82,7 @@ const Attributes = () => {
                         </div>
                         <div className="card">
                             <div className="image_wrapper white">
-                                <img
-                                    src="./images/modal/phone.png"
-                                    alt=""
-                                />
+                                <img src="./images/modal/phone.png" alt="" />
                             </div>
                             <h4>
                                 Остались вопросы?
@@ -96,7 +93,7 @@ const Attributes = () => {
                                     mask="+7 (999) 999-99-99"
                                     placeholder="+7 (___) ___-__-__"
                                     value={phone}
-                                    onClick={(e) => setPhone(e.target.value)}
+                                    onChange={(e) => setPhone(e.target.value)}
                                 />
                                 <button onClick={() => Send()}>
                                     Отправить
