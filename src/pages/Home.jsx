@@ -53,12 +53,12 @@ const hash = ['#about', '#about2', '#faq', '#comments']
 
 const Home = ({ set, showRegister, setShowRegister }) => {
     let location = useLocation()
-    const [isLoading, setIsLoading] = React.useState(false)
+    const [isLoading, setIsLoading] = React.useState(true)
 
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false)
-        }, 500)
+        }, 1000)
     }, [])
 
     useEffect(() => {
