@@ -78,7 +78,7 @@
         }
     }
 
-    img {
+    .image_wrapper {
         position: absolute;
         right: -111px;
     }
@@ -119,7 +119,7 @@
             height: 58px;
             font-weight: 600;
         }
-        img {
+        .image_wrapper {
             display: none;
         }
         .grid_column {

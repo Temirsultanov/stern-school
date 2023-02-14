@@ -32,19 +32,19 @@
         display: grid;
         place-content: center;
         background: #fff;
-        img.first {
+        .first {
             width: 223px;
         }
-        img.second {
+        .second {
             width: 400px;
             position: absolute;
             top: -130px;
             left: -100px;
         }
-        img.third {
+        .third {
             width: 284px;
         }
-        img.forth {
+        .forth {
             width: 285px;
         }
     }

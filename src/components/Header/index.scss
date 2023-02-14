@@ -1,9 +1,13 @@
-header {
+.header {
     overflow: hidden;
 }
 .header_top {
     background: #6767bb;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
     .wrapper {
         height: 38px;
         display: flex;
@@ -30,7 +34,7 @@ header {
             cursor: pointer;
             &:hover {
                 p {
-                    color:  #e2e2e2;
+                    color: #e2e2e2;
                     transition: 0.3s all ease;
                 }
                 path {
@@ -70,7 +74,10 @@ header {
 }
 
 .header_bottom {
-    margin-top: 21px;
+    margin-top: 38px;
+    padding: 21px 0;
+
+    background: #ffedfa;
     .wrapper {
         height: 40px;
         display: flex;
@@ -111,10 +118,11 @@ header {
     display: grid;
     grid-template-columns: repeat(4, 228px);
     justify-content: space-between;
-    align-items: center; transition: 0.3s all ease;
+    align-items: center;
+    transition: 0.3s all ease;
     &:hover {
         box-shadow: 5px 5px 15px 0 rgba(150, 150, 150, 0.8),
-        -5px -5px 15px 0 rgba(255, 255, 255, 0.8);
+            -5px -5px 15px 0 rgba(255, 255, 255, 0.8);
     }
     a {
         font-weight: 500;
@@ -208,7 +216,8 @@ header {
         top: 30px;
         cursor: pointer;
     }
-    a, p {
+    a,
+    p {
         font-weight: 700;
         font-size: 36px;
         line-height: 49px;

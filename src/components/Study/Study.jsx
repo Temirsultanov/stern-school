@@ -1,4 +1,5 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import './index.scss'
 
 const Study = () => {
@@ -9,73 +10,91 @@ const Study = () => {
                     <h2>К чему готовим</h2>
                     <div className="grid">
                         <div className="card">
-                            <img
+                            <LazyLoadImage
                                 src="./images/study/image7.png"
-                                alt=""
+                                width={'100%'}
+                                height={'100%'}
+                                alt="Image Alt"
                                 className="bg"
                             />
                             <div className="image_wrapper">
                                 <div className="image">
-                                    <img
+                                    <LazyLoadImage
                                         src="./images/study/image1.svg"
-                                        alt=""
+                                        width={'100%'}
+                                        height={'100%'}
+                                        alt="Image Alt"
                                     />
                                 </div>
                                 <p className="first">ЕГЭ/ОГЭ</p>
                             </div>
                         </div>
                         <div className="card">
-                            <img
+                            <LazyLoadImage
                                 src="./images/study/image8.png"
-                                alt=""
+                                width={'100%'}
+                                height={'100%'}
+                                alt="Image Alt"
                                 className="bg"
                             />
                             <div className="image_wrapper">
                                 <div className="image">
-                                    <img
+                                    <LazyLoadImage
                                         src="./images/study/image2.svg"
-                                        alt=""
+                                        width={'100%'}
+                                        height={'100%'}
+                                        alt="Image Alt"
                                     />
                                 </div>
                                 <p className="second">ДВИ МГУ</p>
                             </div>
                         </div>
                         <div className="card">
-                            <img
+                            <LazyLoadImage
                                 src="./images/study/image9.png"
-                                alt=""
+                                width={'100%'}
+                                height={'100%'}
+                                alt="Image Alt"
                                 className="bg"
                             />
                             <div className="image_wrapper">
                                 <div className="image">
-                                    <img
+                                    <LazyLoadImage
                                         src="./images/study/image3.svg"
-                                        alt=""
+                                        width={'100%'}
+                                        height={'100%'}
+                                        alt="Image Alt"
                                     />
                                 </div>
                                 <p className="third">ВСОШ</p>
                             </div>
                         </div>
                         <div className="card">
-                            <img
+                            <LazyLoadImage
                                 src="./images/study/image10.png"
-                                alt=""
+                                width={'100%'}
+                                height={'100%'}
+                                alt="Image Alt"
                                 className="bg"
                             />
                             <div className="image_wrapper">
                                 <div className="image">
-                                    <img
+                                    <LazyLoadImage
                                         src="./images/study/image4.svg"
-                                        alt=""
+                                        width={'100%'}
+                                        height={'100%'}
+                                        alt="Image Alt"
                                     />
                                 </div>
                                 <p className="fourth">Покори Воробьевы горы!</p>
                             </div>
                         </div>
                         <div className="card">
-                            <img
+                            <LazyLoadImage
                                 src="./images/study/image11.png"
-                                alt=""
+                                width={'100%'}
+                                height={'100%'}
+                                alt="Image Alt"
                                 className="bg"
                             />
                             <div className="image_wrapper">
@@ -89,9 +108,11 @@ const Study = () => {
                             </div>
                         </div>
                         <div className="card">
-                            <img
+                            <LazyLoadImage
                                 src="./images/study/image12.png"
-                                alt=""
+                                width={'100%'}
+                                height={'100%'}
+                                alt="Image Alt"
                                 className="bg"
                             />
                             <div className="image_wrapper">

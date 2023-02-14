@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import './index.scss'
 
 const Header = ({ set, setShowRegister }) => {
@@ -118,16 +119,36 @@ const Header = ({ set, setShowRegister }) => {
             <div className="adaptive_header">
                 <div className="icons">
                     <div className="image_wrapper">
-                        <img src="./images/header/phone.svg" alt="" />
+                        <LazyLoadImage
+                            src="./images/header/phone.svg"
+                            width={'100%'}
+                            height={'100%'}
+                            alt="Image Alt"
+                        />
                     </div>
                     <div className="image_wrapper">
-                        <img src="./images/header/mail.svg" alt="" />
+                        <LazyLoadImage
+                            src="./images/header/mail.svg"
+                            width={'100%'}
+                            height={'100%'}
+                            alt="Image Alt"
+                        />
                     </div>
                     <div className="image_wrapper">
-                        <img src="./images/header/whats.svg" alt="" />
+                        <LazyLoadImage
+                            src="./images/header/whats.svg"
+                            width={'100%'}
+                            height={'100%'}
+                            alt="Image Alt"
+                        />
                     </div>
                     <div className="image_wrapper">
-                        <img src="./images/header/telegram.svg" alt="" />
+                        <LazyLoadImage
+                            src="./images/header/telegram.svg"
+                            width={'100%'}
+                            height={'100%'}
+                            alt="Image Alt"
+                        />
                     </div>
                 </div>
                 <div className="burger" onClick={() => setShow(true)}>

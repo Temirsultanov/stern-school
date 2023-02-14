@@ -14,6 +14,7 @@
         row-gap: 93px;
         column-gap: 190px;
         justify-content: space-between;
+        padding: 0 40px;
     }
 
     .card {
@@ -82,8 +83,6 @@
             top: -17px!important;
             left: 17px!important;
         }
-        .card {
-        }
         p {
             font-size: 11px !important;
             padding: 0 4px;
@@ -99,6 +98,7 @@
             row-gap: 42px;
             column-gap: 0;
             margin-right: 18px;
+            padding: 0;
         }
         .image_wrapper {
             padding: 22px 0 22px!important;

@@ -1,4 +1,5 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import './index.scss'
 
 const Includes = () => {
@@ -9,7 +10,14 @@ const Includes = () => {
                     <div className="texts"></div>
                     <div className="top_card">
                         <h2>Что включает в себя смена?</h2>
-                        <img src="./images/attributes/first.png" alt="" />
+                        <div className="image_wrapper">
+                            <LazyLoadImage
+                                src="./images/attributes/first.png"
+                                width={'100%'}
+                                height={'100%'}
+                                alt="Image Alt"
+                            />
+                        </div>
                         <div className="texts">
                             <p>Интенсив по олимпиадной математике</p>
                             <p>Интеллектуальные квесты</p>

@@ -1,4 +1,5 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 import './index.scss'
 
 const GoMain = () => {
@@ -6,7 +7,14 @@ const GoMain = () => {
         <div className="go_main">
             <div className="wrapper">
                 <div className="cont">
-                    <img src="./images/go/ping.png" alt="" />
+                    <div className="image_wrapper">
+                        <LazyLoadImage
+                            src="./images/go/ping.png"
+                            width={'100%'}
+                            height={'100%'}
+                            alt="Image Alt"
+                        />
+                    </div>
                     <h2>Что взять с собой</h2>
                     <a href="./files/go.pdf" target="_blank">
                         <button className="dowload">Скачать памятку</button>
