@@ -118,38 +118,54 @@ const Header = ({ set, setShowRegister }) => {
             </div>
             <div className="adaptive_header">
                 <div className="icons">
-                    <div className="image_wrapper">
+                    <a
+                        href="tel:+7936512 0601"
+                        target={'_blank'}
+                        className="image_wrapper"
+                    >
                         <LazyLoadImage
                             src="./images/header/phone.svg"
                             width={'100%'}
                             height={'100%'}
                             alt="Image Alt"
                         />
-                    </div>
-                    <div className="image_wrapper">
+                    </a>
+                    <a
+                        href="mailto:hi@stern.xyz"
+                        target={'_blank'}
+                        className="image_wrapper"
+                    >
                         <LazyLoadImage
                             src="./images/header/mail.svg"
                             width={'100%'}
                             height={'100%'}
                             alt="Image Alt"
                         />
-                    </div>
-                    <div className="image_wrapper">
+                    </a>
+                    <a
+                        href="https://wa.clck.bar/79365120601"
+                        className="image_wrapper"
+                        target={'_blank'}
+                    >
                         <LazyLoadImage
                             src="./images/header/whats.svg"
                             width={'100%'}
                             height={'100%'}
                             alt="Image Alt"
                         />
-                    </div>
-                    <div className="image_wrapper">
+                    </a>
+                    <a
+                        href="https://t.me/shternik3"
+                        target={'_blank'}
+                        className="image_wrapper"
+                    >
                         <LazyLoadImage
                             src="./images/header/telegram.svg"
                             width={'100%'}
                             height={'100%'}
                             alt="Image Alt"
                         />
-                    </div>
+                    </a>
                 </div>
                 <div className="burger" onClick={() => setShow(true)}>
                     <span></span>
