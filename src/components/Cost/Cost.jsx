@@ -15,12 +15,26 @@ const Cost = ({ setShow }) => {
                             <img
                                 src="./images/cost/arrow.svg"
                                 alt=""
-                                onClick={() => swiperRef.current?.slidePrev()}
+                                onClick={() => {
+                                    swiperRef.current?.slidePrev()
+                                    if (grade === 1) {
+                                        setGrade(0)
+                                    } else {
+                                        setGrade(1)
+                                    }
+                                }}
                             />
                             <img
                                 src="./images/cost/arrow.svg"
                                 alt=""
-                                onClick={() => swiperRef.current?.slideNext()}
+                                onClick={() => {
+                                    swiperRef.current?.slideNext()
+                                    if (grade === 0) {
+                                        setGrade(1)
+                                    } else {
+                                        setGrade(0)
+                                    }
+                                }}
                             />
                         </div>
                         <Swiper
@@ -28,14 +42,13 @@ const Cost = ({ setShow }) => {
                             spaceBetween={20}
                             slidesPerView={1}
                             className="slider_swiper"
-                            initialSlide={1}
                             onBeforeInit={(swiper) => {
                                 swiperRef.current = swiper
                             }}
                         >
-                            {[1, 2, 3].map((item, index) => (
+                            {[0, 1].map((item) => (
                                 <SwiperSlide>
-                                    <div className="card" key={index}>
+                                    <div className="card">
                                         <p className="cost_text">
                                             {grade === 0
                                                 ? '44 900 ₽'
@@ -99,10 +112,9 @@ const Cost = ({ setShow }) => {
                                                     />
                                                 </div>
                                                 <p>
-                                                    Самый лучший способ
-                                                    заполнить все пробелы в
-                                                    знаних и подготовиться к
-                                                    ОГЭ/ЕГЭ
+                                                    {grade === 0
+                                                        ? 'Самый лучший способ заполнить все пробелы в знаних и подготовиться к поступлению в матшколы и олимпиадам'
+                                                        : 'Самый лучший способ заполнить все пробелы в знаних и подготовиться к ОГЭ/ЕГЭ'}
                                                 </p>
                                             </div>
                                         </div>

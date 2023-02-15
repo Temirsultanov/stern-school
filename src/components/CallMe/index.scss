@@ -72,7 +72,10 @@
     }
     .texts {
         margin-top: 47px;   
-        p {
+        display: flex;
+        flex-direction: column;
+        a {
+            white-space: nowrap;
             font-weight: 700;
             font-size: 33px;
             line-height: 45px;

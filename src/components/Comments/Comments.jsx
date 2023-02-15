@@ -11,7 +11,7 @@ const data = [
     },
     {
         type: 'video',
-        url: './images/comments/video1.mp4',
+        url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Hvgv4TEJ84Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe> ',
     },
     {
         type: 'text',
@@ -80,21 +80,15 @@ const Video = ({ url }) => {
                 />
             )}
 
-            <video
-                ref={vidRef}
-                className={!isPlaying && 'blur'}
-                onClick={() => {
-                    if (isPlaying) {
-                        setIsPlaying(false)
-                        vidRef.current.pause()
-                    } else {
-                        setIsPlaying(true)
-                        vidRef.current.play()
-                    }
-                }}
-            >
-                <source src={url} />
-            </video>
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/Hvgv4TEJ84Y"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+            ></iframe>
         </>
     )
 }

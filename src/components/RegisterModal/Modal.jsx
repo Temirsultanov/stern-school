@@ -65,8 +65,8 @@ const Modal = ({ state, set }) => {
                     />
                     <button onClick={() => handleSend()}>Отправить</button>
                     <div className="texts">
-                        <p>+7 (936) 512-06-01</p>
-                        <p>hi@stern.xyz</p>
+                        <a href="tel:+7 (936) 512-06-01">+7 (936) 512-06-01</a>
+                        <a href="mailto:hi@stern.xyz">hi@stern.xyz</a>
                     </div>
                 </div>
             </div>

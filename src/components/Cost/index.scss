@@ -9,7 +9,7 @@
     }
     .card {
         padding: 27px 104px 6px;
-        position: relative;
+        position: relative;height: 750px;
         background: url(../../../public/images/cost/bg.png) no-repeat;
         background-size: 100%;
         // min-height: 800px;
@@ -103,13 +103,16 @@
             place-content: center;
             margin-right: 26px;
 
-            &.moun {overflow: hidden;
+            &.moun {
+                overflow: hidden;
                 width: 100%;
             }
         }
 
         span {
-            margin-top: 80px;
+            position: absolute;
+            right: 72px;
+            bottom: 6px;
             margin-left: auto;
             font-weight: 700;
             font-size: 16px;
@@ -211,7 +214,6 @@
             line-height: 120%;
             border-radius: 40.391px;
             background: rgba(255, 255, 255, 0.25);
-            box-shadow: 0px 5.14067px 11.0157px rgba(0, 0, 0, 0.15);
             text-align: center;
             &.active {
                 background: #fff;

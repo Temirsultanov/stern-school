@@ -13,7 +13,7 @@ const Footer = () => {
                             <br /> Наук
                         </h2>
                         <div className="column">
-                            <a href="https://t.me/shternik3" className="card">
+                            <a href="https://t.me/mathsabout" className="card">
                                 <div className="image_wrapper">
                                     <img
                                         src="./images/footer/telegram.svg"
@@ -48,14 +48,14 @@ const Footer = () => {
                             </a>
                         </div>
                         <div className="column large">
-                            <a href="tel:+7936512 0601" className="card">
+                            <a href="tel:+7 936 512-06-01" className="card">
                                 <div className="image_wrapper">
                                     <img
                                         src="./images/footer/phone.svg"
                                         alt=""
                                     />
                                 </div>
-                                <p>+7 (985) 971 11 11</p>
+                                <p>+7 936 512-06-01</p>
                             </a>
                             <a href="mailto:hi@stern.xyz" className="card">
                                 <div className="image_wrapper">
@@ -64,7 +64,7 @@ const Footer = () => {
                                         alt=""
                                     />
                                 </div>
-                                <p>pochtaschool@gmail.com</p>
+                                <p>hi@stern.xyz</p>
                             </a>
                         </div>
                     </div>

@@ -18,7 +18,7 @@ const Header = ({ set, setShowRegister }) => {
             <div className="header_top">
                 <div className="wrapper">
                     <div className="info">
-                        <a href="tel:+7936512 0601" className="info_card">
+                        <a href="tel:+7 936 512-06-01" className="info_card">
                             <div className="image_wrapper">
                                 <svg
                                     width="13"
@@ -33,7 +33,7 @@ const Header = ({ set, setShowRegister }) => {
                                     />
                                 </svg>
                             </div>
-                            <p>+7 (985) 971 11 11</p>
+                            <p>+7 936 512-06-01</p>
                         </a>
                         <a href="mailto:hi@stern.xyz" className="info_card">
                             <div className="image_wrapper">
@@ -50,7 +50,7 @@ const Header = ({ set, setShowRegister }) => {
                                     />
                                 </svg>
                             </div>
-                            <p>pochtaschool@gmail.com</p>
+                            <p>hi@stern.xyz</p>
                         </a>
                     </div>
                     <div className="icons">
@@ -119,9 +119,9 @@ const Header = ({ set, setShowRegister }) => {
             <div className="adaptive_header">
                 <div className="icons">
                     <a
-                        href="tel:+7936512 0601"
+                        href="tel:+7 936 512-06-01"
                         target={'_blank'}
-                        className="image_wrapper"
+                        className="image_wrapper" rel="noreferrer"
                     >
                         <LazyLoadImage
                             src="./images/header/phone.svg"
@@ -133,7 +133,7 @@ const Header = ({ set, setShowRegister }) => {
                     <a
                         href="mailto:hi@stern.xyz"
                         target={'_blank'}
-                        className="image_wrapper"
+                        className="image_wrapper" rel="noreferrer"
                     >
                         <LazyLoadImage
                             src="./images/header/mail.svg"
@@ -145,7 +145,7 @@ const Header = ({ set, setShowRegister }) => {
                     <a
                         href="https://wa.clck.bar/79365120601"
                         className="image_wrapper"
-                        target={'_blank'}
+                        target={'_blank'} rel="noreferrer"
                     >
                         <LazyLoadImage
                             src="./images/header/whats.svg"
@@ -157,7 +157,7 @@ const Header = ({ set, setShowRegister }) => {
                     <a
                         href="https://t.me/shternik3"
                         target={'_blank'}
-                        className="image_wrapper"
+                        className="image_wrapper" rel="noreferrer"
                     >
                         <LazyLoadImage
                             src="./images/header/telegram.svg"
