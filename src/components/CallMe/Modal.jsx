@@ -16,7 +16,10 @@ const CallMe = ({ set }) => {
     const Send = () => {
         axios
             .post('https://kurs.stern.xyz:8002/api/v1/feedback/', { phone })
-            .then((res) => notify())
+            .then((res) => {
+                notify()
+                set(false)
+            })
             .catch((err) => notifyError())
     }
 
