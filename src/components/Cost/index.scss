@@ -277,10 +277,12 @@
             .adaptive_card2 {
                 display: grid;
                 grid-template-columns: 26px 1fr;
-                grid-template-rows: 26px;
+                grid-template-rows: auto;
                 column-gap: 11px;
                 align-items: center;
-                &:nth-child(1) {
+                padding-right: 11px;
+                .card_image { 
+                    height: 26px;
                 }
                 &:nth-child(2) {
                     .card_image {
