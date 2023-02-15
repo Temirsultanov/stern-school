@@ -99,6 +99,7 @@
         height: 581px;
         border-radius: 50%;
         img {
+            transition: .15s all ease;
             object-fit: cover;
         }
     }

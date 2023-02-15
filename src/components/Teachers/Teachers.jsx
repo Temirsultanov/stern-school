@@ -101,7 +101,14 @@ const Teachers = () => {
                             {data.map((slide, index) => (
                                 <SwiperSlide key={index}>
                                     <div className="image">
-                                        <ProgressiveImage
+                                        <LazyLoadImage
+                                            src={slide.image}
+                                            placeholderSrc={slide.placeholder}
+                                            width={'100%'}
+                                            height={'100%'}
+                                            alt="Image Alt"
+                                        />
+                                        {/* <ProgressiveImage
                                             src={slide.image}
                                             placeholder={slide.placeholder}
                                         >
@@ -118,7 +125,7 @@ const Teachers = () => {
                                                     height="465"
                                                 />
                                             )}
-                                        </ProgressiveImage>
+                                        </ProgressiveImage> */}
                                     </div>
                                     <div className="text">
                                         <h5>{slide.name}</h5>
