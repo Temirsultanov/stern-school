@@ -108,24 +108,6 @@ const Teachers = () => {
                                             height={'100%'}
                                             alt="Image Alt"
                                         />
-                                        {/* <ProgressiveImage
-                                            src={slide.image}
-                                            placeholder={slide.placeholder}
-                                        >
-                                            {(src, loading) => (
-                                                <img
-                                                    className={`${
-                                                        loading
-                                                            ? ' loading'
-                                                            : ' loaded'
-                                                    }`}
-                                                    src={src}
-                                                    alt="sea beach"
-                                                    width="700"
-                                                    height="465"
-                                                />
-                                            )}
-                                        </ProgressiveImage> */}
                                     </div>
                                     <div className="text">
                                         <h5>{slide.name}</h5>
