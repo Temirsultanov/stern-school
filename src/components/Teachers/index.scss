@@ -95,6 +95,9 @@
     .image {
         margin-left: 10px;
         overflow: hidden;
+        width: 581px;
+        height: 581px;
+        border-radius: 50%;
         img {
             object-fit: cover;
         }
@@ -108,7 +111,7 @@
 
     .loaded {
         filter: blur(0px);
-        transition: filter 0.5s linear;
+        transition: filter 0.4s linear;
     }
 
     @media screen and (max-width: 768px) {
@@ -140,8 +143,10 @@
             display: none;
         }
         .image {
-            display: flex;
-            justify-content: center;
+            overflow: hidden;
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
         }
         .text {
             padding: 14px 8px 20px 16px;
