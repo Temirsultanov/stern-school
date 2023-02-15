@@ -117,11 +117,11 @@ const Comments = () => {
                         window.innerWidth < 768
                             ? 1.169
                             : window.innerWidth > 2000
-                            ? 8
+                            ? 5
                             : 5
                     }
                     className="mySwiper"
-                    initialSlide={window.innerWidth < 657 ? 2 : 1}
+                    initialSlide={window.innerWidth < 768 ? 2 : 0}
                     onBeforeInit={(swiper) => {
                         swiperRef.current = swiper
                     }}
