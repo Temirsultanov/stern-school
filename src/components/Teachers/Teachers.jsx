@@ -50,11 +50,6 @@ const data = [
         image: './images/teachers/photo7.jpeg',
     },
     {
-        name: 'АВДАСЕВ Олег',
-        text: 'Преподаватель программирования и математики',
-        image: './images/teachers/photo8.jpeg',
-    },
-    {
         name: 'МУДИНОВ Темур',
         text: 'Преподаватель биологии',
         image: './images/teachers/photo9.jpeg',
