@@ -111,7 +111,7 @@
 
     .loaded {
         filter: blur(0px);
-        transition: filter 0.4s linear;
+        transition: filter 0.15s linear;
     }
 
     @media screen and (max-width: 768px) {

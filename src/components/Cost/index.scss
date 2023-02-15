@@ -9,7 +9,8 @@
     }
     .card {
         padding: 27px 104px 6px;
-        position: relative;height: 750px;
+        position: relative;
+        height: 750px;
         background: url(../../../public/images/cost/bg.png) no-repeat;
         background-size: 100%;
         // min-height: 800px;
@@ -281,7 +282,7 @@
                 column-gap: 11px;
                 align-items: center;
                 padding-right: 11px;
-                .card_image { 
+                .card_image {
                     height: 26px;
                 }
                 &:nth-child(2) {
