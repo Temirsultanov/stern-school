@@ -11,13 +11,18 @@ const data = [
     },
     {
         type: 'video',
-        url: '<iframe width="560" height="315" src="https://www.youtube.com/embed/Hvgv4TEJ84Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe> ',
+        url: 'https://kurs.stern.xyz:8002/media/videos/test.mp4',
     },
+
     {
         type: 'text',
         name: 'Дарья',
         messanger: 'Telegram',
         text: 'Спасибо большое! Вы делаете прекрасное дело!',
+    },
+    {
+        type: 'video',
+        url: 'https://kurs.stern.xyz:8002/media/videos/video2.mp4 ',
     },
     {
         type: 'text',
@@ -26,10 +31,18 @@ const data = [
         text: 'Спасибо вам за великолепную смену!!! Детям очень понравилось. Столько положительных эмоций. С наступающим новым годом вас!!!а',
     },
     {
+        type: 'video',
+        url: 'https://kurs.stern.xyz:8002/media/videos/video3.mp4 ',
+    },
+    {
         type: 'text',
         name: 'Анна',
         messanger: 'Telegram',
         text: 'Спасибо огромное организаторам и вожатым за отличную организацию, Серена счастлив, всю дорогу домой рассказывал, сколько всего полезного, нового он узнал. Вы молодцы, уже не первый раз с вами, на май собираются уже вдвоем Серга и Ваня. С Наступающим Новым Годом и Рождеством! Новых идей инициатив, замечательных преподавателей и дружных ребят!',
+    },
+    {
+        type: 'video',
+        url: 'https://kurs.stern.xyz:8002/media/videos/video4.mp4 ',
     },
     {
         type: 'text',
@@ -38,10 +51,18 @@ const data = [
         text: 'Какие молодцы, шикарный праздник ребятам организовали, СПАСИБО!<br/><br/> И всех с наступающими праздниками! Пусть заряд и настроение сохранятся на новый рывок:)<br/><br/>Особенно ребятам из нашего 1го отряда от души желаю справиться с завершением года с честью и поступить в те ВУЗы, которые являются фокусными :))',
     },
     {
+        type: 'video',
+        url: 'https://kurs.stern.xyz:8002/media/videos/video5.mp4 ',
+    },
+    {
         type: 'text',
         name: 'Татьяна',
         messanger: 'Telegram',
         text: 'Спасибо огромное за внимание и креативность в обучении детей!!!',
+    },
+    {
+        type: 'video',
+        url: 'https://kurs.stern.xyz:8002/media/videos/video6.mp4 ',
     },
     {
         type: 'text',
@@ -79,6 +100,21 @@ const Video = ({ url }) => {
                     }}
                 />
             )}
+            <video
+                ref={vidRef}
+                className={!isPlaying && 'blur'}
+                onClick={() => {
+                    if (isPlaying) {
+                        setIsPlaying(false)
+                        vidRef.current.pause()
+                    } else {
+                        setIsPlaying(true)
+                        vidRef.current.play()
+                    }
+                }}
+            >
+                <source src={url} />
+            </video>
         </>
     )
 }
@@ -131,7 +167,13 @@ const Comments = () => {
                         <img src="/images/comments/plus2.svg" alt="" />
                     </SwiperSlide>
                     {data.map((item, index) => (
-                        <SwiperSlide className="card" key={index}>
+                        <>
+                            {item.type === 'video' ? (
+                                <SwiperSlide className="card video">
+                                    <Video url={item.url} />
+                                </SwiperSlide>
+                            ) : (
+                                <SwiperSlide className="card" key={index}>
                                     <div className="row">
                                         <h5>{item.name}</h5>
                                         <p>{item.messanger}</p>
@@ -142,8 +184,8 @@ const Comments = () => {
                                         }}
                                     ></p>
                                 </SwiperSlide>
-                            
-                        
+                            )}
+                        </>
                     ))}
                 </Swiper>
             </div>
