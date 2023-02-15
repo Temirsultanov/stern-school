@@ -27,17 +27,17 @@ const data = [
     {
         name: 'ЗИЗГАНОВА Елена',
         text: 'Преподаватель математики',
-        image: './images/teachers/photo3.jpeg',
+        image: './images/teachers/photo3.png',
     },
     {
         name: 'КУЛИКОВ Андрей',
         text: 'Преподаватель математики',
-        image: './images/teachers/photo4.jpeg',
+        image: './images/teachers/photo1.png',
     },
     {
         name: 'ХМЕЛЕВА Ксения',
         text: 'Преподаватель русского языка',
-        image: './images/teachers/photo5.jpeg',
+        image: './images/teachers/photo5.png',
     },
     {
         name: 'МАТВЕЕВ Алексей',
@@ -47,12 +47,12 @@ const data = [
     {
         name: 'КОРАБЛИНОВ Никита',
         text: 'Преподаватель программирования',
-        image: './images/teachers/photo7.jpeg',
+        image: './images/teachers/photo7.png',
     },
     {
         name: 'МУДИНОВ Темур',
         text: 'Преподаватель биологии',
-        image: './images/teachers/photo9.jpeg',
+        image: './images/teachers/photo9.png',
     },
     {
         name: 'КУЛИЕВА Каролина',
