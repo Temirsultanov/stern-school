@@ -79,16 +79,6 @@ const Video = ({ url }) => {
                     }}
                 />
             )}
-
-            <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/Hvgv4TEJ84Y"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-            ></iframe>
         </>
     )
 }
@@ -113,6 +103,7 @@ const Comments = () => {
                         href="https://t.me/shternik3"
                         className="ask"
                         target={'_blank'}
+                        rel="noreferrer"
                     >
                         <img src="./images/comments/plus.svg" alt="" />
                         <p>Оставить отзыв</p>
@@ -121,7 +112,6 @@ const Comments = () => {
             </div>
             <div className="slider">
                 <Swiper
-                    loop={true}
                     spaceBetween={50}
                     slidesPerView={
                         window.innerWidth < 768
@@ -140,10 +130,8 @@ const Comments = () => {
                         <p>Оставить свой отзыв</p>
                         <img src="/images/comments/plus2.svg" alt="" />
                     </SwiperSlide>
-                    {data.map((item) => (
-                        <>
-                            {item.type === 'text' ? (
-                                <SwiperSlide className="card">
+                    {data.map((item, index) => (
+                        <SwiperSlide className="card" key={index}>
                                     <div className="row">
                                         <h5>{item.name}</h5>
                                         <p>{item.messanger}</p>
@@ -154,12 +142,8 @@ const Comments = () => {
                                         }}
                                     ></p>
                                 </SwiperSlide>
-                            ) : (
-                                <SwiperSlide className="video card">
-                                    <Video url={item.url} />
-                                </SwiperSlide>
-                            )}
-                        </>
+                            
+                        
                     ))}
                 </Swiper>
             </div>

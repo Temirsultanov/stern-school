@@ -94,7 +94,8 @@
             }
         }
     }
-    video, iframe {
+    video,
+    iframe {
         height: 100%;
         width: 100%;
     }
@@ -123,7 +124,8 @@
         box-shadow: 2px 2px 5px rgba(109, 108, 164, 0.25);
         border-radius: 30px;
     }
-    .video, iframe {
+    .video,
+    iframe {
         position: relative;
         padding: 27px 24px;
         display: flex;
@@ -155,7 +157,7 @@
         padding: 120px 41px;
         background: #fff;
         height: 523px;
-        width: 330px!important;
+        width: 330px !important;
         border-radius: 30px;
         box-shadow: 2px 2px 5px rgba(109, 108, 164, 0.25);
         p {
@@ -167,6 +169,12 @@
         }
         img {
             margin: 0 auto;
+        }
+        &:hover {
+            img {
+                transition: 0.5s all ease;
+                transform: rotate(180deg);
+            }
         }
     }
     @media screen and (max-width: 768px) {
