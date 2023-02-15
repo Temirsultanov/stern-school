@@ -12,12 +12,12 @@ const data = [
     {
         name: 'ВОЛКОВА Александра',
         text: 'Психолог-педагог, администратор',
-        image: './images/teachers/photo2.png',
+        image: './images/teachers/photo2.jpg',
     },
     {
         name: 'ЛОБСАНОВА Татьяна',
         text: 'Преподаватель математики',
-        image: './images/teachers/photo11.png',
+        image: './images/teachers/photo11.jpg',
     },
     {
         name: 'КАРТВЕЛИШВИЛИ Татьяна',
@@ -27,37 +27,37 @@ const data = [
     {
         name: 'ЗИЗГАНОВА Елена',
         text: 'Преподаватель математики',
-        image: './images/teachers/photo3.png',
+        image: './images/teachers/photo3.jpg',
     },
     {
         name: 'КУЛИКОВ Андрей',
         text: 'Преподаватель математики',
-        image: './images/teachers/photo1.png',
+        image: './images/teachers/photo4.jpg',
     },
     {
         name: 'ХМЕЛЕВА Ксения',
         text: 'Преподаватель русского языка',
-        image: './images/teachers/photo5.png',
+        image: './images/teachers/photo5.jpg',
     },
     {
         name: 'МАТВЕЕВ Алексей',
         text: 'Преподаватель математики',
-        image: './images/teachers/photo6.png',
+        image: './images/teachers/photo6.jpg',
     },
     {
         name: 'КОРАБЛИНОВ Никита',
         text: 'Преподаватель программирования',
-        image: './images/teachers/photo7.png',
+        image: './images/teachers/photo7.jpg',
     },
     {
         name: 'МУДИНОВ Темур',
         text: 'Преподаватель биологии',
-        image: './images/teachers/photo9.png',
+        image: './images/teachers/photo9.jpg',
     },
     {
         name: 'КУЛИЕВА Каролина',
         text: 'Преподаватель русского языка',
-        image: './images/teachers/photo10.png',
+        image: './images/teachers/photo10.jpg',
     },
 ]
 

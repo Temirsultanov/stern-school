@@ -47,6 +47,7 @@ button:not(.ril__navButtons) {
 }
 
 .ril__closeButton {
+    border: none!important;
     background: url(../public/images/gallery/cross.svg) no-repeat center !important;
 }
 

@@ -72,9 +72,14 @@ const Gallery = () => {
             <div className="wrapper">
                 <div className="cont">
                     {lightbox !== '' && (
-                        <div className="lightbox">
-                            <img src={lightbox} alt="" ref={ref} />
-                        </div>
+                        <Lightbox
+                            mainSrc={lightbox}
+                            nextSrc={null}
+                            prevSrc={null}
+                            onCloseRequest={() => setLightbox("")}
+                            onMovePrevRequest={() => null}
+                            onMoveNextRequest={() => null}
+                        />
                     )}
                     {fullLightbox && (
                         <Lightbox
