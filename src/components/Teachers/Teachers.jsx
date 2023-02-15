@@ -2,62 +2,74 @@ import React, { useEffect, useRef, useState } from 'react'
 import './index.scss'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
+import ProgressiveImage from 'react-progressive-graceful-image'
 
 const data = [
     {
         name: 'ЮМАШЕВ Михаил Владиславович',
         text: 'Руководитель Школы Точных Наук',
         image: './images/teachers/photo1.jpeg',
+        placeholder: './images/teachers/tiny2.jpg',
     },
     {
         name: 'ВОЛКОВА Александра',
         text: 'Психолог-педагог, администратор',
         image: './images/teachers/photo2.jpg',
+        placeholder: './images/teachers/tiny3.jpg',
     },
     {
         name: 'ЛОБСАНОВА Татьяна',
         text: 'Преподаватель математики',
         image: './images/teachers/photo11.jpg',
+        placeholder: './images/teachers/tiny4.jpg',
     },
     {
         name: 'КАРТВЕЛИШВИЛИ Татьяна',
         text: 'Соруководитель Школы, преподаватель математики',
         image: './images/teachers/photo2.jpeg',
+        placeholder: './images/teachers/tiny1.jpeg',
     },
     {
         name: 'ЗИЗГАНОВА Елена',
         text: 'Преподаватель математики',
         image: './images/teachers/photo3.jpg',
+        placeholder: './images/teachers/tiny5.jpg',
     },
     {
         name: 'КУЛИКОВ Андрей',
         text: 'Преподаватель математики',
         image: './images/teachers/photo4.jpg',
+        placeholder: './images/teachers/tiny6.jpg',
     },
     {
         name: 'ХМЕЛЕВА Ксения',
         text: 'Преподаватель русского языка',
         image: './images/teachers/photo5.jpg',
+        placeholder: './images/teachers/tiny7.jpg',
     },
     {
         name: 'МАТВЕЕВ Алексей',
         text: 'Преподаватель математики',
         image: './images/teachers/photo6.jpg',
+        placeholder: './images/teachers/tiny8.jpg',
     },
     {
         name: 'КОРАБЛИНОВ Никита',
         text: 'Преподаватель программирования',
         image: './images/teachers/photo7.jpg',
+        placeholder: './images/teachers/tiny9.jpg',
     },
     {
         name: 'МУДИНОВ Темур',
         text: 'Преподаватель биологии',
         image: './images/teachers/photo9.jpg',
+        placeholder: './images/teachers/tiny10.jpg',
     },
     {
         name: 'КУЛИЕВА Каролина',
         text: 'Преподаватель русского языка',
         image: './images/teachers/photo10.jpg',
+        placeholder: './images/teachers/tiny11.jpg',
     },
 ]
 
@@ -89,12 +101,24 @@ const Teachers = () => {
                             {data.map((slide, index) => (
                                 <SwiperSlide key={index}>
                                     <div className="image">
-                                        <LazyLoadImage
+                                        <ProgressiveImage
                                             src={slide.image}
-                                            width={'100%'}
-                                            height={'100%'}
-                                            alt="Image Alt"
-                                        />
+                                            placeholder={slide.placeholder}
+                                        >
+                                            {(src, loading) => (
+                                                <img
+                                                    className={`${
+                                                        loading
+                                                            ? ' loading'
+                                                            : ' loaded'
+                                                    }`}
+                                                    src={src}
+                                                    alt="sea beach"
+                                                    width="700"
+                                                    height="465"
+                                                />
+                                            )}
+                                        </ProgressiveImage>
                                     </div>
                                     <div className="text">
                                         <h5>{slide.name}</h5>
