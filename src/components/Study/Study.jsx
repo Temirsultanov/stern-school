@@ -9,7 +9,11 @@ const Study = () => {
                 <div className="cont">
                     <h2>К чему готовим</h2>
                     <div className="grid">
-                        <a href="https://fipi.ru/ege" className="card">
+                        <a
+                            target={'_blank'}
+                            href="https://fipi.ru/ege"
+                            className="card" rel="noreferrer"
+                        >
                             <LazyLoadImage
                                 src="./images/study/image7.png"
                                 width={'100%'}
@@ -30,8 +34,9 @@ const Study = () => {
                             </div>
                         </a>
                         <a
+                            target={'_blank'}
                             href="http://pk.math.msu.ru/ru/specialist/variant"
-                            className="card"
+                            className="card" rel="noreferrer"
                         >
                             <LazyLoadImage
                                 src="./images/study/image8.png"
@@ -52,7 +57,11 @@ const Study = () => {
                                 <p className="second">ДВИ МГУ</p>
                             </div>
                         </a>
-                        <a href="https://vos.olimpiada.ru/" className="card">
+                        <a
+                            target={'_blank'}
+                            href="https://vos.olimpiada.ru/"
+                            className="card" rel="noreferrer"
+                        >
                             <LazyLoadImage
                                 src="./images/study/image9.png"
                                 width={'100%'}
@@ -72,7 +81,11 @@ const Study = () => {
                                 <p className="third">ВСОШ</p>
                             </div>
                         </a>
-                        <a href="https://pvg.mk.ru/" className="card">
+                        <a
+                            target={'_blank'}
+                            href="https://pvg.mk.ru/"
+                            className="card" rel="noreferrer"
+                        >
                             <LazyLoadImage
                                 src="./images/study/image10.png"
                                 width={'100%'}
@@ -110,7 +123,11 @@ const Study = () => {
                                 <p className="fifth">Математические школы</p>
                             </div>
                         </div>
-                        <a href="https://lomonosov-msu.ru/" className="card">
+                        <a
+                            target={'_blank'}
+                            href="https://lomonosov-msu.ru/"
+                            className="card" rel="noreferrer"
+                        >
                             <LazyLoadImage
                                 src="./images/study/image12.png"
                                 width={'100%'}

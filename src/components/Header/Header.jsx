@@ -18,7 +18,10 @@ const Header = ({ set, setShowRegister }) => {
             <div className="header_top">
                 <div className="wrapper">
                     <div className="info">
-                        <a href="tel:+7 936 512-06-01" className="info_card">
+                        <a
+                            href="tel:+7 936 512-06-01"
+                            className="info_card"
+                        >
                             <div className="image_wrapper">
                                 <svg
                                     width="13"
@@ -35,7 +38,10 @@ const Header = ({ set, setShowRegister }) => {
                             </div>
                             <p>+7 936 512-06-01</p>
                         </a>
-                        <a href="mailto:hi@stern.xyz" className="info_card">
+                        <a
+                            href="mailto:hi@stern.xyz"
+                            className="info_card"
+                        >
                             <div className="image_wrapper">
                                 <svg
                                     width="13"
@@ -55,6 +61,7 @@ const Header = ({ set, setShowRegister }) => {
                     </div>
                     <div className="icons">
                         <a
+                            target={'_blank'}
                             href="https://wa.clck.bar/79365120601"
                             className="image_wrapper"
                         >
@@ -74,6 +81,7 @@ const Header = ({ set, setShowRegister }) => {
                             </svg>
                         </a>
                         <a
+                            target={'_blank'}
                             href="https://t.me/shternik3"
                             className="image_wrapper"
                         >
@@ -121,7 +129,8 @@ const Header = ({ set, setShowRegister }) => {
                     <a
                         href="tel:+7 936 512-06-01"
                         target={'_blank'}
-                        className="image_wrapper" rel="noreferrer"
+                        className="image_wrapper"
+                        rel="noreferrer"
                     >
                         <LazyLoadImage
                             src="./images/header/phone.svg"
@@ -133,7 +142,8 @@ const Header = ({ set, setShowRegister }) => {
                     <a
                         href="mailto:hi@stern.xyz"
                         target={'_blank'}
-                        className="image_wrapper" rel="noreferrer"
+                        className="image_wrapper"
+                        rel="noreferrer"
                     >
                         <LazyLoadImage
                             src="./images/header/mail.svg"
@@ -145,7 +155,8 @@ const Header = ({ set, setShowRegister }) => {
                     <a
                         href="https://wa.clck.bar/79365120601"
                         className="image_wrapper"
-                        target={'_blank'} rel="noreferrer"
+                        target={'_blank'}
+                        rel="noreferrer"
                     >
                         <LazyLoadImage
                             src="./images/header/whats.svg"
@@ -157,7 +168,8 @@ const Header = ({ set, setShowRegister }) => {
                     <a
                         href="https://t.me/shternik3"
                         target={'_blank'}
-                        className="image_wrapper" rel="noreferrer"
+                        className="image_wrapper"
+                        rel="noreferrer"
                     >
                         <LazyLoadImage
                             src="./images/header/telegram.svg"

@@ -37,8 +37,12 @@ const CallMe = ({ set }) => {
                 />
                 <button onClick={() => Send()}>Отправить</button>
                 <div className="texts">
-                    <a href="tel:+7 (936) 512-06-01">+7 (936) 512-06-01</a>
-                    <a href="mailto:hi@stern.xyz">hi@stern.xyz</a>
+                    <a target={'_blank'} href="tel:+7 (936) 512-06-01">
+                        +7 (936) 512-06-01
+                    </a>
+                    <a target={'_blank'} href="mailto:hi@stern.xyz">
+                        hi@stern.xyz
+                    </a>
                 </div>
             </div>
         </div>

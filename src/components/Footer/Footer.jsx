@@ -13,7 +13,11 @@ const Footer = () => {
                             <br /> Наук
                         </h2>
                         <div className="column">
-                            <a href="https://t.me/mathsabout" className="card">
+                            <a
+                                target={'_blank'}
+                                href="https://t.me/mathsabout"
+                                className="card"
+                            >
                                 <div className="image_wrapper">
                                     <img
                                         src="./images/footer/telegram.svg"
@@ -23,6 +27,7 @@ const Footer = () => {
                                 <p>Telegram</p>
                             </a>
                             <a
+                                target={'_blank'}
                                 href="https://www.youtube.com/@user-nl6nk1ez7j"
                                 className="card"
                             >
@@ -35,6 +40,7 @@ const Footer = () => {
                                 <p>YouTube</p>
                             </a>
                             <a
+                                target={'_blank'}
                                 href="https://wa.clck.bar/79365120601"
                                 className="card"
                             >
@@ -48,7 +54,11 @@ const Footer = () => {
                             </a>
                         </div>
                         <div className="column large">
-                            <a href="tel:+7 936 512-06-01" className="card">
+                            <a
+                                target={'_blank'}
+                                href="tel:+7 936 512-06-01"
+                                className="card"
+                            >
                                 <div className="image_wrapper">
                                     <img
                                         src="./images/footer/phone.svg"
@@ -57,7 +67,11 @@ const Footer = () => {
                                 </div>
                                 <p>+7 936 512-06-01</p>
                             </a>
-                            <a href="mailto:hi@stern.xyz" className="card">
+                            <a
+                                target={'_blank'}
+                                href="mailto:hi@stern.xyz"
+                                className="card"
+                            >
                                 <div className="image_wrapper">
                                     <img
                                         src="./images/footer/mail.svg"
