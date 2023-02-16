@@ -13,14 +13,7 @@ import Comments from '../components/Comments/Comments'
 import { motion } from 'framer-motion'
 import { useLocation } from 'react-router-dom'
 
-const components = [
-    <Study />,
-    <Includes />,
-    <Gallery />,
-    <Teachers />,
-    <Attributes />,
-    <Comments />,
-]
+const components = [<Study />, <Includes />, <Gallery />, <Teachers />]
 
 const cardVariants = {
     offscreen: {
@@ -77,7 +70,7 @@ const Home = ({ set, showRegister, setShowRegister }) => {
         }
     }, [location.hash])
 
-    console.log(showRegister);
+    console.log(showRegister)
 
     return (
         <>
@@ -92,6 +85,8 @@ const Home = ({ set, showRegister, setShowRegister }) => {
             {components.map((item) => {
                 return <Card emoji={item} />
             })}
+            <Attributes set={set} />
+            <Comments />
             <Cost setShow={setShowRegister} />
             <Faq />
         </>

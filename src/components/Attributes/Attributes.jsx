@@ -4,7 +4,7 @@ import InputMask from 'react-input-mask'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 
-const Attributes = () => {
+const Attributes = ({ set }) => {
     const [phone, setPhone] = React.useState('')
 
     const notify = () => toast.success('Заявка отправлена!!')
@@ -104,7 +104,9 @@ const Attributes = () => {
                     <span className="adaptive">
                         Остались вопросы? Мы ответим!
                     </span>
-                    <button className="adaptive">Оставить заявку</button>
+                    <button className="adaptive" onClick={() => set(true)}>
+                        Оставить заявку
+                    </button>
                 </div>
             </div>
         </div>
