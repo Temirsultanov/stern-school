@@ -12,7 +12,7 @@ const Attributes = ({ set }) => {
 
     const Send = () => {
         axios
-            .post('https://kurs.stern.xyz:8002/api/v1/feedback/', { phone })
+            .post('https://camp.stern.xyz/api/v1/feedback/', { phone })
             .then((res) => notify())
             .catch((err) => notifyError())
     }

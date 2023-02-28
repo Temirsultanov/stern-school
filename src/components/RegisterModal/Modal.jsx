@@ -20,7 +20,7 @@ const Modal = ({ state, set }) => {
             return null
         } else {
             axios
-                .post('https://kurs.stern.xyz:8002/api/v1/register/', {
+                .post('https://camp.stern.xyz/api/v1/register/', {
                     fio,
                     phone,
                     form,

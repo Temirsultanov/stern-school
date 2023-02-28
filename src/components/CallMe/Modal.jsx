@@ -15,7 +15,7 @@ const CallMe = ({ set }) => {
 
     const Send = () => {
         axios
-            .post('https://kurs.stern.xyz:8002/api/v1/feedback/', { phone })
+            .post('https://camp.stern.xyz/api/v1/feedback/', { phone })
             .then((res) => {
                 notify()
                 set(false)
@@ -40,10 +40,10 @@ const CallMe = ({ set }) => {
                 />
                 <button onClick={() => Send()}>Отправить</button>
                 <div className="texts">
-                    <a target={'_blank'} href="tel:+7 (936) 512-06-01">
+                    <a target={'_blank'} href="tel:+7 (936) 512-06-01" rel="noreferrer">
                         +7 (936) 512-06-01
                     </a>
-                    <a target={'_blank'} href="mailto:hi@stern.xyz">
+                    <a target={'_blank'} href="mailto:hi@stern.xyz" rel="noreferrer">
                         hi@stern.xyz
                     </a>
                 </div>
