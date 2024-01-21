@@ -50,7 +50,7 @@ export const TEACHERS = [
 	},
 	{
 		id: 8,
-		name: 'Артём',
+		name: 'Артём Назаров',
 		role: 'Преподаватель математики',
 		imageSrc: './images/teachers/artem.webp',
 		placeholderSrc: './images/teachers/artem_stub.webp',

@@ -71,8 +71,8 @@ const Header = ({ openCallBackModal, openRegistrationModal }) => {
 				<div className='wrapper'>
 					<div className='nav'>
 						<a href='/#about'>О смене</a>
-						<a href='/#about2'>Проживание и питание</a>
-						<a href='/#comments'>Отзывы</a>
+						<a href='/#accomodations'>Проживание и питание</a>
+						<a href='/#reviews'>Отзывы</a>
 						<a href='/#faq'>Частые вопросы</a>
 					</div>
 					<div className='buttons'>
@@ -81,7 +81,7 @@ const Header = ({ openCallBackModal, openRegistrationModal }) => {
 								setShow(false)
 								openRegistrationModal()
 							}}>
-							Регистрация
+							Зарегистрироваться
 						</button>
 						<button onClick={openCallBackModal}>Перезвоните мне</button>
 					</div>

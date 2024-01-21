@@ -14,7 +14,7 @@ const Offer = ({ openRegistrationModal }) => {
 								<div className='image_wrapper'>
 									<img src='./images/offer/first.png' alt='' className='table' />
 								</div>
-								<p>5 - 12 мая ДЛЯ 1-11 КЛАССОВ</p>
+								<p>5—12 МАЯ ДЛЯ 1-11 КЛАССОВ</p>
 							</div>
 							<div className='card'>
 								<div className='image_wrapper'>
@@ -26,7 +26,7 @@ const Offer = ({ openRegistrationModal }) => {
 								<div className='image_wrapper'>
 									<img src='./images/offer/third.png' alt='' />
 								</div>
-								<p>АВТОРСКИЕ ОЛИМПИАДНЫЕ ЗАДАЧИ ДЛЯ 1-8 КЛАССОВ</p>
+								<p>АВТОРСКИЕ ОЛИМПИАДНЫЕ ЗАДАЧИ ДЛЯ 1—8 КЛАССОВ</p>
 							</div>
 							<div className='card'>
 								<div className='image_wrapper'>
@@ -39,7 +39,7 @@ const Offer = ({ openRegistrationModal }) => {
 										}}
 									/>
 								</div>
-								<p>АВТОРСКИЙ КУРС К ЕГЭ И ДВИ ОТ ЭКСПЕРТОВ</p>
+								<p>АВТОРСКИЙ КУРС К ОГЭ, ЕГЭ И ДВИ ОТ ЭКСПЕРТОВ</p>
 							</div>
 						</div>
 					</div>

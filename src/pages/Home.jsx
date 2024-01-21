@@ -41,7 +41,7 @@ function Card({ emoji }) {
 	)
 }
 
-const hash = ['#about', '#about2', '#faq', '#comments']
+const hash = ['#about', '#accomodations', '#faq', '#reviews']
 
 const Home = () => {
 	const [openCallBackModal, openRegistrationModal] = useOutletContext()

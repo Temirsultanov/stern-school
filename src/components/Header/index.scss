@@ -122,16 +122,19 @@
 
 .nav {
 	height: 100%;
-	width: 912px;
-	background: #ffedfa;
+	width: 880px;
 	border: 1px solid rgba(255, 255, 255, 0.25);
-	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
 	border-radius: 55px;
+
 	display: grid;
-	grid-template-columns: repeat(4, 228px);
+	grid-template-columns: repeat(4, 220px);
 	justify-content: space-between;
 	align-items: center;
+
+	background: #ffedfa;
 	transition: 0.3s all ease;
+	box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+
 	&:hover {
 		box-shadow:
 			5px 5px 15px 0 rgba(150, 150, 150, 0.8),

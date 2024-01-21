@@ -11,7 +11,7 @@ const data = [
 	},
 	{
 		type: 'video',
-		url: 'https://camp.stern.xyz/media/videos/test.mp4',
+		url: 'https://camp.stern.xyz/media/videos/video1.mp4',
 	},
 
 	{
@@ -61,20 +61,16 @@ const data = [
 		text: 'Спасибо огромное за внимание и креативность в обучении детей!!!',
 	},
 	{
-		type: 'video',
-		url: 'https://camp.stern.xyz/media/videos/video6.mp4 ',
+		type: 'text',
+		name: 'Галина Голотина',
+		messanger: 'Telegram',
+		text: 'И Коля первое что сказал - "Можно я в мае поеду?" и еще добавил: "Это мой первый лагерь, в котором по учителям можно плакать"<br/>Дорогие организаторы, воспитатели, учителя - всем вам огромное СПАСИБО за счастливого, увлеченного знаниями ребенка <3<br/>С Наступающим Новым Годом!!!',
 	},
 	{
 		type: 'text',
 		name: 'Татьяна',
 		messanger: 'Telegram',
 		text: 'Спасибо огромное за лагерь! Мы уехали, а про диск с фото не спросили. Его как-то можно получить? Или это ссылка на диск?',
-	},
-	{
-		type: 'text',
-		name: 'Галина Голотина',
-		messanger: 'Telegram',
-		text: 'И Коля первое что сказал - "Можно я в мае поеду?" и еще добавил: "Это мой первый лагерь, в котором по учителям можно плакать"<br/>Дорогие организаторы, воспитатели, учителя - всем вам огромное СПАСИБО за счастливого, увлеченного знаниями ребенка <3<br/>С Наступающим Новым Годом!!!',
 	},
 	{
 		type: 'text',
@@ -145,7 +141,7 @@ const Comments = () => {
 	let swiperRef = React.useRef(null)
 
 	return (
-		<div className='comments' id='comments'>
+		<div className='comments' id='reviews'>
 			<div className='wrapper'>
 				<div className='cont'>
 					<h2>Отзывы</h2>
@@ -167,8 +163,10 @@ const Comments = () => {
 						swiperRef.current = swiper
 					}}>
 					<SwiperSlide className='empty'>
-						<p>Оставить свой отзыв</p>
-						<img src='/images/comments/plus2.svg' alt='' />
+						<a href='https://t.me/shternik3' target={'_blank'} rel='noreferrer'>
+							<p>Оставить свой отзыв</p>
+							<img src='/images/comments/plus2.svg' alt='' />
+						</a>
 					</SwiperSlide>
 					{data.map((item, index) => (
 						<>
