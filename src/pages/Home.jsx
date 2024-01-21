@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import { useLocation, useOutletContext } from 'react-router-dom'
+import { motion } from 'framer-motion'
+
 import Cost from '../components/Cost/Cost'
 import Faq from '../components/Faq/Faq'
 import About from '../components/About/About'
@@ -6,13 +9,11 @@ import Offer from '../components/Offer/Offer'
 import Gallery from '../components/Gallery/Gallery'
 import Study from '../components/Study/Study'
 import Includes from '../components/Includes/Includes'
-import Teachers from '../components/Teachers/Teachers'
 import Attributes from '../components/Attributes/Attributes'
 import Comments from '../components/Comments/Comments'
-import { motion } from 'framer-motion'
-import { useLocation, useOutletContext } from 'react-router-dom'
+import TeachingStaff from '../components/TeachingStaff'
 
-const components = [<Study />, <Includes />, <Gallery />, <Teachers />]
+const components = [<Study />, <Includes />, <Gallery />, <TeachingStaff />]
 
 const cardVariants = {
 	offscreen: {
