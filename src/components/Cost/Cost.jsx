@@ -100,12 +100,12 @@ const Cost = ({ openRegistrationModal }) => {
 									9-11 класс и<br /> выпускники
 								</div>
 							</div>
-							<div className='cost_block'>{grade === 0 ? '45 900 ₽' : '74 900 ₽'}</div>
+							<div className='cost_block'>{grade === 0 ? '48 500 ₽' : '78 500 ₽'}</div>
 							<p className='desc'>
-								<span>{grade === 0 ? '80 000₽' : '240 000 ₽'}</span>- стоимость такого же количества занятий в школе
+								<span>{grade === 0 ? '80 000₽' : '320 000 ₽'}</span>- стоимость такого же количества занятий в школе
 							</p>
 							<div className='yellow_block'>
-								{grade === 0 ? '80 000₽ - 45 900₽ = 34 100₽' : '240 000₽ - 74 900₽ = 165 100₽'} экономии
+								{grade === 0 ? '80 000₽ - 48 500₽ = 31 500₽' : '320 000₽ - 78 500₽ = 241 500₽'} экономии
 							</div>
 							<div className='cards_adaptive'>
 								<div className='adaptive_card2'>
