@@ -5,13 +5,13 @@ import axios from 'axios'
 import { useOnClickOutside } from '../../lib/useOnClickOutside'
 import { toast } from 'react-toastify'
 
-const Modal = ({ state, set }) => {
+const RegistrationModal = ({ closeRegistrationModal }) => {
 	const [fio, setFio] = useState('')
 	const [phone, setPhone] = useState('')
 	const [form, setForm] = useState('')
 	let ref = React.useRef(null)
 
-	useOnClickOutside(ref, () => set(false))
+	useOnClickOutside(ref, closeRegistrationModal)
 	const notify = () => toast.success('Заявка отправлена!!')
 	const notifyError = () => toast.error('Ошибка отправки!!')
 
@@ -25,12 +25,9 @@ const Modal = ({ state, set }) => {
 					phone,
 					form,
 				})
-				.then((res) => {
-					set(true)
-					notify()
-				})
-				.catch((err) => notifyError())
-				.finally(() => set(false))
+				.then(notify)
+				.catch(notifyError)
+				.finally(closeRegistrationModal)
 		}
 	}
 
@@ -38,7 +35,7 @@ const Modal = ({ state, set }) => {
 		<div className='register modal_wrapper'>
 			<div className='content' ref={ref}>
 				<img src='./images/modal/phone.png' alt='' className='phone' />
-				<img src='./images/modal/cross.svg' alt='' className='cross' onClick={() => set(false)} />
+				<img src='./images/modal/cross.svg' alt='' className='cross' onClick={closeRegistrationModal} />
 				<div className='left'>
 					<input type='text' placeholder='ФИО' value={fio} onChange={(e) => setFio(e.target.value)} />
 					<input type='number' placeholder='Класс' value={form} onChange={(e) => setForm(e.target.value)} />
@@ -58,4 +55,5 @@ const Modal = ({ state, set }) => {
 		</div>
 	)
 }
-export default Modal
+
+export default RegistrationModal

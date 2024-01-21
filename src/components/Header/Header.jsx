@@ -3,7 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 import './index.scss'
 import { NavLink } from 'react-router-dom'
 
-const Header = ({ set, setShowRegister }) => {
+const Header = ({ openCallBackModal, openRegistrationModal }) => {
 	const [show, setShow] = useState(false)
 
 	useEffect(() => {
@@ -79,11 +79,11 @@ const Header = ({ set, setShowRegister }) => {
 						<button
 							onClick={() => {
 								setShow(false)
-								setShowRegister(true)
+								openRegistrationModal()
 							}}>
 							Регистрация
 						</button>
-						<button onClick={() => set(true)}>Перезвоните мне</button>
+						<button onClick={openCallBackModal}>Перезвоните мне</button>
 					</div>
 				</div>
 			</div>
@@ -125,13 +125,13 @@ const Header = ({ set, setShowRegister }) => {
 				<p
 					onClick={() => {
 						setShow(false)
-						setShowRegister(true)
+						openRegistrationModal()
 					}}>
 					Регистрация
 				</p>
 				<p
 					onClick={() => {
-						set(true)
+						openCallBackModal()
 						setShow(false)
 					}}>
 					Перезвоните мне

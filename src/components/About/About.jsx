@@ -5,7 +5,7 @@ import axios from 'axios'
 import { toast } from 'react-toastify'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
-const About = ({ set }) => {
+const About = ({ openCallBackModal }) => {
 	const [phone, setPhone] = React.useState('')
 
 	const notify = () => toast.success('Заявка отправлена!!')
@@ -58,7 +58,7 @@ const About = ({ set }) => {
 								по 4 предметам - математике, русскому языку, информатике и физике!
 							</p>
 						</div>
-						<button className='adaptive_button' onClick={() => set(true)}>
+						<button className='adaptive_button' onClick={openCallBackModal}>
 							Оставить заявку
 						</button>
 					</div>

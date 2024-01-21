@@ -2,7 +2,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import './index.scss'
 
-const Cost = ({ setShow }) => {
+const Cost = ({ openRegistrationModal }) => {
 	const [grade, setGrade] = React.useState(0)
 	let swiperRef = React.useRef(null)
 
@@ -128,7 +128,7 @@ const Cost = ({ setShow }) => {
 						</div>
 					</div>
 
-					<button onClick={() => setShow(true)}>Регистрация</button>
+					<button onClick={openRegistrationModal}>Регистрация</button>
 				</div>
 			</div>
 		</div>

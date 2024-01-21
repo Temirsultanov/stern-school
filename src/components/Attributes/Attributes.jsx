@@ -4,7 +4,7 @@ import InputMask from 'react-input-mask'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 
-const Attributes = ({ set }) => {
+const Attributes = ({ openCallBackModal }) => {
 	const [phone, setPhone] = React.useState('')
 
 	const notify = () => toast.success('Заявка отправлена!!')
@@ -82,7 +82,7 @@ const Attributes = ({ set }) => {
 						</div>
 					</div>
 					<span className='adaptive'>Остались вопросы? Мы ответим!</span>
-					<button className='adaptive' onClick={() => set(true)}>
+					<button className='adaptive' onClick={openCallBackModal}>
 						Оставить заявку
 					</button>
 				</div>

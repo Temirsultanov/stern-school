@@ -5,11 +5,11 @@ import './index.scss'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 
-const CallMe = ({ set }) => {
+const CallBackModal = ({ closeCallBackModal }) => {
 	let ref = React.useRef(null)
 	const [phone, setPhone] = React.useState('')
 
-	useOnClickOutside(ref, () => set(false))
+	useOnClickOutside(ref, closeCallBackModal)
 	const notify = () => toast.success('Заявка отправлена!!')
 	const notifyError = () => toast.error('Ошибка отправки!!')
 
@@ -18,7 +18,7 @@ const CallMe = ({ set }) => {
 			.post('https://camp.stern.xyz/api/v1/feedback/', { phone })
 			.then((res) => {
 				notify()
-				set(false)
+				closeCallBackModal()
 			})
 			.catch((err) => notifyError())
 	}
@@ -26,7 +26,7 @@ const CallMe = ({ set }) => {
 	return (
 		<div className='call modal_wrapper'>
 			<div className='content' ref={ref}>
-				<img src='./images/modal/cross.svg' alt='' className='cross' onClick={() => set(false)} />
+				<img src='./images/modal/cross.svg' alt='' className='cross' onClick={closeCallBackModal} />
 				<InputMask
 					mask='+7 (999) 999-99-99'
 					placeholder='+7 (___) ___-__-__'
@@ -47,4 +47,4 @@ const CallMe = ({ set }) => {
 	)
 }
 
-export default CallMe
+export default CallBackModal

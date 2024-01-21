@@ -1,31 +1,49 @@
-import React from 'react'
-import Footer from './components/Footer/Footer'
-import Header from './components/Header/Header'
-import 'swiper/css'
-import 'react-toastify/dist/ReactToastify.css'
+import React, { useState, useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+import 'swiper/css'
+
 import Home from './pages/Home'
 import Go from './pages/Go'
-import CallMe from './components/CallMe/Modal'
-import { ToastContainer } from 'react-toastify'
+
+import Header from './components/Header/Header'
+import CallBackModal from './components/CallBackModal'
+import RegistrationModal from './components/RegistrationModal'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
-	const [show, setShow] = React.useState(false)
-	const [showRegister, setShowRegister] = React.useState(false)
+	const [callBackModalOpened, setCallBackModalOpened] = useState(false)
+	const openCallBackModal = () => setCallBackModalOpened(true)
+	const closeCallBackModal = () => setCallBackModalOpened(false)
+
+	const [registrationModalOpened, setRegistrationModalOpened] = useState(false)
+	const openRegistrationModal = () => setRegistrationModalOpened(true)
+	const closeRegistrationModal = () => setRegistrationModalOpened(false)
+
+	useEffect(() => {
+		if (callBackModalOpened || registrationModalOpened) {
+			document.body.style.overflowY = 'hidden'
+		} else {
+			document.body.style.overflowY = 'scroll'
+		}
+	}, [callBackModalOpened, registrationModalOpened])
 
 	return (
 		<>
-			{show && <CallMe set={setShow} />}
+			{callBackModalOpened && <CallBackModal closeCallBackModal={closeCallBackModal} />}
+			{registrationModalOpened && <RegistrationModal closeRegistrationModal={closeRegistrationModal} />}
+
 			<ToastContainer />
-			<Header set={setShow} setShowRegister={setShowRegister} />
+
+			<Header openCallBackModal={openCallBackModal} openRegistrationModal={openRegistrationModal} />
 			<Routes>
 				<Route
 					path='/'
-					element={<Home set={setShow} showRegister={showRegister} setShowRegister={setShowRegister} />}
+					element={<Home openCallBackModal={openCallBackModal} openRegistrationModal={openRegistrationModal} />}
 				/>
 				<Route path='/go' element={<Go />} />
 			</Routes>
-
 			<Footer />
 		</>
 	)

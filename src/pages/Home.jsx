@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import Cost from '../components/Cost/Cost'
-import Modal from '../components/RegisterModal/Modal'
 import Faq from '../components/Faq/Faq'
 import About from '../components/About/About'
 import Offer from '../components/Offer/Offer'
@@ -43,7 +42,7 @@ function Card({ emoji }) {
 
 const hash = ['#about', '#about2', '#faq', '#comments']
 
-const Home = ({ set, showRegister, setShowRegister }) => {
+const Home = ({ openCallBackModal, openRegistrationModal }) => {
 	let location = useLocation()
 	const [isLoading, setIsLoading] = React.useState(true)
 
@@ -54,22 +53,12 @@ const Home = ({ set, showRegister, setShowRegister }) => {
 	}, [])
 
 	useEffect(() => {
-		if (showRegister) {
-			document.body.style.overflowY = 'hidden'
-		} else {
-			document.body.style.overflowY = 'scroll'
-		}
-	}, [showRegister])
-
-	useEffect(() => {
 		for (const key in hash) {
 			if (location.hash.includes(hash[key])) {
 				window.location.href = hash[key]
 			}
 		}
 	}, [location.hash])
-
-	console.log(showRegister)
 
 	return (
 		<>
@@ -78,15 +67,14 @@ const Home = ({ set, showRegister, setShowRegister }) => {
 					<div class='loader'></div>
 				</div>
 			)}
-			<Offer setShow={setShowRegister} />
-			<About set={set} />
-			{showRegister && <Modal set={setShowRegister} />}
+			<Offer openRegistrationModal={openRegistrationModal} />
+			<About openCallBackModal={openCallBackModal} />
 			{components.map((item) => {
 				return <Card emoji={item} />
 			})}
-			<Attributes set={set} />
+			<Attributes openCallBackModal={openCallBackModal} />
 			<Comments />
-			<Cost setShow={setShowRegister} />
+			<Cost openRegistrationModal={openRegistrationModal} />
 			<Faq />
 		</>
 	)
