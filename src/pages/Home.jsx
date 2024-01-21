@@ -3,7 +3,6 @@ import { useLocation, useOutletContext } from 'react-router-dom'
 import { motion } from 'framer-motion'
 
 import Cost from '../components/Cost/Cost'
-import Faq from '../components/Faq/Faq'
 import About from '../components/About/About'
 import Offer from '../components/Offer/Offer'
 import Gallery from '../components/Gallery/Gallery'
@@ -77,7 +76,6 @@ const Home = () => {
 			<Attributes openCallBackModal={openCallBackModal} />
 			<Comments />
 			<Cost openRegistrationModal={openRegistrationModal} />
-			<Faq />
 		</>
 	)
 }

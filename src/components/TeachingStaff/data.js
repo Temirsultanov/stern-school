@@ -50,7 +50,7 @@ export const TEACHERS = [
 	},
 	{
 		id: 8,
-		name: 'Артём Назаров',
+		name: 'НАЗАРОВ Артём',
 		role: 'Преподаватель математики',
 		imageSrc: './images/teachers/artem.webp',
 		placeholderSrc: './images/teachers/artem_stub.webp',
@@ -61,5 +61,12 @@ export const TEACHERS = [
 		role: 'Преподаватель математики',
 		imageSrc: './images/teachers/shubina_aleksandra.webp',
 		placeholderSrc: './images/teachers/shubina_aleksandra_stub.webp',
+	},
+	{
+		id: 10,
+		name: 'АФАНАСЬЕВ Илья',
+		role: 'Преподаватель математики',
+		imageSrc: './images/teachers/afanasyev_ilya.webp',
+		placeholderSrc: './images/teachers/afanasyev_ilya_placeholder.webp',
 	},
 ]

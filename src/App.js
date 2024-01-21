@@ -7,6 +7,7 @@ import 'swiper/css'
 import Header from './components/Header/Header'
 import CallBackModal from './components/CallBackModal'
 import RegistrationModal from './components/RegistrationModal'
+import Faq from './components/Faq/Faq'
 import Footer from './components/Footer/Footer'
 
 const App = () => {
@@ -34,6 +35,7 @@ const App = () => {
 			<ToastContainer />
 			<Header openCallBackModal={openCallBackModal} openRegistrationModal={openRegistrationModal} />
 			<Outlet context={[openCallBackModal, openRegistrationModal]} />
+			<Faq />
 			<Footer />
 		</>
 	)
