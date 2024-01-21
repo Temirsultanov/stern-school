@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Outlet } from 'react-router-dom'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import 'swiper/css'
-
-import Home from './pages/Home'
-import Go from './pages/Go'
 
 import Header from './components/Header/Header'
 import CallBackModal from './components/CallBackModal'
@@ -35,15 +32,8 @@ const App = () => {
 			{registrationModalOpened && <RegistrationModal closeRegistrationModal={closeRegistrationModal} />}
 
 			<ToastContainer />
-
 			<Header openCallBackModal={openCallBackModal} openRegistrationModal={openRegistrationModal} />
-			<Routes>
-				<Route
-					path='/'
-					element={<Home openCallBackModal={openCallBackModal} openRegistrationModal={openRegistrationModal} />}
-				/>
-				<Route path='/go' element={<Go />} />
-			</Routes>
+			<Outlet context={[openCallBackModal, openRegistrationModal]} />
 			<Footer />
 		</>
 	)

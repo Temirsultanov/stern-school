@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import Cost from '../components/Cost/Cost'
 import Faq from '../components/Faq/Faq'
 import About from '../components/About/About'
@@ -10,7 +10,7 @@ import Teachers from '../components/Teachers/Teachers'
 import Attributes from '../components/Attributes/Attributes'
 import Comments from '../components/Comments/Comments'
 import { motion } from 'framer-motion'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useOutletContext } from 'react-router-dom'
 
 const components = [<Study />, <Includes />, <Gallery />, <Teachers />]
 
@@ -42,9 +42,10 @@ function Card({ emoji }) {
 
 const hash = ['#about', '#about2', '#faq', '#comments']
 
-const Home = ({ openCallBackModal, openRegistrationModal }) => {
-	let location = useLocation()
-	const [isLoading, setIsLoading] = React.useState(true)
+const Home = () => {
+	const [openCallBackModal, openRegistrationModal] = useOutletContext()
+	const [isLoading, setIsLoading] = useState(true)
+	const location = useLocation()
 
 	useEffect(() => {
 		setTimeout(() => {
