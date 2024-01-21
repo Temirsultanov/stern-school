@@ -1,155 +1,158 @@
 .go_main {
-    margin: 108px 0 50px;
-    .cont {
-        position: relative;
-    }
-    h2 {
-        font-weight: 700;
-        font-size: 96px;
-        line-height: 120%;
-        color: #6767bb;
-    }
-    button {
-        background: #ffe2f7;
-        box-shadow: 0px 7px 15px rgba(109, 108, 164, 0.25);
-        border-radius: 81.125px;
-        margin-bottom: 28px;
-        width: 300px;
-        height: 60px;
-        font-weight: 600;
-        font-size: 24px;
-        line-height: 120%;
-        color: #6767bb;
-        cursor: pointer;
-    }
-    ul,
-    li {
-        list-style: initial;
-    }
-    .row {
-        display: grid;
-        grid-template-columns: 1fr 381px;
-        column-gap: 89px;
-        flex-grow: 1;
-    }
-    .grid {
-        display: grid;
-        grid-template-columns: 381px 381px;
-        column-gap: 89px;
-        &_column {
-            display: flex;
-            flex-direction: column;
-            gap: 75px;
-            .column {
-                padding-bottom: 50px;
-            }
-            .column:nth-child(1){
-                h3 {
-                    margin-bottom: 16px;
-                }
-            }
-            .column:nth-child(2){}
-        }
-    }
+	margin: 108px 0 50px;
+	.cont {
+		position: relative;
+	}
+	h2 {
+		font-weight: 700;
+		font-size: 96px;
+		line-height: 120%;
+		color: #6767bb;
+	}
+	button {
+		background: #ffe2f7;
+		box-shadow: 0px 7px 15px rgba(109, 108, 164, 0.25);
+		border-radius: 81.125px;
+		margin-bottom: 28px;
+		width: 300px;
+		height: 60px;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 120%;
+		color: #6767bb;
+		cursor: pointer;
+	}
+	ul,
+	li {
+		list-style: initial;
+	}
+	.row {
+		display: grid;
+		grid-template-columns: 1fr 381px;
+		column-gap: 89px;
+		flex-grow: 1;
+	}
+	.grid {
+		display: grid;
+		grid-template-columns: 381px 381px;
+		column-gap: 89px;
+		&_column {
+			display: flex;
+			flex-direction: column;
+			gap: 75px;
+			.column {
+				padding-bottom: 50px;
+			}
+			.column:nth-child(1) {
+				h3 {
+					margin-bottom: 16px;
+				}
+			}
+			.column:nth-child(2) {
+			}
+		}
+	}
 
-    .column {
-        background: #ffe2f7;
-        box-shadow: 0px 7px 15px rgba(109, 108, 164, 0.25),
-            inset 0px 4px 4px rgba(109, 108, 164, 0.25);
-        border-radius: 55px;
-        padding: 37px 12px 61px 30px;
-    }
-    h3 {
-        margin-bottom: 45px;
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 120%;
-        color: #6767bb;
-    }
-    li {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 120%;
-        color: #6767bb;
-        &:nth-child(n + 2) {
-            margin-top: 15px;
-        }
-    }
+	.column {
+		background: #ffe2f7;
+		box-shadow:
+			0px 7px 15px rgba(109, 108, 164, 0.25),
+			inset 0px 4px 4px rgba(109, 108, 164, 0.25);
+		border-radius: 55px;
+		padding: 37px 12px 61px 30px;
+	}
+	h3 {
+		margin-bottom: 45px;
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 120%;
+		color: #6767bb;
+	}
+	li {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 120%;
+		color: #6767bb;
+		&:nth-child(n + 2) {
+			margin-top: 15px;
+		}
+	}
 
-    .image_wrapper {
-        position: absolute;
-        right: -111px;
-    }
+	.image_wrapper {
+		position: absolute;
+		right: -111px;
+	}
 
-    .card {
-        margin-top: 500px;
-        height: 370px;
-        padding: 37px 28px 69px 33px;
-        background: #c6e0ff;
-        box-shadow: 0px 7px 15px rgba(109, 108, 164, 0.25),
-            inset 0px 4px 4px rgba(109, 108, 164, 0.25);
-        border-radius: 55px;
-        p {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 120%;
-            color: #6767bb;
-        }
-        h6 {
-            margin-bottom: 45px;
-            font-weight: 700;
-            font-size: 24px;
-            line-height: 120%;
-            color: #6767bb;
-        }
-    }
-    @media screen and (max-width: 768px) {
-        margin: 70px 0 64px;
-        h2 {
-            font-weight: 700;
-            font-size: 37.2135px;
-            line-height: 120%;
-            color: #6767bb;
-            margin-bottom: 14px;
-        }
-        button {
-            width: 100%;
-            height: 58px;
-            font-weight: 600;
-        }
-        .image_wrapper {
-            display: none;
-        }
-        .grid_column {
-            gap: 41px;
-        }
-        li {
-            font-size: 15px;
-        }
-        .column {
-            padding-top: 31px;
-            padding-bottom: 47px;
-            width: 100% !important;
-        }
-        h3 {
-            margin-bottom: 16px;
-        }
-        .row,
-        .grid {
-            display: flex;
-            flex-direction: column;
-            gap: 41px;
-        }
-        .card {
-            margin: 0;
-            padding-top: 34px;
-            padding-bottom: 64px;
-        }
-        h6 {
-            font-size: 23px !important;
-        }
-        p {
-            font-size: 15px;
-        }
-    }
+	.card {
+		margin-top: 500px;
+		height: 370px;
+		padding: 37px 28px 69px 33px;
+		background: #c6e0ff;
+		box-shadow:
+			0px 7px 15px rgba(109, 108, 164, 0.25),
+			inset 0px 4px 4px rgba(109, 108, 164, 0.25);
+		border-radius: 55px;
+		p {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 120%;
+			color: #6767bb;
+		}
+		h6 {
+			margin-bottom: 45px;
+			font-weight: 700;
+			font-size: 24px;
+			line-height: 120%;
+			color: #6767bb;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		margin: 70px 0 64px;
+		h2 {
+			font-weight: 700;
+			font-size: 37.2135px;
+			line-height: 120%;
+			color: #6767bb;
+			margin-bottom: 14px;
+		}
+		button {
+			width: 100%;
+			height: 58px;
+			font-weight: 600;
+		}
+		.image_wrapper {
+			display: none;
+		}
+		.grid_column {
+			gap: 41px;
+		}
+		li {
+			font-size: 15px;
+		}
+		.column {
+			padding-top: 31px;
+			padding-bottom: 47px;
+			width: 100% !important;
+		}
+		h3 {
+			margin-bottom: 16px;
+		}
+		.row,
+		.grid {
+			display: flex;
+			flex-direction: column;
+			gap: 41px;
+		}
+		.card {
+			margin: 0;
+			padding-top: 34px;
+			padding-bottom: 64px;
+		}
+		h6 {
+			font-size: 23px !important;
+		}
+		p {
+			font-size: 15px;
+		}
+	}
 }

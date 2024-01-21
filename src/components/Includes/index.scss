@@ -1,86 +1,72 @@
 .includes .top_card {
-    background: linear-gradient(
-            121.91deg,
-            #fff598 -144.25%,
-            rgba(255, 246, 165, 0) 72.54%
-        ),
-        linear-gradient(
-            66.94deg,
-            #8e59fe 0.45%,
-            #6922ff 0.46%,
-            rgba(174, 90, 255, 0) 77.92%
-        ),
-        linear-gradient(
-            250.92deg,
-            #fb25ff -73.06%,
-            rgba(255, 255, 255, 0) 39.82%
-        ),
-        #ffcaed;
-    border-radius: 55px;
-    padding: 42px 47px 56px 29px;
-    position: relative;
-    h2 {
-        font-weight: 700;
-        font-size: 96px;
-        line-height: 120%;
-        color: #ffffff;
-        margin-bottom: 80px;
-    }
-    &_row {
-        display: grid;
-        grid-template-columns: 540px 1fr;
-        padding: 18px 90px 18px 0;
-        column-gap: 127px;
-        &:nth-child(n + 4) {
-            border-top: 1px solid rgba(255, 255, 255, 0.3);
-        }
-        &:last-child {
-            border: none;
-        }
-        p {
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 38px;
-            color: #ffffff;
-        }
-    }
-    .image_wrapper {
-        position: absolute;
-        right: 0;
-        top: 100px;
-    }
-    .texts {
-        display: none;
-    }
-    @media screen and (max-width: 768px) {
-        img {
-            width: 147px;
-            top: 60px;
-        }
+	background: linear-gradient(121.91deg, #fff598 -144.25%, rgba(255, 246, 165, 0) 72.54%),
+		linear-gradient(66.94deg, #8e59fe 0.45%, #6922ff 0.46%, rgba(174, 90, 255, 0) 77.92%),
+		linear-gradient(250.92deg, #fb25ff -73.06%, rgba(255, 255, 255, 0) 39.82%), #ffcaed;
+	border-radius: 55px;
+	padding: 42px 47px 56px 29px;
+	position: relative;
+	h2 {
+		font-weight: 700;
+		font-size: 96px;
+		line-height: 120%;
+		color: #ffffff;
+		margin-bottom: 80px;
+	}
+	&_row {
+		display: grid;
+		grid-template-columns: 540px 1fr;
+		padding: 18px 90px 18px 0;
+		column-gap: 127px;
+		&:nth-child(n + 4) {
+			border-top: 1px solid rgba(255, 255, 255, 0.3);
+		}
+		&:last-child {
+			border: none;
+		}
+		p {
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 38px;
+			color: #ffffff;
+		}
+	}
+	.image_wrapper {
+		position: absolute;
+		right: 0;
+		top: 100px;
+	}
+	.texts {
+		display: none;
+	}
+	@media screen and (max-width: 768px) {
+		img {
+			width: 147px;
+			top: 60px;
+		}
 
-        h2 {
-            font-size: 32px !important;
-            margin-bottom: 28px;
-        }
-        .top_card_row {
-            display: none;
-        }
-        .texts {
-            display: flex;
-            flex-direction: column;
-        }
-        p {
-            display: flex;
-            align-items: center;
-            padding: 12px 0;
-            font-weight: 600;
-            font-size: 12px;
-            color: #ffffff;
-        }
-        p:not(:first-child) {
-            border-top: 2px solid rgba(255, 255, 255, 0.3);
-        }
-    }
+		h2 {
+			font-size: 32px !important;
+			margin-bottom: 28px;
+		}
+		.top_card_row {
+			display: none;
+		}
+		.texts {
+			display: flex;
+			flex-direction: column;
+		}
+		p {
+			display: flex;
+			align-items: center;
+			padding: 12px 0;
+			font-weight: 600;
+			font-size: 12px;
+			color: #ffffff;
+		}
+		p:not(:first-child) {
+			border-top: 2px solid rgba(255, 255, 255, 0.3);
+		}
+	}
 }
 
 .includes {

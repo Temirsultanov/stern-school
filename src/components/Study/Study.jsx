@@ -3,153 +3,107 @@ import { LazyLoadImage } from 'react-lazy-load-image-component'
 import './index.scss'
 
 const Study = () => {
-    return (
-        <div className="study">
-            <div className="wrapper">
-                <div className="cont">
-                    <h2>К чему готовим</h2>
-                    <div className="grid">
-                        <a
-                            target={'_blank'}
-                            href="https://fipi.ru/ege"
-                            className="card" rel="noreferrer"
-                        >
-                            <LazyLoadImage
-                                src="./images/study/image7.png"
-                                width={'100%'}
-                                height={'100%'}
-                                alt="Image Alt"
-                                className="bg"
-                            />
-                            <div className="image_wrapper">
-                                <div className="image">
-                                    <LazyLoadImage
-                                        src="./images/study/image1.svg"
-                                        width={'100%'}
-                                        height={'100%'}
-                                        alt="Image Alt"
-                                    />
-                                </div>
-                                <p className="first">ЕГЭ/ОГЭ</p>
-                            </div>
-                        </a>
-                        <a
-                            target={'_blank'}
-                            href="http://pk.math.msu.ru/ru/specialist/variant"
-                            className="card" rel="noreferrer"
-                        >
-                            <LazyLoadImage
-                                src="./images/study/image8.png"
-                                width={'100%'}
-                                height={'100%'}
-                                alt="Image Alt"
-                                className="bg"
-                            />
-                            <div className="image_wrapper">
-                                <div className="image">
-                                    <LazyLoadImage
-                                        src="./images/study/image2.svg"
-                                        width={'100%'}
-                                        height={'100%'}
-                                        alt="Image Alt"
-                                    />
-                                </div>
-                                <p className="second">ДВИ МГУ</p>
-                            </div>
-                        </a>
-                        <a
-                            target={'_blank'}
-                            href="https://vos.olimpiada.ru/"
-                            className="card" rel="noreferrer"
-                        >
-                            <LazyLoadImage
-                                src="./images/study/image9.png"
-                                width={'100%'}
-                                height={'100%'}
-                                alt="Image Alt"
-                                className="bg"
-                            />
-                            <div className="image_wrapper">
-                                <div className="image">
-                                    <LazyLoadImage
-                                        src="./images/study/image3.svg"
-                                        width={'100%'}
-                                        height={'100%'}
-                                        alt="Image Alt"
-                                    />
-                                </div>
-                                <p className="third">ВСОШ</p>
-                            </div>
-                        </a>
-                        <a
-                            target={'_blank'}
-                            href="https://pvg.mk.ru/"
-                            className="card" rel="noreferrer"
-                        >
-                            <LazyLoadImage
-                                src="./images/study/image10.png"
-                                width={'100%'}
-                                height={'100%'}
-                                alt="Image Alt"
-                                className="bg"
-                            />
-                            <div className="image_wrapper">
-                                <div className="image">
-                                    <LazyLoadImage
-                                        src="./images/study/image4.svg"
-                                        width={'100%'}
-                                        height={'100%'}
-                                        alt="Image Alt"
-                                    />
-                                </div>
-                                <p className="fourth">Покори Воробьевы горы!</p>
-                            </div>
-                        </a>
-                        <div className="card">
-                            <LazyLoadImage
-                                src="./images/study/image11.png"
-                                width={'100%'}
-                                height={'100%'}
-                                alt="Image Alt"
-                                className="bg"
-                            />
-                            <div className="image_wrapper">
-                                <div className="image">
-                                    <img
-                                        src="./images/study/image5.png"
-                                        alt=""
-                                    />
-                                </div>
-                                <p className="fifth">Математические школы</p>
-                            </div>
-                        </div>
-                        <a
-                            target={'_blank'}
-                            href="https://lomonosov-msu.ru/"
-                            className="card" rel="noreferrer"
-                        >
-                            <LazyLoadImage
-                                src="./images/study/image12.png"
-                                width={'100%'}
-                                height={'100%'}
-                                alt="Image Alt"
-                                className="bg"
-                            />
-                            <div className="image_wrapper">
-                                <div className="image">
-                                    <img
-                                        src="./images/study/image6.svg"
-                                        alt=""
-                                    />
-                                </div>
-                                <p className="sixth">Олимпиада “Ломоносов” </p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
+	return (
+		<div className='study'>
+			<div className='wrapper'>
+				<div className='cont'>
+					<h2>К чему готовим</h2>
+					<div className='grid'>
+						<a target={'_blank'} href='https://fipi.ru/ege' className='card' rel='noreferrer'>
+							<LazyLoadImage
+								src='./images/study/image7.png'
+								width={'100%'}
+								height={'100%'}
+								alt='Image Alt'
+								className='bg'
+							/>
+							<div className='image_wrapper'>
+								<div className='image'>
+									<LazyLoadImage src='./images/study/image1.svg' width={'100%'} height={'100%'} alt='Image Alt' />
+								</div>
+								<p className='first'>ЕГЭ/ОГЭ</p>
+							</div>
+						</a>
+						<a target={'_blank'} href='http://pk.math.msu.ru/ru/specialist/variant' className='card' rel='noreferrer'>
+							<LazyLoadImage
+								src='./images/study/image8.png'
+								width={'100%'}
+								height={'100%'}
+								alt='Image Alt'
+								className='bg'
+							/>
+							<div className='image_wrapper'>
+								<div className='image'>
+									<LazyLoadImage src='./images/study/image2.svg' width={'100%'} height={'100%'} alt='Image Alt' />
+								</div>
+								<p className='second'>ДВИ МГУ</p>
+							</div>
+						</a>
+						<a target={'_blank'} href='https://vos.olimpiada.ru/' className='card' rel='noreferrer'>
+							<LazyLoadImage
+								src='./images/study/image9.png'
+								width={'100%'}
+								height={'100%'}
+								alt='Image Alt'
+								className='bg'
+							/>
+							<div className='image_wrapper'>
+								<div className='image'>
+									<LazyLoadImage src='./images/study/image3.svg' width={'100%'} height={'100%'} alt='Image Alt' />
+								</div>
+								<p className='third'>ВСОШ</p>
+							</div>
+						</a>
+						<a target={'_blank'} href='https://pvg.mk.ru/' className='card' rel='noreferrer'>
+							<LazyLoadImage
+								src='./images/study/image10.png'
+								width={'100%'}
+								height={'100%'}
+								alt='Image Alt'
+								className='bg'
+							/>
+							<div className='image_wrapper'>
+								<div className='image'>
+									<LazyLoadImage src='./images/study/image4.svg' width={'100%'} height={'100%'} alt='Image Alt' />
+								</div>
+								<p className='fourth'>Покори Воробьевы горы!</p>
+							</div>
+						</a>
+						<div className='card'>
+							<LazyLoadImage
+								src='./images/study/image11.png'
+								width={'100%'}
+								height={'100%'}
+								alt='Image Alt'
+								className='bg'
+							/>
+							<div className='image_wrapper'>
+								<div className='image'>
+									<img src='./images/study/image5.png' alt='' />
+								</div>
+								<p className='fifth'>Математические школы</p>
+							</div>
+						</div>
+						<a target={'_blank'} href='https://lomonosov-msu.ru/' className='card' rel='noreferrer'>
+							<LazyLoadImage
+								src='./images/study/image12.png'
+								width={'100%'}
+								height={'100%'}
+								alt='Image Alt'
+								className='bg'
+							/>
+							<div className='image_wrapper'>
+								<div className='image'>
+									<img src='./images/study/image6.svg' alt='' />
+								</div>
+								<p className='sixth'>Олимпиада “Ломоносов” </p>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	)
 }
 
 export default Study

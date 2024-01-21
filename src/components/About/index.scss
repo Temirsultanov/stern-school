@@ -1,303 +1,219 @@
 .about {
-    .row {
-        display: grid;
-        grid-template-columns: 645px 1fr;
-        column-gap: 28px;
-        margin-bottom: 27px;
-        height: 583px;
-    }
-    .second_row {
-        display: grid;
-        grid-template-columns: 888px 1fr;
-        column-gap: 31px;
-        height: 583px;
-    }
-    .card {
-        display: flex;
-        flex-direction: column;
-        border-radius: 30px;
-        background: #fff;
-        padding: 60px 56px 70px;
-        transition: 2s all ease;
-    }
-    .card.phone {
-        padding: 57px 50px 42px;
-    }
-    .image_wrapper {
-        margin: 0 auto;
-        position: relative;
-        border-radius: 50%;
-        width: 284px;
-        height: 284px;
-        display: grid;
-        place-content: center;
-        background: #fff;
-        .first {
-            width: 223px;
-        }
-        .second {
-            width: 400px;
-            position: absolute;
-            top: -130px;
-            left: -100px;
-        }
-        .third {
-            width: 284px;
-        }
-        .forth {
-            width: 285px;
-        }
-    }
-    span {
-        font-size: 20px;
-        line-height: 150%;
-        color: #515151;
-        font-weight: 500;
-    }
-    p {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 150%;
-        color: #515151;
-        margin-top: 44px;
-    }
-    button {
-        width: 208px;
-        height: 52px;
-        background: radial-gradient(
-                100% 942.28% at 9.58% 0%,
-                #738cff 0%,
-                rgba(110, 91, 233, 0) 97.76%
-            )
-            #6f5bec;
-        box-shadow: 4.31443px 4.31443px 8.62887px rgba(62, 72, 128, 0.1);
-        border-radius: 43px;
-        border: none;
-        margin: 0 auto;
-        font-weight: 400;
-        font-size: 32px;
-        color: #ffffff;
-        cursor: pointer;
-    }
-    input {
-        background: radial-gradient(
-                    109.8% 109.8% at 11.4% -9.8%,
-                    rgba(200, 210, 255, 0.15) 0%,
-                    rgba(255, 255, 255, 0) 100%
-                )
-                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-            #ffffff;
-        box-shadow: inset 4.31443px 4.31443px 4.31443px rgba(125, 102, 173, 0.2);
-        border-radius: 43.1443px;
-        height: 60px;
-        width: 100%;
-        text-align: center;
-        font-weight: 400;
-        font-size: 20.7093px;
-        color: rgba(50, 50, 65, 0.5);
-        outline: none;
-        border: none;
-        margin: 53px 0 30px;
-        &::placeholder {
-            font-weight: 400;
-            font-size: 20.7093px;
-            color: rgba(50, 50, 65, 0.5);
-        }
-    }
+	.row {
+		display: grid;
+		grid-template-columns: 645px 1fr;
+		column-gap: 28px;
+		margin-bottom: 27px;
+		height: 583px;
+	}
+	.second_row {
+		display: grid;
+		grid-template-columns: 888px 1fr;
+		column-gap: 31px;
+		height: 583px;
+	}
+	.card {
+		display: flex;
+		flex-direction: column;
+		border-radius: 30px;
+		background: #fff;
+		padding: 60px 56px 70px;
+		transition: 2s all ease;
+	}
+	.card.phone {
+		padding: 57px 50px 42px;
+	}
+	.image_wrapper {
+		margin: 0 auto;
+		position: relative;
+		border-radius: 50%;
+		width: 284px;
+		height: 284px;
+		display: grid;
+		place-content: center;
+		background: #fff;
+		.first {
+			width: 223px;
+		}
+		.second {
+			width: 400px;
+			position: absolute;
+			top: -130px;
+			left: -100px;
+		}
+		.third {
+			width: 284px;
+		}
+		.forth {
+			width: 285px;
+		}
+	}
+	span {
+		font-size: 20px;
+		line-height: 150%;
+		color: #515151;
+		font-weight: 500;
+	}
+	p {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 150%;
+		color: #515151;
+		margin-top: 44px;
+	}
+	button {
+		width: 208px;
+		height: 52px;
+		background: radial-gradient(100% 942.28% at 9.58% 0%, #738cff 0%, rgba(110, 91, 233, 0) 97.76%) #6f5bec;
+		box-shadow: 4.31443px 4.31443px 8.62887px rgba(62, 72, 128, 0.1);
+		border-radius: 43px;
+		border: none;
+		margin: 0 auto;
+		font-weight: 400;
+		font-size: 32px;
+		color: #ffffff;
+		cursor: pointer;
+	}
+	input {
+		background:
+			radial-gradient(109.8% 109.8% at 11.4% -9.8%, rgba(200, 210, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%)
+				/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+			#ffffff;
+		box-shadow: inset 4.31443px 4.31443px 4.31443px rgba(125, 102, 173, 0.2);
+		border-radius: 43.1443px;
+		height: 60px;
+		width: 100%;
+		text-align: center;
+		font-weight: 400;
+		font-size: 20.7093px;
+		color: rgba(50, 50, 65, 0.5);
+		outline: none;
+		border: none;
+		margin: 53px 0 30px;
+		&::placeholder {
+			font-weight: 400;
+			font-size: 20.7093px;
+			color: rgba(50, 50, 65, 0.5);
+		}
+	}
 
-    .row .card:nth-child(1) {
-        background: linear-gradient(
-                296.97deg,
-                #8affea -75.37%,
-                rgba(255, 255, 255, 0) 21.9%
-            ),
-            linear-gradient(
-                121.4deg,
-                #fff598 -47.63%,
-                rgba(255, 246, 165, 0) 101.06%
-            ),
-            linear-gradient(
-                63.47deg,
-                #6922ff -104.01%,
-                #8e59fe -73.77%,
-                rgba(174, 90, 255, 0) 103.43%
-            ),
-            linear-gradient(
-                249.05deg,
-                #fb25ff -92.77%,
-                rgba(255, 255, 255, 0) 11.2%
-            ),
-            #ffcaed;
-    }
-    .row .card:nth-child(2) {
-        background: linear-gradient(
-                296.82deg,
-                #8affea -9.09%,
-                rgba(255, 255, 255, 0) 88.11%
-            ),
-            linear-gradient(
-                121.24deg,
-                #fff598 -109.61%,
-                rgba(255, 246, 165, 0) 39%
-            ),
-            linear-gradient(
-                63.61deg,
-                #6922ff -170.37%,
-                #8e59fe -140.16%,
-                rgba(174, 90, 255, 0) 36.89%
-            ),
-            linear-gradient(
-                249.17deg,
-                #fb25ff -20.52%,
-                rgba(255, 255, 255, 0) 83.33%
-            ),
-            #ffcaed;
-    }
-    .second_row .card:nth-child(1) {
-        background: linear-gradient(
-                291.08deg,
-                #8affea -15.53%,
-                rgba(255, 255, 255, 0) 64.74%
-            ),
-            linear-gradient(
-                114.82deg,
-                #fff598 -72.75%,
-                rgba(255, 246, 165, 0) 51.3%
-            ),
-            linear-gradient(
-                69.28deg,
-                #6922ff -58.53%,
-                #8e59fe -33.61%,
-                rgba(174, 90, 255, 0) 112.44%
-            ),
-            linear-gradient(
-                253.83deg,
-                #fb25ff -78.65%,
-                rgba(255, 255, 255, 0) 5.8%
-            ),
-            #ffcaed;
-        background-position: 0 0;
-        background-size: 200%;
-        &:hover {
-            animation: bg 10s infinite ease;
-        }
-    }
-    .second_row .card:nth-child(2) {
-        background: linear-gradient(
-                309.93deg,
-                #8affea 29.13%,
-                rgba(255, 255, 255, 0) 158.78%
-            ),
-            linear-gradient(
-                135.12deg,
-                #fff598 -219.3%,
-                rgba(255, 246, 165, 0) -25.42%
-            ),
-            linear-gradient(
-                47.78deg,
-                #6922ff -106.87%,
-                #8e59fe -33.94%,
-                rgba(174, 90, 255, 0) 66.98%
-            ),
-            linear-gradient(
-                237.81deg,
-                #fb25ff -67.69%,
-                rgba(255, 255, 255, 0) 75.46%
-            ),
-            #ffcaed;
-        background-position: 0 0;
-        background-size: 200%;
-        &:hover {
-            animation: bg 10s infinite ease;
-        }
-    }
+	.row .card:nth-child(1) {
+		background: linear-gradient(296.97deg, #8affea -75.37%, rgba(255, 255, 255, 0) 21.9%),
+			linear-gradient(121.4deg, #fff598 -47.63%, rgba(255, 246, 165, 0) 101.06%),
+			linear-gradient(63.47deg, #6922ff -104.01%, #8e59fe -73.77%, rgba(174, 90, 255, 0) 103.43%),
+			linear-gradient(249.05deg, #fb25ff -92.77%, rgba(255, 255, 255, 0) 11.2%), #ffcaed;
+	}
+	.row .card:nth-child(2) {
+		background: linear-gradient(296.82deg, #8affea -9.09%, rgba(255, 255, 255, 0) 88.11%),
+			linear-gradient(121.24deg, #fff598 -109.61%, rgba(255, 246, 165, 0) 39%),
+			linear-gradient(63.61deg, #6922ff -170.37%, #8e59fe -140.16%, rgba(174, 90, 255, 0) 36.89%),
+			linear-gradient(249.17deg, #fb25ff -20.52%, rgba(255, 255, 255, 0) 83.33%), #ffcaed;
+	}
+	.second_row .card:nth-child(1) {
+		background: linear-gradient(291.08deg, #8affea -15.53%, rgba(255, 255, 255, 0) 64.74%),
+			linear-gradient(114.82deg, #fff598 -72.75%, rgba(255, 246, 165, 0) 51.3%),
+			linear-gradient(69.28deg, #6922ff -58.53%, #8e59fe -33.61%, rgba(174, 90, 255, 0) 112.44%),
+			linear-gradient(253.83deg, #fb25ff -78.65%, rgba(255, 255, 255, 0) 5.8%), #ffcaed;
+		background-position: 0 0;
+		background-size: 200%;
+		&:hover {
+			animation: bg 10s infinite ease;
+		}
+	}
+	.second_row .card:nth-child(2) {
+		background: linear-gradient(309.93deg, #8affea 29.13%, rgba(255, 255, 255, 0) 158.78%),
+			linear-gradient(135.12deg, #fff598 -219.3%, rgba(255, 246, 165, 0) -25.42%),
+			linear-gradient(47.78deg, #6922ff -106.87%, #8e59fe -33.94%, rgba(174, 90, 255, 0) 66.98%),
+			linear-gradient(237.81deg, #fb25ff -67.69%, rgba(255, 255, 255, 0) 75.46%), #ffcaed;
+		background-position: 0 0;
+		background-size: 200%;
+		&:hover {
+			animation: bg 10s infinite ease;
+		}
+	}
 
-    .adaptive_card {
-        display: none;
-    }
+	.adaptive_card {
+		display: none;
+	}
 
-    .adaptive_button {
-        display: none;
-    }
+	.adaptive_button {
+		display: none;
+	}
 
-    @media screen and (max-width: 768px) {
-        .row {
-            background: url(../../../public/images/about/adaptive_bg.png)
-                no-repeat;
-            background-size: cover;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto auto auto;
-            row-gap: 26px;
-            height: auto;
-            padding: 45px 10px 14px;
-            border-radius: 30px;
-            margin-bottom: 0;
-        }
-        .first {
-            width: 61px !important;
-        }
-        .second {
-            top: 0 !important;
-            left: 0 !important;
-            position: relative !important;
-        }
-        .second_wrapper {
-            width: 108px;
-            position: absolute;
-            top: -35px;
-            left: -25px;
-            .second {
-                width: 100% !important;
-            }
-        }
-        .third {
-            width: 100% !important;
-        }
-        .image_wrapper {
-            width: 78px;
-            height: 78px;
-            img {
-            }
-        }
-        .second_row {
-            display: none;
-        }
-        .card {
-            padding: 0;
-            display: grid;
-            grid-template-columns: 78px 1fr;
-            column-gap: 15px;
-            background: none !important;
-        }
-        p {
-            margin-top: 0;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 150%;
-        }
-        span {
-            font-size: 12px;
-        }
-        .adaptive_button {
-            display: block;
-            width: 100%;
-            height: 52px;
-            background: radial-gradient(
-                        100% 942.28% at 9.58% 0%,
-                        #738cff 0%,
-                        rgba(110, 91, 233, 0) 97.76%
-                    )
-                    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-                #6f5bec;
-            border: 0.5px solid #ffffff;
-            box-shadow: 4.31443px 4.31443px 8.62887px rgba(62, 72, 128, 0.1);
-            border-radius: 25px;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 33px;
-            color: #ffffff;
-            cursor: pointer;
-            margin-top: 25px;
-        }
-    }
+	@media screen and (max-width: 768px) {
+		.row {
+			background: url(../../../public/images/about/adaptive_bg.png) no-repeat;
+			background-size: cover;
+			grid-template-columns: 1fr;
+			grid-template-rows: auto auto auto;
+			row-gap: 26px;
+			height: auto;
+			padding: 45px 10px 14px;
+			border-radius: 30px;
+			margin-bottom: 0;
+		}
+		.first {
+			width: 61px !important;
+		}
+		.second {
+			top: 0 !important;
+			left: 0 !important;
+			position: relative !important;
+		}
+		.second_wrapper {
+			width: 108px;
+			position: absolute;
+			top: -35px;
+			left: -25px;
+			.second {
+				width: 100% !important;
+			}
+		}
+		.third {
+			width: 100% !important;
+		}
+		.image_wrapper {
+			width: 78px;
+			height: 78px;
+			img {
+			}
+		}
+		.second_row {
+			display: none;
+		}
+		.card {
+			padding: 0;
+			display: grid;
+			grid-template-columns: 78px 1fr;
+			column-gap: 15px;
+			background: none !important;
+		}
+		p {
+			margin-top: 0;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 150%;
+		}
+		span {
+			font-size: 12px;
+		}
+		.adaptive_button {
+			display: block;
+			width: 100%;
+			height: 52px;
+			background:
+				radial-gradient(100% 942.28% at 9.58% 0%, #738cff 0%, rgba(110, 91, 233, 0) 97.76%)
+					/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+				#6f5bec;
+			border: 0.5px solid #ffffff;
+			box-shadow: 4.31443px 4.31443px 8.62887px rgba(62, 72, 128, 0.1);
+			border-radius: 25px;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 33px;
+			color: #ffffff;
+			cursor: pointer;
+			margin-top: 25px;
+		}
+	}
 }

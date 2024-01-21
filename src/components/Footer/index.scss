@@ -1,170 +1,170 @@
 footer {
-    margin: 115px 0 55px;
-    @media screen and (max-width: 768px) {
-        margin: 54px 0 19px;
-    }
+	margin: 115px 0 55px;
+	@media screen and (max-width: 768px) {
+		margin: 54px 0 19px;
+	}
 }
 
 footer .cont {
-    background: #ffffff;
-    box-shadow: 0px 7px 15px rgba(109, 108, 164, 0.25),
-        inset 0px 2.59575px 2.59575px rgba(0, 0, 0, 0.25);
-    border-radius: 55px;
-    padding: 39px 159px 14px 200px;
-    @media screen and (max-width: 768px) {
-        padding: 50px 34px 49px 14px;
+	background: #ffffff;
+	box-shadow:
+		0px 7px 15px rgba(109, 108, 164, 0.25),
+		inset 0px 2.59575px 2.59575px rgba(0, 0, 0, 0.25);
+	border-radius: 55px;
+	padding: 39px 159px 14px 200px;
+	@media screen and (max-width: 768px) {
+		padding: 50px 34px 49px 14px;
 
-        h2 {
-            font-size: 38px;
-            line-height: 44px;
-            margin-right: 20px;
-        }
-    }
+		h2 {
+			font-size: 38px;
+			line-height: 44px;
+			margin-right: 20px;
+		}
+	}
 }
 footer .top {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 
-    @media screen and (max-width: 768px) {
-        flex-wrap: wrap;
-    }
+	@media screen and (max-width: 768px) {
+		flex-wrap: wrap;
+	}
 }
 
 footer .image_wrapper {
-    border-radius: 50%;
-    background: #323241;
-    display: grid;
-    place-content: center;
-    height: 100%;
-    width: 32px;
+	border-radius: 50%;
+	background: #323241;
+	display: grid;
+	place-content: center;
+	height: 100%;
+	width: 32px;
 }
 
 footer .column {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 32px 32px 32px;
-    row-gap: 21px;
-    @media screen and (max-width: 768px) {
-        grid-template-rows: repeat(3, 27px);
-    }
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 32px 32px 32px;
+	row-gap: 21px;
+	@media screen and (max-width: 768px) {
+		grid-template-rows: repeat(3, 27px);
+	}
 }
 
 footer .card {
-    display: grid;
-    grid-template-columns: 32px 1fr;
-    column-gap: 32px;
-    align-items: center;
-    p {
-        font-weight: 700;
-        font-size: 23.3618px;
-        line-height: 32px;
-        color: #323241;
-    }
-    .image_wrapper {
-        height: 32px;
-    }
-    &:hover {
-        transition: 0.3s all ease;
-        p {
-            transition: 0.3s all ease;
-            color: var(--purple)!important;
-        }
-
-    }
-    @media screen and (max-width: 768px) {
-        grid-template-columns: 27px 1fr;
-        column-gap: 11px;
-        .image_wrapper {
-            width: 100%;
-            height: 100%;
-            img {
-                width: 100%;
-            }
-        }
-        p {
-            font-size: 20px;
-            line-height: 23px;
-        }
-    }
+	display: grid;
+	grid-template-columns: 32px 1fr;
+	column-gap: 32px;
+	align-items: center;
+	p {
+		font-weight: 700;
+		font-size: 23.3618px;
+		line-height: 32px;
+		color: #323241;
+	}
+	.image_wrapper {
+		height: 32px;
+	}
+	&:hover {
+		transition: 0.3s all ease;
+		p {
+			transition: 0.3s all ease;
+			color: var(--purple) !important;
+		}
+	}
+	@media screen and (max-width: 768px) {
+		grid-template-columns: 27px 1fr;
+		column-gap: 11px;
+		.image_wrapper {
+			width: 100%;
+			height: 100%;
+			img {
+				width: 100%;
+			}
+		}
+		p {
+			font-size: 20px;
+			line-height: 23px;
+		}
+	}
 }
 
 footer .column.large {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 45px 45px 45px;
-    row-gap: 20px;
-    .card {
-        display: grid;
-        grid-template-columns: 45px 1fr;
-        column-gap: 20px;
-        align-items: center;
-    }
-    .image_wrapper {
-        width: 45px;
-        height: 45px;
-    }
-    p {
-        font-weight: 700;
-        font-size: 23.3618px;
-        line-height: 32px;
-        color: #323241;
-    }
-    @media screen and (max-width: 768px) {
-        grid-template-rows: repeat(2, 32px);
-        row-gap: 22px;
-        margin-top: 27px;
-        p {
-            font-size: 20px;
-            line-height: 23px;
-        }
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 45px 45px 45px;
+	row-gap: 20px;
+	.card {
+		display: grid;
+		grid-template-columns: 45px 1fr;
+		column-gap: 20px;
+		align-items: center;
+	}
+	.image_wrapper {
+		width: 45px;
+		height: 45px;
+	}
+	p {
+		font-weight: 700;
+		font-size: 23.3618px;
+		line-height: 32px;
+		color: #323241;
+	}
+	@media screen and (max-width: 768px) {
+		grid-template-rows: repeat(2, 32px);
+		row-gap: 22px;
+		margin-top: 27px;
+		p {
+			font-size: 20px;
+			line-height: 23px;
+		}
 
-        .image_wrapper {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            img {
-                width: 60%;
-                margin: 0 auto;
-            }
-        }
+		.image_wrapper {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img {
+				width: 60%;
+				margin: 0 auto;
+			}
+		}
 
-        .card {
-            grid-template-columns: 32px 1fr;
-            column-gap: 11px;
-        }
-    }
+		.card {
+			grid-template-columns: 32px 1fr;
+			column-gap: 11px;
+		}
+	}
 }
 
 footer h2 {
-    font-weight: 800;
-    font-size: 62.2981px;
-    line-height: 73px;
-    color: #323241;
+	font-weight: 800;
+	font-size: 62.2981px;
+	line-height: 73px;
+	color: #323241;
 }
 
 footer .bottom {
-    margin-top: 60px;
-    display: flex;
-    align-items: center;
-    p {
-        font-weight: 700;
-        font-size: 15.5745px;
-        line-height: 18px;
-        color: #323241;
-    }
-    p:nth-child(2) {
-        margin: 0 10px 0 80px;
-    }
+	margin-top: 60px;
+	display: flex;
+	align-items: center;
+	p {
+		font-weight: 700;
+		font-size: 15.5745px;
+		line-height: 18px;
+		color: #323241;
+	}
+	p:nth-child(2) {
+		margin: 0 10px 0 80px;
+	}
 
-    @media screen and (max-width: 768px) {
-        margin-left: 10px;
-        margin-top: 22px;
-        flex-direction: column;
-        align-items: flex-start;
-        p:nth-child(2) {
-            margin: 18px 0 3px;
-        }
-    }
+	@media screen and (max-width: 768px) {
+		margin-left: 10px;
+		margin-top: 22px;
+		flex-direction: column;
+		align-items: flex-start;
+		p:nth-child(2) {
+			margin: 18px 0 3px;
+		}
+	}
 }

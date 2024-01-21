@@ -1,250 +1,214 @@
 .attributes {
-    margin-top: 55px;
+	margin-top: 55px;
 
-    .block {
-        margin: 33px 0;
-        border-radius: 55px;
-        background: linear-gradient(236.7deg, #3687ff 0%, #cd62ff 181.84%);
-        padding: 36px 51px 84px 54px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 130px;
-    }
-    .image_wrapper {
-        margin: 0 auto;
-        width: 320px;
-        height: 320px;
-        border-radius: 50%;
-        display: grid;
-        place-content: center;
-        background: #5156ff;
-        margin-bottom: 32px;
-        img {
-            width: 100%;
-        }
-    }
-    .white {
-        background: #fff;
-    }
-    h3,
-    h4 {
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 150%;
-        color: #ffffff;
-        margin-bottom: 6px;
-    }
-    h4.black {
-        line-height: 150%;
-        color: #515151;
-        margin-bottom: 26px;
-    }
-    input {
-        background: radial-gradient(
-                    109.8% 109.8% at 11.4% -9.8%,
-                    rgba(200, 210, 255, 0.15) 0%,
-                    rgba(255, 255, 255, 0) 100%
-                )
-                /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-            #ffffff;
-        box-shadow: inset 4.31443px 4.31443px 4.31443px rgba(125, 102, 173, 0.2);
-        border-radius: 43.1443px;
-        height: 52px;
-        width: 100%;
-        text-align: center;
-        font-weight: 400;
-        font-size: 20.7093px;
-        color: rgba(50, 50, 65, 0.5);
-        outline: none;
-        border: none;
-        margin: 26px auto;
-        &::placeholder {
-            font-weight: 400;
-            font-size: 20.7093px;
-            color: rgba(50, 50, 65, 0.5);
-        }
-    }
-    button {
-        width: 100%;
-        height: 52px;
-        background: radial-gradient(
-                100% 942.28% at 9.58% 0%,
-                #738cff 0%,
-                rgba(110, 91, 233, 0) 97.76%
-            )
-            #6f5bec;
-        box-shadow: 4.31443px 4.31443px 8.62887px rgba(62, 72, 128, 0.1);
-        border-radius: 43px;
-        border: none;
-        margin: 0 auto;
-        font-weight: 400;
-        font-size: 32px;
-        color: #ffffff;
-        cursor: pointer;
-    }
-    p {
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 150%;
-        color: #ffffff;
-    }
+	.block {
+		margin: 33px 0;
+		border-radius: 55px;
+		background: linear-gradient(236.7deg, #3687ff 0%, #cd62ff 181.84%);
+		padding: 36px 51px 84px 54px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 130px;
+	}
+	.image_wrapper {
+		margin: 0 auto;
+		width: 320px;
+		height: 320px;
+		border-radius: 50%;
+		display: grid;
+		place-content: center;
+		background: #5156ff;
+		margin-bottom: 32px;
+		img {
+			width: 100%;
+		}
+	}
+	.white {
+		background: #fff;
+	}
+	h3,
+	h4 {
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 150%;
+		color: #ffffff;
+		margin-bottom: 6px;
+	}
+	h4.black {
+		line-height: 150%;
+		color: #515151;
+		margin-bottom: 26px;
+	}
+	input {
+		background:
+			radial-gradient(109.8% 109.8% at 11.4% -9.8%, rgba(200, 210, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%)
+				/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+			#ffffff;
+		box-shadow: inset 4.31443px 4.31443px 4.31443px rgba(125, 102, 173, 0.2);
+		border-radius: 43.1443px;
+		height: 52px;
+		width: 100%;
+		text-align: center;
+		font-weight: 400;
+		font-size: 20.7093px;
+		color: rgba(50, 50, 65, 0.5);
+		outline: none;
+		border: none;
+		margin: 26px auto;
+		&::placeholder {
+			font-weight: 400;
+			font-size: 20.7093px;
+			color: rgba(50, 50, 65, 0.5);
+		}
+	}
+	button {
+		width: 100%;
+		height: 52px;
+		background: radial-gradient(100% 942.28% at 9.58% 0%, #738cff 0%, rgba(110, 91, 233, 0) 97.76%) #6f5bec;
+		box-shadow: 4.31443px 4.31443px 8.62887px rgba(62, 72, 128, 0.1);
+		border-radius: 43px;
+		border: none;
+		margin: 0 auto;
+		font-weight: 400;
+		font-size: 32px;
+		color: #ffffff;
+		cursor: pointer;
+	}
+	p {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 150%;
+		color: #ffffff;
+	}
 
-    .row {
-        height: 740px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 30px;
-    }
+	.row {
+		height: 740px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 30px;
+	}
 
-    .row .card {
-        border-radius: 55px;
-        padding: 40px 55px 40px;
-    }
+	.row .card {
+		border-radius: 55px;
+		padding: 40px 55px 40px;
+	}
 
-    .row .card:nth-child(2) {
-        display: flex;
-        flex-direction: column;
+	.row .card:nth-child(2) {
+		display: flex;
+		flex-direction: column;
 
-        background: radial-gradient(
-                244.2% 304.44% at 269.41% -65.3%,
-                #8affea 0%,
-                rgba(255, 255, 255, 0) 100%
-            ),
-            radial-gradient(
-                385.79% 314.34% at 2.59% -394.25%,
-                #fff598 0%,
-                rgba(255, 246, 165, 0) 100%
-            ),
-            radial-gradient(
-                277.84% 338.19% at -104.36% -49.99%,
-                #5b57ff 30.21%,
-                #f2f1ff 98.44%
-            ),
-            radial-gradient(
-                390.9% 500.43% at 348.1% -359.19%,
-                #7977ff 0%,
-                rgba(255, 255, 255, 0) 100%
-            ),
-            #ffcaed;
-    }
-    .row .card:nth-child(1) {
-        background: linear-gradient(
-            216.69deg,
-            #3687ff -104.38%,
-            #cd62ff 158.47%
-        );
-    }
+		background: radial-gradient(244.2% 304.44% at 269.41% -65.3%, #8affea 0%, rgba(255, 255, 255, 0) 100%),
+			radial-gradient(385.79% 314.34% at 2.59% -394.25%, #fff598 0%, rgba(255, 246, 165, 0) 100%),
+			radial-gradient(277.84% 338.19% at -104.36% -49.99%, #5b57ff 30.21%, #f2f1ff 98.44%),
+			radial-gradient(390.9% 500.43% at 348.1% -359.19%, #7977ff 0%, rgba(255, 255, 255, 0) 100%), #ffcaed;
+	}
+	.row .card:nth-child(1) {
+		background: linear-gradient(216.69deg, #3687ff -104.38%, #cd62ff 158.47%);
+	}
 
-    .card_row {
-        display: grid;
-        grid-template-columns: 287px 1fr;
-        column-gap: 15px;
-        align-items: center;
-    }
+	.card_row {
+		display: grid;
+		grid-template-columns: 287px 1fr;
+		column-gap: 15px;
+		align-items: center;
+	}
 
-    .adaptive {
-        display: none;
-    }
+	.adaptive {
+		display: none;
+	}
 
-    @media screen and (max-width: 768px) {
-        margin: 52px 0;
-        .adaptive {
-            display: block;
-        }
-        .cont {
-            padding: 39px 10px 16px 12px;
-            background: linear-gradient(
-                236.7deg,
-                #3687ff 4.96%,
-                #cd62ff 186.81%
-            );
-            border-radius: 25px;
-        }
-        .row {
-            width: 100%;
-            height: auto;
-            grid-template-columns: 1fr;
-        }
-        .block {
-            height: auto;
-            grid-template-columns: 1fr;
-        }
-        .row .card:nth-child(2) {
-            display: none;
-        }
-        .block,
-        .card {
-            background: none !important;
-        }
-        .block {
-            padding: 0;
-            margin: 0 0 35px 0;
-        }
-        .left {
-            display: grid;
-            grid-template-columns: 78px 1fr;
-            column-gap: 13px;
-        }
-        .image_wrapper {
-            width: 78px;
-            height: 78px;
-            img {
-                width: 80%;
-                margin: 0 auto;
-            }
-        }
-        h3,
-        h4 {
-            margin-bottom: 2px;
-            font-size: 16px;
-        }
-        p {
-            font-weight: 200;
-            font-size: 12px;
-        }
-        .right {
-            margin-top: 35px;
-            display: grid;
-            grid-template-columns: 78px 1fr;
-            column-gap: 13px;
-        }
-        .row .card {
-            display: grid;
-            grid-template-columns: 78px 1fr;
-            column-gap: 13px;
-            padding: 0;
-            .image_wrapper img {
-                width: 100%;
-            }
-        }
-        button.adaptive {
-            height: 52px;
-            width: 100%;
-            border: none;
-            background: radial-gradient(
-                        100% 942.28% at 9.58% 0%,
-                        #738cff 0%,
-                        rgba(110, 91, 233, 0) 97.76%
-                    )
-                    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
-                #6f5bec;
-            border: 0.5px solid #ffffff;
-            box-shadow: 4.31443px 4.31443px 8.62887px rgba(62, 72, 128, 0.1);
-            border-radius: 25px;
-            font-weight: 400;
-            font-size: 24px;
-            line-height: 33px;
-            color: #ffffff;
-            margin-top: 15px;
-        }
-        span.adaptive {
-            width: 200px;
-            margin-top: 54px;
-            margin-left: 90px;
-            font-weight: 600;
-            font-size: 20px;
-            line-height: 130%;
-            color: #ffffff;
-        }
-    }
+	@media screen and (max-width: 768px) {
+		margin: 52px 0;
+		.adaptive {
+			display: block;
+		}
+		.cont {
+			padding: 39px 10px 16px 12px;
+			background: linear-gradient(236.7deg, #3687ff 4.96%, #cd62ff 186.81%);
+			border-radius: 25px;
+		}
+		.row {
+			width: 100%;
+			height: auto;
+			grid-template-columns: 1fr;
+		}
+		.block {
+			height: auto;
+			grid-template-columns: 1fr;
+		}
+		.row .card:nth-child(2) {
+			display: none;
+		}
+		.block,
+		.card {
+			background: none !important;
+		}
+		.block {
+			padding: 0;
+			margin: 0 0 35px 0;
+		}
+		.left {
+			display: grid;
+			grid-template-columns: 78px 1fr;
+			column-gap: 13px;
+		}
+		.image_wrapper {
+			width: 78px;
+			height: 78px;
+			img {
+				width: 80%;
+				margin: 0 auto;
+			}
+		}
+		h3,
+		h4 {
+			margin-bottom: 2px;
+			font-size: 16px;
+		}
+		p {
+			font-weight: 200;
+			font-size: 12px;
+		}
+		.right {
+			margin-top: 35px;
+			display: grid;
+			grid-template-columns: 78px 1fr;
+			column-gap: 13px;
+		}
+		.row .card {
+			display: grid;
+			grid-template-columns: 78px 1fr;
+			column-gap: 13px;
+			padding: 0;
+			.image_wrapper img {
+				width: 100%;
+			}
+		}
+		button.adaptive {
+			height: 52px;
+			width: 100%;
+			border: none;
+			background:
+				radial-gradient(100% 942.28% at 9.58% 0%, #738cff 0%, rgba(110, 91, 233, 0) 97.76%)
+					/* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+				#6f5bec;
+			border: 0.5px solid #ffffff;
+			box-shadow: 4.31443px 4.31443px 8.62887px rgba(62, 72, 128, 0.1);
+			border-radius: 25px;
+			font-weight: 400;
+			font-size: 24px;
+			line-height: 33px;
+			color: #ffffff;
+			margin-top: 15px;
+		}
+		span.adaptive {
+			width: 200px;
+			margin-top: 54px;
+			margin-left: 90px;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 130%;
+			color: #ffffff;
+		}
+	}
 }
