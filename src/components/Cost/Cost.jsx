@@ -46,7 +46,7 @@ const Cost = ({ openRegistrationModal }) => {
 								swiperRef.current = swiper
 							}}>
 							{[0, 1].map((item) => (
-								<SwiperSlide>
+								<SwiperSlide key={item}>
 									<div className='card'>
 										<p className='cost_text'>{grade === 0 ? '48 500 ₽' : '78 500 ₽'}</p>
 										<h2>Стоимость</h2>

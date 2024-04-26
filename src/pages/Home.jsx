@@ -12,7 +12,12 @@ import Attributes from '../components/Attributes/Attributes'
 import Comments from '../components/Comments/Comments'
 import TeachingStaff from '../components/TeachingStaff'
 
-const components = [<Study />, <Includes />, <Gallery />, <TeachingStaff />]
+const components = [
+	{ name: 'Study', component: <Study /> },
+	{ name: 'Includes', component: <Includes /> },
+	{ name: 'Gallery', component: <Gallery /> },
+	{ name: 'TeachingStaff', component: <TeachingStaff /> },
+]
 
 const cardVariants = {
 	offscreen: {
@@ -64,14 +69,14 @@ const Home = () => {
 	return (
 		<>
 			{isLoading && (
-				<div class='loader-wrapper'>
-					<div class='loader'></div>
+				<div className='loader-wrapper'>
+					<div className='loader'></div>
 				</div>
 			)}
 			<Offer openRegistrationModal={openRegistrationModal} />
 			<About openCallBackModal={openCallBackModal} />
 			{components.map((item) => {
-				return <Card emoji={item} />
+				return <Card key={item.name} emoji={item.component} />
 			})}
 			<Attributes openCallBackModal={openCallBackModal} />
 			<Comments />

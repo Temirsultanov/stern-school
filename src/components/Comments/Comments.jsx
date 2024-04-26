@@ -4,75 +4,88 @@ import './index.scss'
 
 const data = [
 	{
+		id: 1,
 		type: 'text',
 		name: 'Marat',
 		messanger: 'Telegram',
 		text: 'Камиль тоже на май уже чемодан собирает. Сказал, что это было лучше Алтая, спортивного лагеря и семейного лагеря. Спасибо организаторам и вожатым.',
 	},
 	{
+		id: 2,
 		type: 'video',
 		url: 'https://camp.stern.xyz/media/videos/video1.mp4',
 	},
-
 	{
+		id: 3,
 		type: 'text',
 		name: 'Дарья',
 		messanger: 'Telegram',
 		text: 'Спасибо большое! Вы делаете прекрасное дело!',
 	},
 	{
+		id: 4,
 		type: 'video',
 		url: 'https://camp.stern.xyz/media/videos/video2.mp4',
 	},
 	{
+		id: 5,
 		type: 'text',
 		name: 'Надежда Авдасева',
 		messanger: 'Telegram',
 		text: 'Спасибо вам за великолепную смену!!! Детям очень понравилось. Столько положительных эмоций. С наступающим новым годом вас!!!а',
 	},
 	{
+		id: 6,
 		type: 'video',
 		url: 'https://camp.stern.xyz/media/videos/video3.mp4 ',
 	},
 	{
+		id: 7,
 		type: 'text',
 		name: 'Анна',
 		messanger: 'Telegram',
 		text: 'Спасибо огромное организаторам и вожатым за отличную организацию, Серена счастлив, всю дорогу домой рассказывал, сколько всего полезного, нового он узнал. Вы молодцы, уже не первый раз с вами, на май собираются уже вдвоем Серга и Ваня. С Наступающим Новым Годом и Рождеством! Новых идей инициатив, замечательных преподавателей и дружных ребят!',
 	},
 	{
+		id: 8,
 		type: 'video',
 		url: 'https://camp.stern.xyz/media/videos/video4.mp4 ',
 	},
 	{
+		id: 9,
 		type: 'text',
 		name: 'Илья Кузнецов',
 		messanger: 'Telegram',
 		text: 'Какие молодцы, шикарный праздник ребятам организовали, СПАСИБО!<br/><br/> И всех с наступающими праздниками! Пусть заряд и настроение сохранятся на новый рывок:)<br/><br/>Особенно ребятам из нашего 1го отряда от души желаю справиться с завершением года с честью и поступить в те ВУЗы, которые являются фокусными :))',
 	},
 	{
+		id: 10,
 		type: 'video',
 		url: 'https://camp.stern.xyz/media/videos/video5.mp4 ',
 	},
 	{
+		id: 11,
 		type: 'text',
 		name: 'Татьяна',
 		messanger: 'Telegram',
 		text: 'Спасибо огромное за внимание и креативность в обучении детей!!!',
 	},
 	{
+		id: 12,
 		type: 'text',
 		name: 'Галина Голотина',
 		messanger: 'Telegram',
 		text: 'И Коля первое что сказал - "Можно я в мае поеду?" и еще добавил: "Это мой первый лагерь, в котором по учителям можно плакать"<br/>Дорогие организаторы, воспитатели, учителя - всем вам огромное СПАСИБО за счастливого, увлеченного знаниями ребенка <3<br/>С Наступающим Новым Годом!!!',
 	},
 	{
+		id: 13,
 		type: 'text',
 		name: 'Татьяна',
 		messanger: 'Telegram',
 		text: 'Спасибо огромное за лагерь! Мы уехали, а про диск с фото не спросили. Его как-то можно получить? Или это ссылка на диск?',
 	},
 	{
+		id: 14,
 		type: 'text',
 		name: 'Дарья',
 		messanger: 'Telegram',
@@ -113,8 +126,8 @@ const Video = ({ url }) => {
 							r='1'
 							gradientUnits='userSpaceOnUse'
 							gradientTransform='translate(8.87223 -13.0284) rotate(55.4446) scale(109.22 107.365)'>
-							<stop stop-color='#C8D2FF' stop-opacity='0.15' />
-							<stop offset='1' stop-color='white' stop-opacity='0' />
+							<stop stopColor='#C8D2FF' stopOpacity='0.15' />
+							<stop offset='1' stopColor='white' stopOpacity='0' />
 						</radialGradient>
 					</defs>
 				</svg>
@@ -168,14 +181,17 @@ const Comments = () => {
 							<img src='/images/comments/plus2.svg' alt='' />
 						</a>
 					</SwiperSlide>
-					{data.map((item, index) => (
-						<>
-							{item.type === 'video' ? (
-								<SwiperSlide className='card video'>
+
+					{data.map((item, index) => {
+						if (item.type === 'video') {
+							return (
+								<SwiperSlide key={item.id} className='card video'>
 									<Video url={item.url} />
 								</SwiperSlide>
-							) : (
-								<SwiperSlide className='card' key={index}>
+							)
+						} else {
+							return (
+								<SwiperSlide key={item.id} className='card'>
 									<div className='row'>
 										<h5>{item.name}</h5>
 										<p>{item.messanger}</p>
@@ -185,9 +201,9 @@ const Comments = () => {
 											__html: item.text,
 										}}></p>
 								</SwiperSlide>
-							)}
-						</>
-					))}
+							)
+						}
+					})}
 				</Swiper>
 			</div>
 			<div className='arrows'>
