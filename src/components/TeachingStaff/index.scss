@@ -20,18 +20,18 @@
 		width: 768px;
 		height: 768px;
 		background: #ffe2f7;
-		border-radius: 50%;
+		border-radius: 50px;
 		position: absolute;
 		left: -94px;
 		top: -94px;
 	}
 	.slider {
 		position: relative;
-		margin-top: 16px;
+		margin-top: 40px;
 		img {
 			width: 581px;
 			height: 581px;
-			border-radius: 50%;
+			border-radius: 50px;
 		}
 	}
 	.text {
@@ -97,7 +97,7 @@
 		overflow: hidden;
 		width: 581px;
 		height: 581px;
-		border-radius: 50%;
+		border-radius: 50px;
 		img {
 			transition: 0.15s all ease;
 			object-fit: cover;
@@ -151,7 +151,7 @@
 		}
 		.text {
 			padding: 14px 8px 20px 16px;
-			max-width: 300px;
+			max-width: 280px;
 			width: 300px;
 			bottom: 15px;
 			left: 50%;
