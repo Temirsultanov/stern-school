@@ -20,12 +20,20 @@ div {
 	margin: 0 auto;
 }
 
+html {
+	scroll-behavior: smooth;
+}
 body {
 	background: #ffedfa;
+	scroll-behavior: smooth;
 }
 #root {
 	position: relative;
 	scroll-behavior: smooth;
+}
+
+.anchored-section {
+	scroll-margin-top: 80px;
 }
 
 button:not(.ril__navButtons) {

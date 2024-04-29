@@ -18,7 +18,7 @@ const Attributes = ({ openCallBackModal }) => {
 	}
 
 	return (
-		<div className='attributes' id='accomodations'>
+		<div className='attributes anchored-section' id='accomodations'>
 			<div className='wrapper'>
 				<div className='cont'>
 					<div className='block'>

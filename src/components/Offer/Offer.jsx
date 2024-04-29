@@ -3,7 +3,7 @@ import './index.scss'
 
 const Offer = ({ openRegistrationModal }) => {
 	return (
-		<div className='offer' id='about'>
+		<div className='offer'>
 			<div className='wrapper'>
 				<div className='cont'>
 					<div className='left'>

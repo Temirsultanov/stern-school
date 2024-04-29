@@ -113,10 +113,10 @@ const Header = ({ openCallBackModal, openRegistrationModal }) => {
 				<a href='/#about' onClick={() => setShow(false)}>
 					О смене
 				</a>
-				<a href='/#about2' onClick={() => setShow(false)}>
+				<a href='/#accomodations' onClick={() => setShow(false)}>
 					Проживание и питание
 				</a>
-				<a href='/#comments' onClick={() => setShow(false)}>
+				<a href='/#reviews' onClick={() => setShow(false)}>
 					Отзывы
 				</a>
 				<a href='/#faq' onClick={() => setShow(false)}>

@@ -154,7 +154,7 @@ const Comments = () => {
 	let swiperRef = React.useRef(null)
 
 	return (
-		<div className='comments' id='reviews'>
+		<div className='comments anchored-section' id='reviews'>
 			<div className='wrapper'>
 				<div className='cont'>
 					<h2>Отзывы</h2>

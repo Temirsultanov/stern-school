@@ -60,9 +60,15 @@
 		margin-bottom: 0;
 		.ping {
 			z-index: 0;
-			bottom: 30px;
+			bottom: -30px;
 			right: -30px;
 			width: 379px;
+		}
+	}
+
+	@media screen and (max-width: 460px) {
+		.ping {
+			bottom: 10px;
 		}
 	}
 }

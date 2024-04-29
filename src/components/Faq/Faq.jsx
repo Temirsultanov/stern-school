@@ -1,7 +1,5 @@
 import React from 'react'
 import InputMask from 'react-input-mask'
-import { motion } from 'framer-motion'
-import AnimatedText from '../AnimatedText'
 import './index.scss'
 import axios from 'axios'
 import { toast } from 'react-toastify'
@@ -71,7 +69,7 @@ const Faq = () => {
 			.catch((err) => notifyError())
 	}
 	return (
-		<div className='faq' id='faq'>
+		<div className='faq anchored-section' id='faq'>
 			<div className='wrapper'>
 				<div className='cont'>
 					<div className='left'>
