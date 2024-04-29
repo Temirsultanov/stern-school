@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useOnClickOutside } from '../../lib/useOnClickOutside'
 import Lightbox from 'react-image-lightbox'
-import 'react-image-lightbox/style.css' // T
+import 'react-image-lightbox/style.css'
 import './index.scss'
 
 let photos = [
@@ -113,7 +113,6 @@ const Gallery = () => {
 							))}
 						</div>
 					</div>
-					<button onClick={() => setFullLightbox(true)}>Посмотреть еще</button>
 				</div>
 			</div>
 		</div>

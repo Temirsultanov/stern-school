@@ -1,7 +1,7 @@
 export const TEACHERS = [
 	{
 		id: 0,
-		name: 'Юмашев Михаил',
+		name: 'Юмашев МИХАИЛ',
 		role: 'Основатель и Руководитель Школы Точных Наук',
 		imageSrc: './images/teachers/yumashev_mihail.webp',
 		placeholderSrc: './images/teachers/yumashev_mihail.webp',

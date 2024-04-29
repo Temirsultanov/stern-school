@@ -119,7 +119,7 @@ const Header = ({ openCallBackModal, openRegistrationModal }) => {
 				<a href='/#comments' onClick={() => setShow(false)}>
 					Отзывы
 				</a>
-				<a to='/#faq' onClick={() => setShow(false)}>
+				<a href='/#faq' onClick={() => setShow(false)}>
 					Частые вопросы
 				</a>
 				<p

@@ -36,23 +36,6 @@
 		border-radius: 52.8186px;
 		cursor: pointer;
 	}
-	button {
-		margin-top: 30px;
-		background: linear-gradient(97.27deg, #fff598 -228.48%, rgba(255, 246, 165, 0) 83.52%),
-			linear-gradient(85.02deg, #8e59fe -15.75%, #6922ff -15.74%, rgba(174, 90, 255, 0) 85.85%),
-			linear-gradient(265.95deg, #fb25ff -104.04%, rgba(255, 255, 255, 0) 37.84%), #ffcaed;
-		box-shadow: 0px 17.305px 25.9575px rgba(0, 0, 0, 0.2);
-		width: 100%;
-		height: 125px;
-		border: none;
-		cursor: pointer;
-		border-radius: 70px;
-		font-weight: 700;
-		font-size: 40px;
-		line-height: 120%;
-		color: #ffffff;
-	}
-
 	.lightbox {
 		height: 100vh;
 		width: 100vw;
@@ -168,11 +151,6 @@
 			overflow: hidden;
 			border-radius: 25px;
 			object-fit: cover;
-		}
-		button {
-			font-size: 24px;
-			height: 52px;
-			margin-top: 12px;
 		}
 	}
 }
