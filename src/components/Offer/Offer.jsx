@@ -14,7 +14,7 @@ const Offer = ({ openRegistrationModal }) => {
 								<div className='image_wrapper'>
 									<img src='./images/offer/first.png' alt='' className='table' />
 								</div>
-								<p>17—31 МАЯ ДЛЯ 1-11 КЛАССОВ</p>
+								<p>17—31 АВГУСТА ДЛЯ 1-11 КЛАССОВ И ВЫПУСКНИКОВ</p>
 							</div>
 							<div className='card'>
 								<div className='image_wrapper'>
