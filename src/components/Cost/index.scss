@@ -8,7 +8,7 @@
 		left: -20px;
 	}
 	.card {
-		padding: 27px 104px 6px;
+		padding: 27px 104px 30px;
 		position: relative;
 		height: 750px;
 		background: url(../../../public/images/cost/bg.png) no-repeat;
@@ -31,15 +31,16 @@
 			font-size: 96px;
 			line-height: 120%;
 			color: #ffffff;
-			margin-bottom: 5px;
+			margin-top: 30px;
 		}
 		.grades {
+			margin-top: 30px;
 			display: flex;
 			gap: 18px;
 			.grade {
 				cursor: pointer;
 				font-weight: 600;
-				font-size: 48px;
+				font-size: 44px;
 				line-height: 120%;
 				color: #fff;
 				background: rgba(255, 255, 255, 0.25);
@@ -58,14 +59,14 @@
 			font-size: 37px;
 			line-height: 120%;
 			color: #ffffff;
-			margin: 80px 0 24px;
+			margin: 50px 0 24px;
 		}
 
 		.subcost {
 			padding: 7px 34px;
 			text-align: center;
 			font-weight: 700;
-			font-size: 40px;
+			font-size: 39px;
 			line-height: 120%;
 			color: #424242;
 			background: #feff99;
@@ -112,7 +113,7 @@
 		span {
 			position: absolute;
 			right: 72px;
-			bottom: 6px;
+			bottom: 16px;
 			margin-left: auto;
 			font-weight: 700;
 			font-size: 16px;
@@ -199,7 +200,7 @@
 		}
 		.slide {
 			color: #fff;
-			padding: 0 21px;
+			padding: 10px 21px;
 			font-weight: 600;
 			font-size: 36px;
 			line-height: 120%;
@@ -226,7 +227,7 @@
 		}
 		.cost_block {
 			position: absolute;
-			top: 256px;
+			top: 270px;
 			right: -50px;
 			width: 344px;
 			height: 87px;
@@ -253,7 +254,7 @@
 			}
 		}
 		.yellow_block {
-			padding: 3px 14px;
+			padding: 8px 14px;
 			font-weight: 700;
 			font-size: 16.875px;
 			line-height: 120%;

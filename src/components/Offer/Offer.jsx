@@ -14,13 +14,13 @@ const Offer = ({ openRegistrationModal }) => {
 								<div className='image_wrapper'>
 									<img src='./images/offer/first.png' alt='' className='table' />
 								</div>
-								<p>5—12 МАЯ ДЛЯ 1-11 КЛАССОВ</p>
+								<p>17—31 МАЯ ДЛЯ 1-11 КЛАССОВ</p>
 							</div>
 							<div className='card'>
 								<div className='image_wrapper'>
 									<img src='./images/offer/second.png' className='roket' alt='' />
 								</div>
-								<p>ЭФФЕКТ 3 МЕСЯЦЕВ ЗАНЯТИЙ ВСЕГО ЗА 8 ДНЕЙ</p>
+								<p>ЭФФЕКТ 4 МЕСЯЦЕВ ЗАНЯТИЙ ВСЕГО ЗА 14 ДНЕЙ</p>
 							</div>
 							<div className='card'>
 								<div className='image_wrapper'>

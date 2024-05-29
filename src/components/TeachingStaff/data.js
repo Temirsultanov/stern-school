@@ -35,13 +35,6 @@ export const TEACHERS = [
 		placeholderSrc: './images/teachers/volkova_aleksandra.webp',
 	},
 	{
-		id: 5,
-		name: 'Хмелёва КСЕНИЯ',
-		role: 'Преподаватель русского языка, преподаватель классов "Математическая вертикаль", филолог',
-		imageSrc: './images/teachers/hmeleva_kseniya.webp',
-		placeholderSrc: './images/teachers/hmeleva_kseniya.webp',
-	},
-	{
 		id: 6,
 		name: 'Розанов АРТЁМ',
 		role: 'Преподаватель физики',
@@ -54,13 +47,6 @@ export const TEACHERS = [
 		role: 'Преподаватель математики',
 		imageSrc: './images/teachers/sharafetdinov_egor.webp',
 		placeholderSrc: './images/teachers/sharafetdinov_egor.webp',
-	},
-	{
-		id: 8,
-		name: 'Шимбирёв СЕРГЕЙ',
-		role: 'Преподаватель математики',
-		imageSrc: './images/teachers/shimbirev_sergey.webp',
-		placeholderSrc: './images/teachers/shimbirev_sergey.webp',
 	},
 	{
 		id: 9,

@@ -99,17 +99,18 @@ const Gallery = () => {
 									onClick={() => (photo.url.includes('image2') ? null : setLightbox(photo.url))}
 									src={photo.url}
 									key={index}
+									alt={photo.url}
 								/>
 							))}
 						</div>
 						<div className='row'>
 							{photos2.map((photo, index) => (
-								<img onClick={() => setLightbox(photo.url)} src={photo.url} key={index} />
+								<img onClick={() => setLightbox(photo.url)} src={photo.url} key={index} alt={photo.url} />
 							))}
 						</div>
 						<div className='row'>
 							{photos3.map((photo, index) => (
-								<img onClick={() => setLightbox(photo.url)} src={photo.url} key={index} />
+								<img onClick={() => setLightbox(photo.url)} src={photo.url} key={index} alt={photo.url} />
 							))}
 						</div>
 					</div>
