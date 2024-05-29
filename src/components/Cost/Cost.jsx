@@ -29,7 +29,6 @@ const Cost = ({ openRegistrationModal }) => {
 								alt=''
 								onClick={() => {
 									swiperRef.current?.slidePrev()
-									setGrade((grade) => -grade + 1)
 								}}
 							/>
 							<img
@@ -37,7 +36,6 @@ const Cost = ({ openRegistrationModal }) => {
 								alt=''
 								onClick={() => {
 									swiperRef.current?.slideNext()
-									setGrade((grade) => -grade + 1)
 								}}
 							/>
 						</div>
